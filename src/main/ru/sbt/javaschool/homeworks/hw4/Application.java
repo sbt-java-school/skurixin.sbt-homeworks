@@ -1,9 +1,6 @@
 package ru.sbt.javaschool.homeworks.hw4;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * Created by скурихин on 13.08.2016.
@@ -50,26 +47,8 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        /*Random random = new Random(System.currentTimeMillis());
-        List<Integer> list = new ArrayList<Integer>(LIST_SIZE);
-        for(int i = 0;i< LIST_SIZE;i++){
-            list.add(random.nextInt(MAX_RANDOM));
-        }
-        System.out.println(list);
 
-        Set<Integer> sorted = new TreeSet<Integer>(list);
-
-        System.out.println(sorted);
-        System.out.println(sorted.size()==list.size());*/
-
-        //-----------------
-
-        /*if (args.length != 1) {
-            printHelp();
-            System.exit(1);
-        }*/
-
-        TruckDao truckDao = new TruckDaoMemoryImpl();
+        //TruckDao truckDao = new TruckDaoMemoryImpl();
         //Application application = new Application(truckDao);
         //application.viewTruck();
         //application.viewTruckRegistry();
@@ -78,20 +57,12 @@ public class Application {
         Truck truckById = application.getTrackById(truckId);
         System.out.println(truckById.getCapacity());*/
 
-        List<Truck> list = truckDao.list();
+        //List<Truck> list = truckDao.list();
         //System.out.println(list);
         //list.add(new Truck(123,112));
         //System.out.println(list);
         //List<Truck> truckList = truckDao.list();
         //System.out.println(truckList);
-
-        Iterator<Truck> iterator = list.iterator();
-        while (iterator.hasNext()) {
-            Truck truck = iterator.next();
-            if (truck.getCapacity() < 20) {
-                list.remove(0);
-            }
-        }
 
         /*for (Truck truck : new ArrayList<Truck>(list)) {
             if(truck.getCapacity()<20) {
@@ -100,6 +71,10 @@ public class Application {
         }*/
 
         //System.out.println(list);
+
+        TruckDao truckDao = new TruckDaoMemoryImpl();
+        MultiMapTypes multiMapTypes = new MultiMapTypes(truckDao);
+        System.out.println(multiMapTypes.toString());
     }
 
 }
