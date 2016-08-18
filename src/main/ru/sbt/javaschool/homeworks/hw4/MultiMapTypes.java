@@ -28,6 +28,7 @@ public class MultiMapTypes {
 
     ArrayList<Truck> get(String type){
         return multiMap.get(type);
+
     }
 
     void put(Truck truck){
