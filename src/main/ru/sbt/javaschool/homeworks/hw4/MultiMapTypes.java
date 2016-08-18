@@ -32,7 +32,15 @@ public class MultiMapTypes {
     }
 
     void put(Truck truck){
-        multiMap.get(truck.getType()).add(truck);
+        ArrayList<Truck> trucks = multiMap.get(truck.getType());
+        if(trucks==null){
+            trucks = new ArrayList<Truck>();
+            trucks.add(truck);
+            multiMap.put(truck.getType(),trucks);
+        }
+        else{
+            trucks.add(truck);
+        }
     }
 
     @Override

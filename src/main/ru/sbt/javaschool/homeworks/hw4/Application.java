@@ -75,6 +75,10 @@ public class Application {
         TruckDao truckDao = new TruckDaoMemoryImpl();
         MultiMapTypes multiMapTypes = new MultiMapTypes(truckDao);
         System.out.println(multiMapTypes.toString());
+
+        //MultiMap<String, Truck> multiMap = new MultiMap<String, Truck>();
+        //multiMap.put("Kamaz",new Truck(12,34,"Kamaz"));
+        //System.out.println(multiMap);
     }
 
 }
