@@ -1,15 +1,12 @@
 package ru.sbt.javaschool.homeworks.hw4;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by скурихин on 18.08.2016.
  */
-public class MultiMap<K,V> {
-    private Map<K,ArrayList<V>> multiMap;
+public class MultiMap<K,V extends Truck> {
+    private Map<K,ArrayList<V>> multiMap = new HashMap<K, ArrayList<V>>();
 
     ArrayList<V> get(K key){
         return multiMap.get(key);

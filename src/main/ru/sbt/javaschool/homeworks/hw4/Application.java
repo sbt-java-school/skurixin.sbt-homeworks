@@ -48,37 +48,23 @@ public class Application {
 
     public static void main(String[] args) {
 
-        //TruckDao truckDao = new TruckDaoMemoryImpl();
-        //Application application = new Application(truckDao);
-        //application.viewTruck();
-        //application.viewTruckRegistry();
-
-        /*long truckId = Long.parseLong(args[0]);
-        Truck truckById = application.getTrackById(truckId);
-        System.out.println(truckById.getCapacity());*/
-
-        //List<Truck> list = truckDao.list();
-        //System.out.println(list);
-        //list.add(new Truck(123,112));
-        //System.out.println(list);
-        //List<Truck> truckList = truckDao.list();
-        //System.out.println(truckList);
-
-        /*for (Truck truck : new ArrayList<Truck>(list)) {
-            if(truck.getCapacity()<20) {
-                list.remove(truck);
-            }
-        }*/
-
-        //System.out.println(list);
-
         TruckDao truckDao = new TruckDaoMemoryImpl();
         MultiMapTypes multiMapTypes = new MultiMapTypes(truckDao);
+        multiMapTypes.put(new Truck(54,3545,"asdf"));
         System.out.println(multiMapTypes.toString());
 
-        //MultiMap<String, Truck> multiMap = new MultiMap<String, Truck>();
-        //multiMap.put("Kamaz",new Truck(12,34,"Kamaz"));
-        //System.out.println(multiMap);
+        MultiMap<String, Truck> multiMap = new MultiMap<String, Truck>();
+        multiMap.put("Kamaz",new Truck(12,34,"Kamaz"));
+        multiMap.put("Kamaz",new Truck(43,54,"Kamaz"));
+        multiMap.put("asd",new Truck(12,34,"asd"));
+        System.out.println(multiMap.get("Kamaz"));
+
+        MultiMap<Integer,Truck> integerTruckMultiMap = new MultiMap<Integer, Truck>();
+        integerTruckMultiMap.put(new Integer(12),new Truck(12,34,"Kamaz"));
+        integerTruckMultiMap.put(43,new Truck(43,54,"Kamaz"));
+        integerTruckMultiMap.put(12,new Truck(12,34,"asd"));
+        System.out.println(integerTruckMultiMap);
+
     }
 
 }
