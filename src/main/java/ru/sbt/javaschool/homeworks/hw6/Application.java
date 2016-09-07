@@ -7,7 +7,7 @@ import java.lang.reflect.Modifier;
 /**
  * Created by скурихин on 24.08.2016.
  */
-public class Aplication {
+public class Application {
     public static void main(String[] args) throws IllegalAccessException, NoSuchFieldException {
         TestClass testClass = new TestClass();
 //        printAllMethods(testClass.getClass());
