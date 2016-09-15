@@ -1,11 +1,6 @@
 package ru.sbt.javaschool.homeworks.hw9_serialization;
 
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.SealedObject;
 import java.io.*;
-import java.security.InvalidKeyException;
-import java.security.SignatureException;
-import java.security.SignedObject;
 
 /**
  * Created by скурихин on 07.09.2016.
