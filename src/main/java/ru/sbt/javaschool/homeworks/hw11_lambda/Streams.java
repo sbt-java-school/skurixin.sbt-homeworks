@@ -1,9 +1,6 @@
 package ru.sbt.javaschool.homeworks.hw11_lambda;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -13,32 +10,30 @@ import java.util.stream.Stream;
 /**
  * Created by скурихин on 13.09.2016.
  */
-public class Streams<T extends Person> {
+public class Streams<T> {
     private List<T> list;
-    private Streams<T> myStream;
-    private static Streams staticStream;
 
     private Streams() {
-        myStream = new Streams<T>();
     }
 
-    public static Streams of(List newCollection) {
-        staticStream = new Streams();
-        staticStream.list = new ArrayList();
-        staticStream.list.addAll(newCollection);
-        return staticStream.myStream;
+    public static <T> Streams<T> of(List<T> newCollection) {
+        Streams<T> myStream = new Streams<>();
+        myStream.list = new ArrayList();
+        myStream.list.addAll(newCollection);
+        return myStream;
     }
 
     public Streams<T> filter(Predicate<T> predicate) {
-        for (T t : list) {
-            if (!predicate.test(t)) {
-                list.remove(t);
+        Iterator<T> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            if (!predicate.test(iterator.next())) {
+                iterator.remove();
             }
         }
         return this;
     }
 
-    public Streams<T> transform(Function<T, T> function) {
+    public Streams<T> transform(Function<? super T, T> function) {
         for (T t : list) {
             t = function.apply(t);
         }
