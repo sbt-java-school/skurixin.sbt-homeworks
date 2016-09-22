@@ -23,7 +23,7 @@ public class Streams<T> {
         return myStream;
     }
 
-    public Streams<T> filter(Predicate<T> predicate) {
+    public Streams<T> filter(Predicate<? super T> predicate) {
         Iterator<T> iterator = list.iterator();
         while (iterator.hasNext()) {
             if (!predicate.test(iterator.next())) {
@@ -34,8 +34,10 @@ public class Streams<T> {
     }
 
     public Streams<T> transform(Function<? super T, T> function) {
-        for (T t : list) {
-            t = function.apply(t);
+        ListIterator<T> iterator = list.listIterator();
+        while (iterator.hasNext()) {
+            T t = iterator.next();
+            iterator.set(function.apply(t));
         }
         return this;
     }
@@ -49,7 +51,7 @@ public class Streams<T> {
         return map;
     }
 
-    public void forEach(Consumer consumer) {
+    public void forEach(Consumer<? super T> consumer) {
         for (T t : list) {
             consumer.accept(t);
         }
