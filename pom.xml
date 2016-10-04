@@ -23,6 +23,7 @@
     </build>
     <modules>
         <module>JMM_homework</module>
+        <module>ThreadPool_homework</module>
     </modules>
 
     <dependencies>
