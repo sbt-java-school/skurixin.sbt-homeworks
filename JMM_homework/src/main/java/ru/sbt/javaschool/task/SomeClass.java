@@ -1,6 +1,4 @@
-package ru.sbt.javaschool;
-
-import ru.sbt.javaschool.BusinessException;
+package ru.sbt.javaschool.task;
 
 import java.time.LocalTime;
 import java.util.concurrent.Callable;

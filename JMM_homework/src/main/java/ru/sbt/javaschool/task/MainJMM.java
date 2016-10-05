@@ -1,4 +1,4 @@
-package ru.sbt.javaschool;
+package ru.sbt.javaschool.task;
 
 /**
  * Created by скурихин on 29.09.2016.

@@ -1,4 +1,4 @@
-package ru.sbt.javaschool;
+package ru.sbt.javaschool.execution_manager;
 
 /**
  * Created by скурихин on 30.09.2016.
