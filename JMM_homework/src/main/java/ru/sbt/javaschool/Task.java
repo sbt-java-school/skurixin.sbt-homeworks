@@ -1,5 +1,7 @@
 package ru.sbt.javaschool;
 
+import ru.sbt.javaschool.BusinessException;
+
 import java.util.Map;
 import java.util.concurrent.Callable;
 

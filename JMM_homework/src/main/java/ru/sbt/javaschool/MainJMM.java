@@ -1,8 +1,5 @@
 package ru.sbt.javaschool;
 
-import java.time.LocalTime;
-import java.util.concurrent.Callable;
-
 /**
  * Created by скурихин on 29.09.2016.
  */
