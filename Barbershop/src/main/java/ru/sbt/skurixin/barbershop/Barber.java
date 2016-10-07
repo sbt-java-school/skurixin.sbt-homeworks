@@ -5,12 +5,15 @@ package ru.sbt.skurixin.barbershop;
  */
 public class Barber extends Thread {
     private long timeOfWork;
-    private boolean isWorking;
+    private long timeOfTravelToSeats;
+    private volatile boolean isBusy;
     private BarberShop shop;
+    private Client currentClient;
 
-    public Barber(BarberShop barberShop, long timeOfWork) {
+    public Barber(BarberShop barberShop, long timeOfWork, long timeOfTravelToSeats) {
         this.timeOfWork = timeOfWork;
         this.shop = barberShop;
+        this.timeOfTravelToSeats = timeOfTravelToSeats;
     }
 
     @Override
@@ -24,50 +27,55 @@ public class Barber extends Thread {
     }
 
     private void sleeping() {
-        System.out.println("Barber sleep");
-        try {
-            synchronized (shop.barber) {
-                shop.barber.wait();
+        synchronized (this) {
+            try {
+                isBusy = false;
+                System.out.println("Barber sleep");
+                this.wait();
+            } catch (InterruptedException e) {
+                System.out.println("Interrupted sleep");
+            } finally {
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
         System.out.println("Barber end sleep");
     }
 
     private boolean checkClients() {
-        System.out.println("Barber go for clients");
-        Client client = shop.seats.remove();
-        if (client == null) {
+        System.out.println("Barber came for clients");
+        currentClient = shop.getSeats().remove();
+        if (currentClient == null) {
             return false;
         } else {
-            synchronized (client) {
-                System.out.println("Barber take with him " + client.getName());
-                client.notify();
+            synchronized (currentClient) {
+                System.out.println("Barber take with him " + currentClient.returnName());
+                currentClient.notify();
+                try {
+                    currentClient.wait();
+                } catch (InterruptedException e) {
+                }
             }
         }
         return true;
-//        Client client = shop.seats.remove();
-//        if(client==null){
-//            return false;
-//        }
-//        client.takeTheSeat();
-//        return true;
     }
 
     private void working() {
-        isWorking = true;
+        isBusy = true;
         System.out.println("Barber start working");
         try {
+            currentClient.cutHair();
             Thread.sleep(timeOfWork);
             System.out.println("Barber end working");
-            isWorking = false;
+            System.out.println("Barber will go to seats for a long time");
+            Thread.sleep(timeOfTravelToSeats);
         } catch (InterruptedException e) {
-
         }
     }
 
-    public boolean isWorking() {
-        return isWorking;
+    public boolean isBusy() {
+        return isBusy;
+    }
+
+    public void setCurrentClient(Client currentClient) {
+        this.currentClient = currentClient;
     }
 }

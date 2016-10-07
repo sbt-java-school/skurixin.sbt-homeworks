@@ -10,13 +10,13 @@ import java.util.concurrent.TimeUnit;
  */
 public class BarberShop {
     private final int COUNT_OF_SEATS;
-    Seats seats;
-    final Barber barber;
+    private final Seats seats;
+    private final Barber barber;
 
-    public BarberShop(int count_of_seats, long timeOfWork) {
+    public BarberShop(int count_of_seats, long timeOfWork, long timeOfTravelToSeats) {
         COUNT_OF_SEATS = count_of_seats;
         seats = new Seats(count_of_seats);
-        barber = new Barber(this, timeOfWork);
+        barber = new Barber(this, timeOfWork, timeOfTravelToSeats);
     }
 
     public void startWorking(int countOfClients, long frequencyOfAppearance) {
@@ -30,14 +30,8 @@ public class BarberShop {
             @Override
             public void run() {
                 latch.countDown();
-                Client client = new Client(shop);
-//                client.UncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-//                    @Override
-//                    public void uncaughtException(Thread t, Throwable e) {
-//                        System.out.println(e.getMessage());
-//                    }
-//                });
-                client.setName("Client-" + latch.getCount());
+                Client client = new Client(shop, "Client-" + latch.getCount());
+                client.setUncaughtExceptionHandler((t, e) -> System.out.println(e.getMessage()));
                 client.start();
             }
         }, 0, frequencyOfAppearance, TimeUnit.MILLISECONDS);
@@ -48,17 +42,20 @@ public class BarberShop {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         try {
-            Thread.currentThread().sleep(10000);
+            Thread.currentThread().sleep(15000);
             System.out.println("BARBERSHOP IS CLOSED");
         } catch (InterruptedException e) {
             System.out.println("sleep barbershop");
         }
-//        try {
-//            barber.join();
-//        } catch (InterruptedException e) {
-//            System.out.println("Exception of join");
-//        }
     }
 
+    public Seats getSeats() {
+        return seats;
+    }
+
+    public Barber getBarber() {
+        return barber;
+    }
 }
