@@ -18,6 +18,7 @@ public class Server {
     private static Map<Client, ArrayList<String>> messagesMap = new ConcurrentHashMap<>();
 
     public static void main(String[] args) throws IOException {
+        System.out.println("Chat started!");
         try (ServerSocket server = new ServerSocket(PORT)) {
             ExecutorService service = Executors.newFixedThreadPool(MAX_COUNT_OF_CLIENTS);
             while (true) {
@@ -73,11 +74,17 @@ public class Server {
             try {
                 System.out.println("Listening");
                 while ((s = reader.readLine()) != null) {
-                    String[] splitResult = s.split(">>", 2);
-                    System.out.println("From " + client.getLogin() + " to " + splitResult[0] + ":\n\t" + splitResult[1]);
-                    Client clientTo = getClientByLogin(splitResult[0]);
-                    messagesMap.get(clientTo).add(splitResult[1]);
-                    sendToUser(client, clientTo, splitResult[1]);
+                    if (s.equals("getmessages")) {
+                        System.out.println(client.getLogin() + " required his messages");
+                        System.out.println("This is his history " + messagesMap.get(client).toString());
+                        sendToUser(new Client("SYSTEM"), client, messagesMap.get(client).toString());
+                    } else {
+                        String[] splitResult = s.split(">>", 2);
+                        System.out.println("From " + client.getLogin() + " to " + splitResult[0] + ":\n\t" + splitResult[1]);
+                        Client clientTo = getClientByLogin(splitResult[0]);
+                        messagesMap.get(clientTo).add(client.getLogin() + " >> " + splitResult[1]);
+                        sendToUser(client, clientTo, splitResult[1]);
+                    }
                 }
             } catch (IOException e) {
                 System.err.println("Exception " + client.getLogin());

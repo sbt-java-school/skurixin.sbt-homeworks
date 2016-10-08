@@ -29,22 +29,29 @@ public class Client {
     public static void main(String[] args) throws IOException {
         System.out.println("Write your login: ");
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
-        String currentLogin = consoleReader.readLine();
+        String currentLogin = consoleReader.readLine().replaceAll(" ","");
         try (Socket server = new Socket(InetAddress.getLocalHost(), 1234);
              BufferedReader reader = new BufferedReader(new InputStreamReader(server.getInputStream()));
              PrintWriter writer = new PrintWriter(server.getOutputStream())) {
             writer.println(currentLogin);
             writer.flush();
             new Thread(new ReaderRunnable(reader)).start();
+            System.out.println("Write your comands:");
             String message;
             while ((message = consoleReader.readLine()) != null) {
-                String[] splitResult = message.split(">>");
-                if (splitResult.length < 2) {
-                    System.out.println("Для отправления сообщения введите \"Имя пользователя\">>\"сообщение\"");
-                } else {
-                    writer.println(message);
-                    writer.flush();
+                if(message.toLowerCase().replaceAll(" ","").equals("getmessages")) {
+                    message="getmessages";
                 }
+                else {
+                    String[] splitResult = message.split(">>");
+                    if (splitResult.length < 2) {
+                        System.out.println("Для отправления сообщения введите \"Имя пользователя\">>\"сообщение\"");
+                        continue;
+                    }
+                    message=message.replaceAll(splitResult[0],splitResult[0].replaceAll(" ",""));
+                }
+                writer.println(message);
+                writer.flush();
             }
         }
     }
