@@ -46,7 +46,15 @@ public class Server {
     }
 
     private static void sendToUser(Client from, Client to, String message) {
-        to.getPrintWriter().write(from.getLogin() + " >> " + message);
+        to.getPrintWriter().println(from.getLogin() + " >> " + message);
+        to.getPrintWriter().flush();
+//        try {
+//            PrintWriter printWriter = new PrintWriter(to.getSocket().getOutputStream());
+//            printWriter.write(from.getLogin() + " >> " + message);
+//            printWriter.flush();
+//        } catch (IOException e) {
+//            System.err.println(e.getMessage());
+//        }
     }
 
     private static class Notification implements Runnable {
