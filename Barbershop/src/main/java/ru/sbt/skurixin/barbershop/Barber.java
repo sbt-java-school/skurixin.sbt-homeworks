@@ -1,5 +1,8 @@
 package ru.sbt.skurixin.barbershop;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * Created by скурихин on 06.10.2016.
  */
@@ -20,16 +23,19 @@ public class Barber extends Thread {
     public void run() {
         while (true) {
             sleeping();
-            do {
-                working();
-            } while (checkClients());
+            try {
+                do {
+                    working();
+                } while (checkClients());
+            } catch (InterruptedException e) {
+                System.err.println("interrupted");
+            }
         }
     }
 
     private void sleeping() {
         synchronized (this) {
             try {
-                isBusy = false;
                 System.out.println("Barber sleep");
                 this.wait();
             } catch (InterruptedException e) {
@@ -40,22 +46,30 @@ public class Barber extends Thread {
         System.out.println("Barber end sleep");
     }
 
-    private boolean checkClients() {
+    private boolean checkClients() throws InterruptedException {
+        System.out.println("Barber will go to seats for a long time");
+        Thread.sleep(timeOfTravelToSeats);
         System.out.println("Barber came for clients");
         currentClient = shop.getSeats().remove();
+        boolean flag;
         if (currentClient == null) {
-            return false;
+            flag = false;
         } else {
+            flag = true;
             synchronized (currentClient) {
                 System.out.println("Barber take with him " + currentClient.returnName());
                 currentClient.notify();
                 try {
                     currentClient.wait();
                 } catch (InterruptedException e) {
+                    System.err.println("interrupted in checkClients");
                 }
             }
         }
-        return true;
+        Thread.sleep(timeOfTravelToSeats);
+        shop.getLock().unlock();
+        System.out.println("Barber came to work place");
+        return flag;
     }
 
     private void working() {
@@ -65,13 +79,13 @@ public class Barber extends Thread {
             currentClient.cutHair();
             Thread.sleep(timeOfWork);
             System.out.println("Barber end working");
-            System.out.println("Barber will go to seats for a long time");
-            Thread.sleep(timeOfTravelToSeats);
+            isBusy = false;
+            shop.getLock().lock();
         } catch (InterruptedException e) {
         }
     }
 
-    public boolean isBusy() {
+    public boolean isWorking() {
         return isBusy;
     }
 

@@ -18,14 +18,14 @@ public class Seats {
         queue = new ArrayDeque(COUNT_OF_SEATS);
     }
 
-    public boolean add(Client t) {
+    public synchronized boolean add(Client t) {
         if (queue.size() < COUNT_OF_SEATS) {
             queue.add(t);
             return true;
         } else return false;
     }
 
-    public Client remove() {
+    public synchronized Client remove() {
         Client t = null;
         if (queue.size() > 0) {
             t = queue.remove();
