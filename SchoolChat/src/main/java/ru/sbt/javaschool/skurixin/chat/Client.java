@@ -3,8 +3,6 @@ package ru.sbt.javaschool.skurixin.chat;
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.UnknownHostException;
-import java.util.logging.SocketHandler;
 
 /**
  * Created by скурихин on 08.10.2016.
@@ -14,49 +12,74 @@ public class Client {
     private Socket socket;
     private PrintWriter printWriter;
     private BufferedReader bufferedReader;
-
-    public Client(String login) {
-        this.login = login;
-    }
-
-    public Client(String login, Socket socket, PrintWriter printWriter, BufferedReader bufferedReader) {
-        this.login = login;
-        this.socket = socket;
-        this.printWriter = printWriter;
-        this.bufferedReader = bufferedReader;
-    }
+    private BufferedReader consoleReader;
 
     public static void main(String[] args) throws IOException {
+        new Client().go();
+    }
+
+    private void go() throws IOException {
         System.out.println("Write your login: ");
-        BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
-        String currentLogin = consoleReader.readLine().replaceAll(" ","");
+        String currentLogin = consoleReader.readLine().replaceAll(" ", "");
         try (Socket server = new Socket(InetAddress.getLocalHost(), 1234);
              BufferedReader reader = new BufferedReader(new InputStreamReader(server.getInputStream()));
              PrintWriter writer = new PrintWriter(server.getOutputStream())) {
+
+            //отправляем логин на сервер
             writer.println(currentLogin);
             writer.flush();
+
+            //слушаем сообщения от сервера
             new Thread(new ReaderRunnable(reader)).start();
-            System.out.println("Write your comands:");
-            String message;
-            while ((message = consoleReader.readLine()) != null) {
-                if(message.toLowerCase().replaceAll(" ","").equals("getmessages")) {
-                    message="getmessages";
-                }
-                else {
-                    String[] splitResult = message.split(">>");
-                    if (splitResult.length < 2) {
-                        System.out.println("Для отправления сообщения введите \"Имя пользователя\">>\"сообщение\"");
-                        continue;
-                    }
-                    message=message.replaceAll(splitResult[0],splitResult[0].replaceAll(" ",""));
-                }
+            getMessagesFromConsole(writer);
+        }
+        System.out.println("Close connection");
+    }
+
+    //вводим команды к серверу или новое сообщение
+    private void getMessagesFromConsole(PrintWriter writer) throws IOException {
+        System.out.println("Write one of comands:");
+        System.out.println("\tgetMessages");
+        System.out.println("\tactiveUsers");
+        System.out.println("\tdisconnect");
+        String message;
+        while ((message = consoleReader.readLine()) != null) {
+            message = parseConsoleString(message);
+            if (message != null) {
                 writer.println(message);
                 writer.flush();
+            }
+            if (message.equals("disconnect")) {
+                break;
             }
         }
     }
 
-    private static class ReaderRunnable implements Runnable {
+    private String parseConsoleString(String message) {
+        switch (message.toLowerCase().replaceAll(" ", "")) {
+            case "getmessages":
+                message = "getmessages";
+                break;
+            case "activeusers":
+                message = "activeusers";
+                break;
+            case "disconnect":
+                message = "disconnect";
+                break;
+            default:
+                String[] splitResult = message.split(">>");
+                if (splitResult.length < 2) {
+                    System.out.println("Для отправления сообщения введите \"Имя пользователя\">>\"сообщение\"");
+                    message = null;
+                } else {
+                    message = message.replaceAll(splitResult[0], splitResult[0].replaceAll(" ", ""));
+                }
+                break;
+        }
+        return message;
+    }
+
+    private class ReaderRunnable implements Runnable {
         private final BufferedReader reader;
 
         public ReaderRunnable(BufferedReader reader) {
@@ -71,9 +94,24 @@ public class Client {
                     System.out.println(message);
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Reading from server finished");
             }
         }
+    }
+
+    public Client(String login) {
+        this.login = login;
+    }
+
+    public Client(String login, Socket socket, PrintWriter printWriter, BufferedReader bufferedReader) {
+        this.login = login;
+        this.socket = socket;
+        this.printWriter = printWriter;
+        this.bufferedReader = bufferedReader;
+    }
+
+    public Client() {
+        consoleReader = new BufferedReader(new InputStreamReader(System.in));
     }
 
     public String getLogin() {
@@ -108,4 +146,20 @@ public class Client {
         this.bufferedReader = bufferedReader;
     }
 
+    @Override
+    public String toString() {
+        return login;
+    }
+
+    @Override
+    public int hashCode() {
+        return login.hashCode() + socket.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return (obj instanceof Client &&
+                login.equals(((Client) obj).login) &&
+                socket.equals(((Client) obj).socket));
+    }
 }
