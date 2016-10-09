@@ -24,6 +24,7 @@
     <modules>
         <module>JMM_homework</module>
         <module>ThreadPool_homework</module>
+        <module>Barbershop</module>
     </modules>
 
     <dependencies>

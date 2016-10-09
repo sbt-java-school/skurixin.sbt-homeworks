@@ -12,7 +12,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.mockito:mockito-core:2.1.0-RC.2" level="project" />
-    <orderEntry type="module" module-name="ThreadPool_homework" exported="" />
     <orderEntry type="module" module-name="ThreadPool_homework" />
     <orderEntry type="library" name="Maven: org.lucee:commons-codec:1.6" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
