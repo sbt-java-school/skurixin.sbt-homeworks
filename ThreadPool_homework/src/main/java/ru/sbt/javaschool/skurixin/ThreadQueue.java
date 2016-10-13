@@ -9,19 +9,19 @@ import java.util.Queue;
 public class ThreadQueue<T> {
     private Queue<T> queue = new ArrayDeque<>();
 
-    synchronized void add(T t) {
+    public synchronized void add(T t) {
         queue.add(t);
         this.notify();
     }
 
-    synchronized T remove() throws InterruptedException {
+    public synchronized T remove() throws InterruptedException {
         while (queue.size() < 1) {
             this.wait();
         }
         return queue.remove();
     }
 
-    public void removeAll(){
+    public synchronized void removeAll(){
         queue.clear();
     }
     public int size(){

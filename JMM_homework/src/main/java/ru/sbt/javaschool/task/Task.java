@@ -5,9 +5,9 @@ import java.util.concurrent.Callable;
 /**
  * Created by скурихин on 29.09.2016.
  */
-public class Task<T>{
+public class Task<T> {
     private Callable<? extends T> callable;
-    private static final Object lock=new Object();
+    private static final Object lock = new Object();
     private T result;
     private BusinessException businessException;
 
@@ -18,17 +18,17 @@ public class Task<T>{
 
     public T get() throws BusinessException {
         try {
-            if(result!=null){
+            if (result != null) {
                 return result;
             }
-            if(businessException!=null){
+            if (businessException != null) {
                 throw businessException;
             }
             synchronized (lock) {
-                if(result!=null) {
+                if (result != null) {
                     return result;
                 }
-                if(businessException!=null){
+                if (businessException != null) {
                     throw businessException;
                 }
                 result = callable.call();
@@ -36,7 +36,7 @@ public class Task<T>{
                 return result;
             }
         } catch (BusinessException e) {
-            businessException=e;
+            businessException = e;
             throw businessException;
         } catch (InterruptedException e) {
             System.out.println("Interrupted!");
