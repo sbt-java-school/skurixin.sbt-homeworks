@@ -15,6 +15,8 @@ public class Main {
         String path = new File(".").getAbsolutePath().replaceAll("\\\\", "/");
         PluginManager manager = new PluginManager("file:///" + path.substring(0, path.length() - 1) + "root_for_java_classes/");
         Object obj = manager.load("pluginImpl", "ru.sbt.javaschool.homeworks.hw10_classloader.PluginImpl");
+        Plugin plugin = (Plugin) obj;
+        plugin.doUsefull();
         System.out.println(obj);
         //ошибка
         //Plugin plugin = (Plugin) obj;

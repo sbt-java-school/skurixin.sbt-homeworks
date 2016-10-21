@@ -26,6 +26,7 @@
         <module>ThreadPool_homework</module>
         <module>Barbershop</module>
         <module>GoodCode</module>
+        <module>MagicWoman</module>
     </modules>
 
     <dependencies>
