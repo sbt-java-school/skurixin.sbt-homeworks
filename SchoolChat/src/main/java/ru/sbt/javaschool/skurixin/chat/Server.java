@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 public class Server {
     private static final int MAX_COUNT_OF_CLIENTS = 10;
     public static final int PORT = 1234;
-    private static Map<Client, ArrayList<String>> messagesMap = new ConcurrentHashMap<>();
+    private static Map<Client, ArrayList<Object>> messagesMap = new ConcurrentHashMap<>();
     private static final Client SYSTEM = new Client("SYSTEM");
 
     public static void main(String[] args) throws IOException {

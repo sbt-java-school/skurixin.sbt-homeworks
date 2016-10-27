@@ -27,6 +27,8 @@
         <module>Barbershop</module>
         <module>GoodCode</module>
         <module>MagicWoman</module>
+        <module>SchoolChat</module>
+        <module>HomeTasksBeforeMaven</module>
     </modules>
 
     <dependencies>

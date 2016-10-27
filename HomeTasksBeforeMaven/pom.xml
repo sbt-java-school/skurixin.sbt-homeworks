@@ -9,14 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>JMM_homework</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>groupId</groupId>
-            <artifactId>thread_pool</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <artifactId>HomeTasksBeforeMaven</artifactId>
 
 
 </project>
