@@ -1,12 +1,13 @@
 package ru.sbt.skurixin.barbershop;
 
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import org.apache.log4j.Logger;
 
 /**
  * Created by скурихин on 06.10.2016.
  */
 public class Barber extends Thread {
+    // Инициализация логера
+    private static final Logger LOGGER = Logger.getLogger(Barber.class);
     private long timeOfWork;
     private long timeOfTravelToSeats;
     private volatile boolean isBusy;
@@ -28,7 +29,8 @@ public class Barber extends Thread {
                     working();
                 } while (checkClients());
             } catch (InterruptedException e) {
-                System.err.println("interrupted");
+                LOGGER.error("Interrupted barber" + e);
+                Thread.currentThread().interrupt();
             }
         }
     }
@@ -36,20 +38,20 @@ public class Barber extends Thread {
     private void sleeping() {
         synchronized (this) {
             try {
-                System.out.println("Barber sleep");
+                LOGGER.info("Barber sleep");
                 this.wait();
             } catch (InterruptedException e) {
-                System.out.println("Interrupted sleep");
-            } finally {
+                LOGGER.error("Interrupted sleep of barber");
+                Thread.currentThread().interrupt();
             }
         }
-        System.out.println("Barber end sleep");
+        LOGGER.info("Barber end sleep");
     }
 
     private boolean checkClients() throws InterruptedException {
-        System.out.println("Barber will go to seats for a long time");
+        LOGGER.info("Barber will go to seats for a long time");
         Thread.sleep(timeOfTravelToSeats);
-        System.out.println("Barber came for clients");
+        LOGGER.info("Barber came for clients");
         currentClient = shop.getSeats().remove();
         boolean flag;
         if (currentClient == null) {
@@ -57,31 +59,34 @@ public class Barber extends Thread {
         } else {
             flag = true;
             synchronized (currentClient) {
-                System.out.println("Barber take with him " + currentClient.returnName());
+                LOGGER.info("Barber take with him " + currentClient.returnName());
                 currentClient.notify();
                 try {
                     currentClient.wait();
                 } catch (InterruptedException e) {
-                    System.err.println("interrupted in checkClients");
+                    LOGGER.error("interrupted in checkClients");
+                    Thread.currentThread().interrupt();
                 }
             }
         }
         Thread.sleep(timeOfTravelToSeats);
         shop.getLock().unlock();
-        System.out.println("Barber came to work place");
+        LOGGER.info("Barber came to work place");
         return flag;
     }
 
     private void working() {
         isBusy = true;
-        System.out.println("Barber start working");
+        LOGGER.info("Barber start working");
         try {
             currentClient.cutHair();
             Thread.sleep(timeOfWork);
-            System.out.println("Barber end working");
+            LOGGER.info("Barber end working");
             isBusy = false;
             shop.getLock().lock();
         } catch (InterruptedException e) {
+            LOGGER.error("Interrupted in work" + e);
+            Thread.currentThread().interrupt();
         }
     }
 

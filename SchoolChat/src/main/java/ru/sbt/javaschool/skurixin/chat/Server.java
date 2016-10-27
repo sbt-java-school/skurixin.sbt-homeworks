@@ -6,6 +6,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Optional;
+import org.apache.log4j.Logger;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -15,16 +16,21 @@ import java.util.regex.Pattern;
  * Created by скурихин on 07.10.2016.
  */
 public class Server {
+    // Инициализация логера
+    private static final Logger LOGGER = Logger.getLogger(Server.class);
     private static final int MAX_COUNT_OF_CLIENTS = 10;
     public static final int PORT = 1234;
     private static Map<Client, ArrayList<Object>> messagesMap = new ConcurrentHashMap<>();
     private static final Client SYSTEM = new Client("SYSTEM");
 
+    private Server() {
+    }
+
     public static void main(String[] args) throws IOException {
-        System.out.println("Chat started!");
+        LOGGER.info("Chat started!");
         try (ServerSocket server = new ServerSocket(PORT)) {
             ExecutorService service = Executors.newFixedThreadPool(MAX_COUNT_OF_CLIENTS);
-            while (true) {
+            while (!Thread.currentThread().isInterrupted()) {
                 try {
                     Socket clientSocket = server.accept();
                     BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
@@ -38,12 +44,12 @@ public class Server {
                     notifyClients(client.getLogin() + " has entered to school chat!");
                     //создаем для нового пользователя историю сообщений
                     messagesMap.put(client, new ArrayList<>());
-                    System.out.println(client.getLogin() + " connected");
+                    LOGGER.info(client.getLogin() + " connected");
 
                     //добавляем прослушку команд от клиента
                     service.submit(new Notification(client));
                 } catch (Exception e) {
-                    System.err.println("Exception!");
+                    LOGGER.error("Exception!"+ e);
                 }
             }
         }
@@ -96,44 +102,49 @@ public class Server {
                 while ((s = reader.readLine()) != null) {
                     switch (s) {
                         case "getmessages":
-                            System.out.println(client.getLogin() + " required his messages");
+                            LOGGER.info(client.getLogin() + " required his messages");
                             String answerToClient = messagesMap.get(client).toString();
-                            System.out.println("\t" + answerToClient);
+                            LOGGER.info("\t" + answerToClient);
                             sendToUser(SYSTEM, client, answerToClient);
                             break;
                         case "activeusers":
-                            System.out.println(client.getLogin() + " required active users");
+                            LOGGER.info(client.getLogin() + " required active users");
                             String answerToClient1 = messagesMap.keySet().toString();
-                            System.out.println("\t" + answerToClient1);
+                            LOGGER.info("\t" + answerToClient1);
                             sendToUser(SYSTEM, client, answerToClient1);
                             break;
                         case "disconnect":
-                            messagesMap.remove(client);
-                            client.getSocket().close();
-                            String disconnectMessage = client.getLogin() + " has disconnected from SchoolChat";
-                            System.out.println(disconnectMessage);
-                            notifyClients(disconnectMessage);
+                            disconnectUser();
                             break;
                         //отправляем сообщение
                         default:
-                            String[] splitResult = s.split(">>", 2);
-                            System.out.println("From " + client.getLogin() + " to " + splitResult[0] + ":\n\t" + splitResult[1]);
-                            //Client clientTo = getClientByLogin(splitResult[0]);
-                            Optional<Client> first = messagesMap.keySet().stream()
-                                    .filter(p -> p.getLogin().equals(splitResult[0]))
-                                    .findFirst();
-                            if (first.isPresent()) {
-                                messagesMap.get(first.get()).add(client.getLogin() + " >> " + splitResult[1]);
-                                sendToUser(client, first.get(), splitResult[1]);
-                            }
+                            prepareToSent(s);
                             break;
                     }
                 }
             } catch (IOException e) {
-                System.err.println(client.getLogin() + e.getMessage());
+                LOGGER.error(client.getLogin() + e);
             }
         }
+
+        private void prepareToSent(String s) {
+            String[] splitResult = s.split(">>", 2);
+            LOGGER.info("From " + client.getLogin() + " to " + splitResult[0] + ":\n\t" + splitResult[1]);
+            Optional<Client> first = messagesMap.keySet().stream()
+                    .filter(p -> p.getLogin().equals(splitResult[0]))
+                    .findFirst();
+            if (first.isPresent()) {
+                messagesMap.get(first.get()).add(client.getLogin() + " >> " + splitResult[1]);
+                sendToUser(client, first.get(), splitResult[1]);
+            }
+        }
+
+        private void disconnectUser() throws IOException {
+            messagesMap.remove(client);
+            client.getSocket().close();
+            String disconnectMessage = client.getLogin() + " has disconnected from SchoolChat";
+            LOGGER.info(disconnectMessage);
+            notifyClients(disconnectMessage);
+        }
     }
-
-
 }

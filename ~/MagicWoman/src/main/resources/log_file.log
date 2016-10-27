@@ -1,0 +1,13 @@
+2016-10-27 19:06:31 INFO  Visitor:26 - Welcome to our MagicPlace
+2016-10-27 19:06:31 INFO  Visitor:54 - Попробуй угадай!
+2016-10-27 19:06:37 INFO  Visitor:57 - java.net.SocketException: Connection reset
+2016-10-27 19:06:55 INFO  Visitor:26 - Welcome to our MagicPlace
+2016-10-27 19:06:55 INFO  Visitor:54 - Попробуй угадай!
+2016-10-27 19:06:58 INFO  Visitor:54 - Too few
+2016-10-27 19:07:03 INFO  Visitor:57 - java.net.SocketException: Connection reset
+2016-10-27 19:08:08 INFO  Visitor:26 - Welcome to our MagicPlace
+2016-10-27 19:08:08 INFO  Visitor:54 - Попробуй угадай!
+2016-10-27 19:08:13 INFO  Visitor:54 - Too few
+2016-10-27 19:08:15 INFO  Visitor:54 - Too few
+2016-10-27 19:08:17 INFO  Visitor:54 - Too few
+2016-10-27 19:08:35 INFO  MagicWoman:65 - java.net.SocketException: Connection reset

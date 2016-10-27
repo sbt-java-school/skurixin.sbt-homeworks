@@ -1,0 +1,4 @@
+2016-10-27 20:04:59 INFO  MagicWoman:29 - Start MagicWoman
+2016-10-27 20:05:05 INFO  Visitor:26 - Welcome to our MagicPlace
+2016-10-27 20:05:05 INFO  Visitor:54 - Попробуй угадай!
+2016-10-27 20:05:13 ERROR MagicWoman:66 - java.net.SocketException: Connection reset

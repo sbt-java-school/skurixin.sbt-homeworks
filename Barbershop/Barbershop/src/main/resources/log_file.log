@@ -1,0 +1,40 @@
+2016-10-27 20:51:58 INFO  Barber:41 - Barber sleep
+2016-10-27 20:51:58 INFO  Client:63 - Client-4 is coming
+2016-10-27 20:51:59 INFO  Client:71 - Client-4 see, that barber SLEEPING
+2016-10-27 20:51:59 INFO  Barber:48 - Barber end sleep
+2016-10-27 20:51:59 INFO  Barber:80 - Barber start working
+2016-10-27 20:51:59 INFO  Client:38 - Client-4 is cutting his hair
+2016-10-27 20:51:59 INFO  Client:63 - Client-3 is coming
+2016-10-27 20:52:00 INFO  Client:67 - Client-3 see, that barber is BUSY
+2016-10-27 20:52:00 INFO  Barber:84 - Barber end working
+2016-10-27 20:52:00 INFO  Client:63 - Client-2 is coming
+2016-10-27 20:52:00 INFO  Client:56 - Client-3 try to take the seat
+2016-10-27 20:52:00 INFO  Client:43 - Client-3 is waiting
+2016-10-27 20:52:00 INFO  Barber:52 - Barber will go to seats for a long time
+2016-10-27 20:52:01 INFO  Client:63 - Client-1 is coming
+2016-10-27 20:52:02 INFO  Client:63 - Client-0 is coming
+2016-10-27 20:52:02 INFO  Barber:54 - Barber came for clients
+2016-10-27 20:52:02 INFO  Barber:62 - Barber take with him Client-3
+2016-10-27 20:52:02 INFO  Client:46 - Client-3 has ended waiting
+2016-10-27 20:52:04 INFO  Barber:74 - Barber came to work place
+2016-10-27 20:52:04 INFO  Barber:80 - Barber start working
+2016-10-27 20:52:04 INFO  Client:38 - Client-3 is cutting his hair
+2016-10-27 20:52:05 INFO  Client:67 - Client-2 see, that barber is BUSY
+2016-10-27 20:52:05 INFO  Barber:84 - Barber end working
+2016-10-27 20:52:05 INFO  Client:56 - Client-2 try to take the seat
+2016-10-27 20:52:05 INFO  Client:43 - Client-2 is waiting
+2016-10-27 20:52:06 INFO  Client:71 - Client-1 see, that barber SLEEPING
+2016-10-27 20:52:06 INFO  Client:71 - Client-0 see, that barber SLEEPING
+2016-10-27 20:52:06 INFO  Barber:52 - Barber will go to seats for a long time
+2016-10-27 20:52:08 INFO  Barber:54 - Barber came for clients
+2016-10-27 20:52:08 INFO  Barber:62 - Barber take with him Client-2
+2016-10-27 20:52:08 INFO  Client:46 - Client-2 has ended waiting
+2016-10-27 20:52:10 INFO  Barber:74 - Barber came to work place
+2016-10-27 20:52:10 INFO  Barber:80 - Barber start working
+2016-10-27 20:52:10 INFO  Client:38 - Client-2 is cutting his hair
+2016-10-27 20:52:11 INFO  Barber:84 - Barber end working
+2016-10-27 20:52:11 INFO  Barber:52 - Barber will go to seats for a long time
+2016-10-27 20:52:13 INFO  Barber:54 - Barber came for clients
+2016-10-27 20:52:15 INFO  Barber:74 - Barber came to work place
+2016-10-27 20:52:15 INFO  Barber:41 - Barber sleep
+2016-10-27 20:52:17 INFO  BarberShop:58 - BARBERSHOP IS CLOSED

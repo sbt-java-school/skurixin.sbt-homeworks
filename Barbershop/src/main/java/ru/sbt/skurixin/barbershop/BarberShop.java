@@ -1,5 +1,7 @@
 package ru.sbt.skurixin.barbershop;
 
+import org.apache.log4j.Logger;
+
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -11,6 +13,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * Created by скурихин on 06.10.2016.
  */
 public class BarberShop {
+    // Инициализация логера
+    private static final Logger LOGGER = Logger.getLogger(BarberShop.class);
     private final int COUNT_OF_SEATS;
     private final Seats seats;
     private final Barber barber;
@@ -45,14 +49,16 @@ public class BarberShop {
             latch.await();
             schedule.shutdown();
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            LOGGER.error("Interrupted sleep of barbershop" + e);
+            Thread.currentThread().interrupt();
         }
 
         try {
             Thread.currentThread().sleep(15000);
-            System.out.println("BARBERSHOP IS CLOSED");
+            LOGGER.info("BARBERSHOP IS CLOSED");
         } catch (InterruptedException e) {
-            System.out.println("sleep barbershop");
+            LOGGER.error("Interrupted sleep barbershop" + e);
+            Thread.currentThread().interrupt();
         }
     }
 

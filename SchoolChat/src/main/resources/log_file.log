@@ -1,0 +1,13 @@
+2016-10-27 20:17:51 INFO  Server:30 - Chat started!
+2016-10-27 20:17:54 INFO  Client:45 - Write your login: 
+2016-10-27 20:17:57 INFO  Client:64 - Write one of comands:
+2016-10-27 20:17:57 INFO  Client:65 - 	getmessages
+2016-10-27 20:17:57 INFO  Client:66 - 	activeusers
+2016-10-27 20:17:57 INFO  Client:67 - 	disconnect
+2016-10-27 20:17:57 INFO  Server:47 - admin connected
+2016-10-27 20:18:01 INFO  Client:96 - Для отправления сообщения введите "Имя пользователя">>"сообщение"
+2016-10-27 20:18:05 INFO  Client:96 - Для отправления сообщения введите "Имя пользователя">>"сообщение"
+2016-10-27 20:18:13 INFO  Client:59 - Close connection
+2016-10-27 20:18:13 ERROR Client:121 - Reading from server finished: Socket closed
+2016-10-27 20:18:13 INFO  Server:146 - admin has disconnected from SchoolChat
+2016-10-27 20:18:13 ERROR Server:126 - adminjava.net.SocketException: socket closed

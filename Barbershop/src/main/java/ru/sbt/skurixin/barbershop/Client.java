@@ -1,9 +1,13 @@
 package ru.sbt.skurixin.barbershop;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by скурихин on 06.10.2016.
  */
 public class Client extends Thread {
+    // Инициализация логера
+    private static final Logger LOGGER = Logger.getLogger(Client.class);
     private BarberShop shop;
     private String name;
     private final long timeToTravelForBarber;
@@ -25,44 +29,46 @@ public class Client extends Thread {
                 }
             }
         } catch (InterruptedException e) {
-            System.err.println("interrupted");
+            LOGGER.error("interrupted");
+            Thread.currentThread().interrupt();
         }
     }
 
     public void cutHair() {
-        System.out.println(name + " is cutting his hair");
+        LOGGER.info(name + " is cutting his hair");
     }
 
     private void waiting() {
         try {
-            System.out.println(name + " is waiting");
+            LOGGER.info(name + " is waiting");
             synchronized (this) {
                 wait();
-                System.out.println(name + " has ended waiting");
+                LOGGER.info(name + " has ended waiting");
                 notify();
             }
         } catch (InterruptedException e) {
-            System.out.println("Interrupt have come for your soul");
+            LOGGER.error("Interrupt have come for your soul" + e);
+            Thread.currentThread().interrupt();
         }
     }
 
     public boolean takeTheSeat() {
-        System.out.println(name + " try to take the seat");
+        LOGGER.info(name + " try to take the seat");
         boolean isAdd = shop.getSeats().add(this);
         shop.getLock().unlock();
         return isAdd;
     }
 
     private boolean isBarberBusy() throws InterruptedException {
-        System.out.println(name + " is coming");
+        LOGGER.info(name + " is coming");
         shop.getLock().lock();
         Thread.sleep(timeToTravelForBarber);
         if (shop.getBarber().isWorking()) {
-            System.out.println(name + " see, that barber is BUSY");
+            LOGGER.info(name + " see, that barber is BUSY");
             Thread.sleep(timeToTravelForBarber);
             return true;
         } else {
-            System.out.println(name + " see, that barber SLEEPING");
+            LOGGER.info(name + " see, that barber SLEEPING");
             synchronized (shop.getBarber()) {
                 shop.getBarber().setCurrentClient(this);
                 shop.getLock().unlock();
