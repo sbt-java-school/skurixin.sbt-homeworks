@@ -29,6 +29,7 @@
         <module>MagicWoman</module>
         <module>SchoolChat</module>
         <module>HomeTasksBeforeMaven</module>
+        <module>RecipesSpringJdbc</module>
     </modules>
 
     <dependencies>
