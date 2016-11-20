@@ -8,12 +8,12 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 import ru.sbt.javaschool.recipes.springjdbc.dao.IngredientDao;
 import ru.sbt.javaschool.recipes.springjdbc.entity.Ingredient;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by скурихин on 14.11.2016.
@@ -52,28 +52,15 @@ public class IngredientDaoImpl implements IngredientDao {
 
     @Override
     public List<Ingredient> getByPartOfName(String name) {
-        List<Map<String, Object>> list = namedParameterJdbcTemplatecTemplate.queryForList("select id,name from Ingredient where name like '%:name%'",
-                new MapSqlParameterSource("name", name));
-        ArrayList<Ingredient> result = new ArrayList<>();
-        for (Map<String, Object> map : list) {
-            result.add(new Ingredient(
-                    ((Number) map.get("id")).longValue(),
-                    (String) map.get("name")
-            ));
-        }
-        return result;
+        return namedParameterJdbcTemplatecTemplate.query("select id,name from Ingredient where name like '%:name%'",
+                new MapSqlParameterSource("name", name),
+                (row, count) -> new Ingredient(row.getLong("id"), row.getString("name")));
     }
 
     @Override
     public List<Ingredient> getAll() {
-        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select id,name from Ingredient ing ORDER BY 1");
-        ArrayList<Ingredient> result = new ArrayList<>();
-        for (Map<String, Object> map : maps) {
-            result.add(new Ingredient(
-                    ((Number) map.get("id")).longValue(),
-                    (String) map.get("name")
-            ));
-        }
+        List<Ingredient> result = jdbcTemplate.query("select id,name from Ingredient ing ORDER BY 1",
+                (row, count) -> new Ingredient(row.getLong("id"), row.getString("name")));
         return result;
     }
 }

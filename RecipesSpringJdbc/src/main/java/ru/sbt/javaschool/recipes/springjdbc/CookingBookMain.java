@@ -4,7 +4,12 @@ package ru.sbt.javaschool.recipes.springjdbc;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import ru.sbt.javaschool.recipes.springjdbc.config.ApplicationConfiguration;
 import ru.sbt.javaschool.recipes.springjdbc.config.TablesInitializer;
 import ru.sbt.javaschool.recipes.springjdbc.config.TablesInitializerImpl;
@@ -36,9 +41,9 @@ public class CookingBookMain {
     public static void main(String[] args) throws IOException {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
         TablesInitializer initializer = context.getBean(TablesInitializerImpl.class);
-        initializer.dropTables();
-        initializer.createTables();
-        initializer.executeScript(TablesInitializerImpl.SCRIPT_FILL);
+//        initializer.dropTables();
+//        initializer.createTables();
+//        initializer.executeScript(TablesInitializerImpl.SCRIPT_FILL);
 
         CookingBookMain book = context.getBean(CookingBookMain.class);
         book.start();
@@ -58,7 +63,7 @@ public class CookingBookMain {
             LOGGER.info("5. Вывод рецептов");
             LOGGER.info("0. Выход");
             LOGGER.info("Выберите действие: ");
-            action = Integer.parseInt(consoleReader.readLine());
+            action = getUserAction(consoleReader);
             switch (action) {
                 case 1: {
                     search(consoleReader);
@@ -89,6 +94,38 @@ public class CookingBookMain {
         } while (action != 0);
     }
 
+    private int getUserAction(BufferedReader consoleReader) throws IOException {
+        int result = 0;
+        while (true) {
+            try {
+                result = Integer.parseInt(consoleReader.readLine());
+                break;
+            } catch (NumberFormatException e) {
+                LOGGER.error("ОШИБКА! Введите номер действия.");
+                LOGGER.error("Попробуйте еще раз:");
+                continue;
+            }
+        }
+        return result;
+    }
+
+    private int getSelectedIngredientFromList(BufferedReader consoleReader, int maxInd, boolean isExitExist) throws IOException {
+        int result = 0;
+        while (true) {
+            try {
+                result = Integer.parseInt(consoleReader.readLine());
+                if ((result >= 1 && result <= maxInd) || (isExitExist && result == 0))
+                    break;
+                else throw new NumberFormatException();
+            } catch (NumberFormatException e) {
+                LOGGER.error("ОШИБКА! Выберите корректный элемент списка.");
+                LOGGER.error("Попробуйте еще раз:");
+                continue;
+            }
+        }
+        return result;
+    }
+
     private void showBook() {
         Map<Recipe, List<IngredientProperty>> cookingBook = recipesToIngredientsDao.getCookingBook();
         for (Map.Entry<Recipe, List<IngredientProperty>> entry : cookingBook.entrySet()) {
@@ -98,10 +135,19 @@ public class CookingBookMain {
     }
 
     private void createRecipe(BufferedReader consoleReader) throws IOException {
-        LOGGER.info("Введите название рецепта");
-        String name = consoleReader.readLine();
-        Recipe recipe = recipeDao.create(new Recipe(name));
-        workWithIngredients(recipe, consoleReader);
+        while (true) {
+            try {
+                LOGGER.info("Введите название рецепта");
+                String name = consoleReader.readLine();
+                Recipe recipe = recipeDao.create(new Recipe(name));
+                workWithIngredients(recipe, consoleReader);
+                break;
+            } catch (DuplicateKeyException e) {
+                LOGGER.error("ОШИБКА! Рецепт с таким именем уже существует");
+                LOGGER.error("Попробуйте еще раз");
+                continue;
+            }
+        }
     }
 
     private void search(BufferedReader consoleReader) throws IOException {
@@ -112,10 +158,9 @@ public class CookingBookMain {
             LOGGER.info("" + (i + 1) + ". " + list.get(i).getName());
         }
         LOGGER.info("0. В главное меню");
-        int action = Integer.parseInt(consoleReader.readLine());
-        if (action > 0 && action <= list.size()) {
+        int action = getSelectedIngredientFromList(consoleReader, list.size(), true);
+        if (action != 0)
             workWithIngredients(list.get(action - 1), consoleReader);
-        }
     }
 
     private void workWithIngredients(Recipe recipe, BufferedReader consoleReader) throws IOException {
@@ -132,7 +177,7 @@ public class CookingBookMain {
             LOGGER.info("3. Удалить ингредиент из рецепта");
             LOGGER.info("4. Создать новый ингредиент");
             LOGGER.info("0. В главное меню");
-            action = Integer.parseInt(consoleReader.readLine());
+            action = getUserAction(consoleReader);
             switch (action) {
                 case 1:
                     addIngredient(recipe, consoleReader);
@@ -148,43 +193,61 @@ public class CookingBookMain {
                     break;
             }
         } while (action != 0);
-
     }
 
     private void createIngredient(BufferedReader consoleReader) throws IOException {
         LOGGER.info("Введите название нового ингредиента");
         String name = consoleReader.readLine();
-        ingredientDao.create(new Ingredient(name));
+        try {
+            ingredientDao.create(new Ingredient(name));
+        } catch (DuplicateKeyException e) {
+            LOGGER.error("ОШИБКА! Рецепт с таким именем уже существует в БД.");
+        }
     }
 
     private void deleteIngredient(Recipe recipe, List<IngredientProperty> ingredients, BufferedReader consoleReader) throws IOException {
         LOGGER.info("Выберите удаляемый ингредиент");
-        int ing = Integer.parseInt(consoleReader.readLine()) - 1;
+        int ing = getSelectedIngredientFromList(consoleReader, ingredients.size(), false) - 1;
         recipesToIngredientsDao.deleteIngredientFromRecipe(recipe, ingredients.get(ing).getIngredient());
     }
 
     private void editIngredient(Recipe recipe, List<IngredientProperty> ingredients, BufferedReader consoleReader) throws IOException {
         LOGGER.info("Выберите редактируемый ингредиент");
-        int ing = Integer.parseInt(consoleReader.readLine()) - 1;
+        int ing = getSelectedIngredientFromList(consoleReader, ingredients.size(), false) - 1;
         LOGGER.info("Введите новое количество");
         long count = Long.parseLong(consoleReader.readLine());
         IngredientProperty ingredientProperty = ingredients.get(ing);
-        recipesToIngredientsDao.updateCount(recipe, ingredientProperty.getIngredient(), count);
+        try {
+            recipesToIngredientsDao.updateCount(recipe, ingredientProperty.getIngredient(), count);
+        } catch (DataIntegrityViolationException e) {
+            LOGGER.error("ОШИБКА! Не корректные данные.");
+            LOGGER.error("Попробуйте еще раз:");
+        }
     }
 
     private void addIngredient(Recipe recipe, BufferedReader consoleReader) throws IOException {
-        List<Ingredient> allIngredients = ingredientDao.getAll();
-        LOGGER.info("Ингредиенты:");
-        for (int i = 0; i < allIngredients.size(); i++) {
-            LOGGER.info("" + (i + 1) + ". " + allIngredients.get(i));
-        }
-        LOGGER.info("0. Назад:");
-        int action = Integer.parseInt(consoleReader.readLine());
-        if(action>0) {
-            LOGGER.info("Колличество:");
-            long count = Long.parseLong(consoleReader.readLine());
-            if (action > 0 && action <= allIngredients.size()) {
-                recipesToIngredientsDao.addIngredientToRecipe(recipe, new IngredientProperty(allIngredients.get(action - 1), count));
+        while (true) {
+            try {
+                List<Ingredient> allIngredients = ingredientDao.getAll();
+                LOGGER.info("Ингредиенты:");
+                for (int i = 0; i < allIngredients.size(); i++) {
+                    LOGGER.info("" + (i + 1) + ". " + allIngredients.get(i));
+                }
+                LOGGER.info("0. Назад:");
+                int action = getSelectedIngredientFromList(consoleReader, allIngredients.size(), true);
+                if (action != 0) {
+                    LOGGER.info("Колличество:");
+                    long count = Long.parseLong(consoleReader.readLine());
+                    recipesToIngredientsDao.addIngredientToRecipe(recipe, new IngredientProperty(allIngredients.get(action - 1), count));
+                }
+                break;
+            } catch (DuplicateKeyException e) {
+                LOGGER.error("ОШИБКА! Данный ингредиент уже добавлен в этот рецепт.");
+                LOGGER.error("Попробуйте еще раз:");
+                continue;
+            } catch (DataIntegrityViolationException e) {
+                LOGGER.error("ОШИБКА! Не корректные данные.");
+                LOGGER.error("Попробуйте еще раз:");
             }
         }
     }

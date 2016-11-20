@@ -124,3 +124,1403 @@
 2016-11-15 20:43:19 INFO  CookingBookMain:58 - 5. Вывод рецептов
 2016-11-15 20:43:19 INFO  CookingBookMain:59 - 0. Выход
 2016-11-15 20:43:19 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:08:09 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:08:09 KRAT 2016]; root of context hierarchy
+2016-11-19 22:08:10 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:08:10 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:08:10 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:08:10 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:08:10 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:08:10 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:08:10 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:08:10 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:08:10 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:08:13 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:08:13 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:08:13 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:08:13 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:08:13 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:08:13 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:08:13 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:08:13 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:12:31 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:12:31 KRAT 2016]; root of context hierarchy
+2016-11-19 22:12:32 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:12:32 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:12:32 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:12:32 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:12:32 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:12:32 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:12:32 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:12:32 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:12:32 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:12:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-19 22:12:35 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-19 22:13:36 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:13:36 KRAT 2016]; root of context hierarchy
+2016-11-19 22:13:37 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:13:37 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:13:37 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:13:37 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:13:37 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:13:37 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:13:37 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:13:37 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:13:37 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:13:39 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:13:39 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:13:39 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:13:39 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:13:39 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:13:39 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:13:39 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:13:39 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:14:42 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:14:42 KRAT 2016]; root of context hierarchy
+2016-11-19 22:14:43 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:14:43 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:14:43 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:14:43 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:14:43 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:14:43 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:14:43 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:14:43 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:14:43 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:14:44 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:14:44 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:14:44 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:14:44 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:14:44 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:14:44 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:14:44 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:14:44 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:22:44 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:22:44 KRAT 2016]; root of context hierarchy
+2016-11-19 22:22:45 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:22:45 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:22:45 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:22:45 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:22:45 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:22:45 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:22:45 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:22:45 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:22:45 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:22:47 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:22:47 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:22:47 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:22:47 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:22:47 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:22:47 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:22:47 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:22:47 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:22:50 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:22:50 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:22:50 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:22:50 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:22:50 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:22:50 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:22:50 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:22:50 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:22:56 INFO  CookingBookMain:108 - Введите название рецепта
+2016-11-19 22:22:59 INFO  CookingBookMain:112 - 1. borstch
+2016-11-19 22:22:59 INFO  CookingBookMain:114 - 0. В главное меню
+2016-11-19 22:23:01 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:23:01 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:23:01 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:23:01 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:23:01 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:23:01 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:23:01 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:23:01 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:41:40 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:41:40 KRAT 2016]; root of context hierarchy
+2016-11-19 22:41:41 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:41:41 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:41:41 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:41:41 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:41:41 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:41:41 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:41:41 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:41:41 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:41:41 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:41:48 INFO  CookingBookMain:108 - Введите название рецепта
+2016-11-19 22:41:50 INFO  CookingBookMain:112 - 1. borstch
+2016-11-19 22:41:50 INFO  CookingBookMain:114 - 0. В главное меню
+2016-11-19 22:41:51 INFO  CookingBookMain:125 - Ингредиенты:
+2016-11-19 22:41:51 INFO  CookingBookMain:127 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-19 22:41:51 INFO  CookingBookMain:127 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-19 22:41:51 INFO  CookingBookMain:127 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-19 22:41:51 INFO  CookingBookMain:127 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-19 22:41:51 INFO  CookingBookMain:129 - Выберите действие:
+2016-11-19 22:41:51 INFO  CookingBookMain:130 - 1. Добавить существующий ингредиент
+2016-11-19 22:41:51 INFO  CookingBookMain:131 - 2. Изменить количество ингредиента
+2016-11-19 22:41:51 INFO  CookingBookMain:132 - 3. Удалить ингредиент из рецепта
+2016-11-19 22:41:51 INFO  CookingBookMain:133 - 4. Создать новый ингредиент
+2016-11-19 22:41:51 INFO  CookingBookMain:134 - 0. В главное меню
+2016-11-19 22:42:02 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:42:02 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:42:02 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:42:02 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:42:02 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:42:02 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:42:02 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:42:02 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:43:10 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:43:10 KRAT 2016]; root of context hierarchy
+2016-11-19 22:43:11 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:43:11 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:43:11 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:43:11 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:43:11 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:43:11 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:43:11 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:43:11 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:43:11 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:43:34 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:43:34 KRAT 2016]; root of context hierarchy
+2016-11-19 22:43:35 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:43:35 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:43:35 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:43:35 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:43:35 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:43:35 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:43:35 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:43:35 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:43:35 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:43:57 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:43:57 KRAT 2016]; root of context hierarchy
+2016-11-19 22:43:58 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:43:58 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:43:58 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:43:58 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:43:58 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:43:58 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:43:58 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:43:58 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:43:58 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:44:26 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:44:26 KRAT 2016]; root of context hierarchy
+2016-11-19 22:44:27 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:44:27 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:44:27 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:44:27 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:44:27 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:44:27 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:44:27 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:44:27 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:44:27 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:47:36 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:47:36 KRAT 2016]; root of context hierarchy
+2016-11-19 22:47:37 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:47:37 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:47:37 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:47:37 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:47:37 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:47:37 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:47:37 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:47:37 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:47:37 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:47:52 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:47:52 KRAT 2016]; root of context hierarchy
+2016-11-19 22:47:53 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:47:53 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:47:53 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:47:53 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:47:53 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:47:53 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:47:53 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:47:53 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:47:53 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:56:41 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:56:41 KRAT 2016]; root of context hierarchy
+2016-11-19 22:56:43 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:56:43 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:56:43 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:56:43 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:56:43 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:56:43 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:56:43 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:56:43 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:56:43 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:57:17 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:57:17 KRAT 2016]; root of context hierarchy
+2016-11-19 22:57:18 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:57:18 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:57:18 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:57:18 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:57:18 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:57:18 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:57:18 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:57:18 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:57:18 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:57:33 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:57:33 KRAT 2016]; root of context hierarchy
+2016-11-19 22:57:34 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:57:34 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:57:34 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:57:34 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:57:34 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:57:34 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:57:34 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:57:34 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:57:34 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 22:59:03 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 22:59:03 KRAT 2016]; root of context hierarchy
+2016-11-19 22:59:04 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 22:59:04 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 22:59:04 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 22:59:04 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 22:59:04 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 22:59:04 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 22:59:04 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 22:59:04 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 22:59:04 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 23:10:16 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea30797: startup date [Sat Nov 19 23:10:16 KRAT 2016]; root of context hierarchy
+2016-11-19 23:10:17 INFO  CookingBookMain:48 - Start Application!
+2016-11-19 23:10:17 INFO  CookingBookMain:53 - ----Главное меню----
+2016-11-19 23:10:17 INFO  CookingBookMain:54 - 1. Поиск рецепта
+2016-11-19 23:10:17 INFO  CookingBookMain:55 - 2. Создать рецепт
+2016-11-19 23:10:17 INFO  CookingBookMain:56 - 3. Вывод кулинарной книги
+2016-11-19 23:10:17 INFO  CookingBookMain:57 - 4. Вывод ингредиентов
+2016-11-19 23:10:17 INFO  CookingBookMain:58 - 5. Вывод рецептов
+2016-11-19 23:10:17 INFO  CookingBookMain:59 - 0. Выход
+2016-11-19 23:10:17 INFO  CookingBookMain:60 - Выберите действие: 
+2016-11-19 23:10:20 INFO  CookingBookMain:101 - Введите название рецепта
+2016-11-19 23:10:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-19 23:10:29 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-19 23:13:17 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sat Nov 19 23:13:17 KRAT 2016]; root of context hierarchy
+2016-11-19 23:13:18 INFO  CookingBookMain:49 - Start Application!
+2016-11-19 23:13:18 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:13:18 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:13:18 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:13:18 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:13:18 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:13:18 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:13:18 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:13:18 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:13:20 INFO  CookingBookMain:103 - Введите название рецепта
+2016-11-19 23:13:23 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-19 23:13:23 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-19 23:13:23 ERROR CookingBookMain:109 - Duplicate!
+2016-11-19 23:13:23 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:13:23 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:13:23 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:13:23 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:13:23 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:13:23 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:13:23 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:13:23 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:19:25 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sat Nov 19 23:19:25 KRAT 2016]; root of context hierarchy
+2016-11-19 23:19:26 INFO  CookingBookMain:49 - Start Application!
+2016-11-19 23:19:26 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:19:26 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:19:26 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:19:26 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:19:26 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:19:26 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:19:26 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:19:26 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:19:28 INFO  CookingBookMain:104 - Введите название рецепта
+2016-11-19 23:19:33 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-19 23:19:33 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-19 23:19:33 ERROR CookingBookMain:110 - Duplicate!
+2016-11-19 23:19:33 INFO  CookingBookMain:104 - Введите название рецепта
+2016-11-19 23:19:38 ERROR CookingBookMain:110 - Duplicate!
+2016-11-19 23:19:38 INFO  CookingBookMain:104 - Введите название рецепта
+2016-11-19 23:19:51 INFO  CookingBookMain:134 - Ингредиенты:
+2016-11-19 23:19:51 INFO  CookingBookMain:138 - Выберите действие:
+2016-11-19 23:19:51 INFO  CookingBookMain:139 - 1. Добавить существующий ингредиент
+2016-11-19 23:19:51 INFO  CookingBookMain:140 - 2. Изменить количество ингредиента
+2016-11-19 23:19:51 INFO  CookingBookMain:141 - 3. Удалить ингредиент из рецепта
+2016-11-19 23:19:51 INFO  CookingBookMain:142 - 4. Создать новый ингредиент
+2016-11-19 23:19:51 INFO  CookingBookMain:143 - 0. В главное меню
+2016-11-19 23:19:53 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:19:53 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:19:53 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:19:53 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:19:53 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:19:53 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:19:53 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:19:53 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:20:02 INFO  CookingBookMain:117 - Введите название рецепта
+2016-11-19 23:20:06 INFO  CookingBookMain:121 - 1. cake
+2016-11-19 23:20:06 INFO  CookingBookMain:121 - 2. adf
+2016-11-19 23:20:06 INFO  CookingBookMain:123 - 0. В главное меню
+2016-11-19 23:20:08 INFO  CookingBookMain:134 - Ингредиенты:
+2016-11-19 23:20:08 INFO  CookingBookMain:138 - Выберите действие:
+2016-11-19 23:20:08 INFO  CookingBookMain:139 - 1. Добавить существующий ингредиент
+2016-11-19 23:20:08 INFO  CookingBookMain:140 - 2. Изменить количество ингредиента
+2016-11-19 23:20:08 INFO  CookingBookMain:141 - 3. Удалить ингредиент из рецепта
+2016-11-19 23:20:08 INFO  CookingBookMain:142 - 4. Создать новый ингредиент
+2016-11-19 23:20:08 INFO  CookingBookMain:143 - 0. В главное меню
+2016-11-19 23:20:15 INFO  CookingBookMain:186 - Ингредиенты:
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 1. Ingredient{id=1, name='morkov'}
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 2. Ingredient{id=2, name='svekla'}
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 3. Ingredient{id=3, name='look'}
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 7. Ingredient{id=7, name='chicken'}
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 8. Ingredient{id=8, name='sugar'}
+2016-11-19 23:20:15 INFO  CookingBookMain:188 - 9. Ingredient{id=9, name='flour'}
+2016-11-19 23:20:15 INFO  CookingBookMain:190 - 0. Назад:
+2016-11-19 23:20:18 INFO  CookingBookMain:193 - Колличество:
+2016-11-19 23:20:21 INFO  CookingBookMain:134 - Ингредиенты:
+2016-11-19 23:20:21 INFO  CookingBookMain:136 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=345, measure=COUNT}
+2016-11-19 23:20:21 INFO  CookingBookMain:138 - Выберите действие:
+2016-11-19 23:20:21 INFO  CookingBookMain:139 - 1. Добавить существующий ингредиент
+2016-11-19 23:20:21 INFO  CookingBookMain:140 - 2. Изменить количество ингредиента
+2016-11-19 23:20:21 INFO  CookingBookMain:141 - 3. Удалить ингредиент из рецепта
+2016-11-19 23:20:21 INFO  CookingBookMain:142 - 4. Создать новый ингредиент
+2016-11-19 23:20:21 INFO  CookingBookMain:143 - 0. В главное меню
+2016-11-19 23:20:30 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:20:30 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:20:30 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:20:30 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:20:30 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:20:30 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:20:30 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:20:30 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:21:38 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@49993335: startup date [Sat Nov 19 23:21:38 KRAT 2016]; root of context hierarchy
+2016-11-19 23:21:39 INFO  CookingBookMain:49 - Start Application!
+2016-11-19 23:21:39 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:21:39 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:21:39 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:21:39 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:21:39 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:21:39 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:21:39 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:21:39 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:21:45 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sat Nov 19 23:21:45 KRAT 2016]; root of context hierarchy
+2016-11-19 23:21:46 INFO  CookingBookMain:49 - Start Application!
+2016-11-19 23:21:46 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:21:46 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:21:46 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:21:46 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:21:46 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:21:46 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:21:46 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:21:46 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:21:51 INFO  CookingBookMain:118 - Введите название рецепта
+2016-11-19 23:21:52 INFO  CookingBookMain:124 - 0. В главное меню
+2016-11-19 23:21:54 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:21:54 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:21:54 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:21:54 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:21:54 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:21:54 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:21:54 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:21:54 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:21:56 INFO  CookingBookMain:118 - Введите название рецепта
+2016-11-19 23:22:10 INFO  CookingBookMain:124 - 0. В главное меню
+2016-11-19 23:28:23 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sat Nov 19 23:28:23 KRAT 2016]; root of context hierarchy
+2016-11-19 23:28:24 INFO  CookingBookMain:49 - Start Application!
+2016-11-19 23:28:24 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:28:24 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:28:24 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:28:24 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:28:24 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:28:24 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:28:24 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:28:24 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:28:27 ERROR CookingBookMain:100 - ОШИБКА! Введите номер действия.
+2016-11-19 23:28:27 ERROR CookingBookMain:101 - Попробуйте еще раз:
+2016-11-19 23:28:33 INFO  CookingBookMain:133 - Введите название рецепта
+2016-11-19 23:28:34 INFO  CookingBookMain:137 - 1. borstch
+2016-11-19 23:28:34 INFO  CookingBookMain:139 - 0. В главное меню
+2016-11-19 23:28:37 ERROR CookingBookMain:100 - ОШИБКА! Введите номер действия.
+2016-11-19 23:28:37 ERROR CookingBookMain:101 - Попробуйте еще раз:
+2016-11-19 23:28:39 INFO  CookingBookMain:150 - Ингредиенты:
+2016-11-19 23:28:39 INFO  CookingBookMain:152 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-19 23:28:39 INFO  CookingBookMain:152 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-19 23:28:39 INFO  CookingBookMain:152 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-19 23:28:39 INFO  CookingBookMain:152 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-19 23:28:39 INFO  CookingBookMain:154 - Выберите действие:
+2016-11-19 23:28:39 INFO  CookingBookMain:155 - 1. Добавить существующий ингредиент
+2016-11-19 23:28:39 INFO  CookingBookMain:156 - 2. Изменить количество ингредиента
+2016-11-19 23:28:39 INFO  CookingBookMain:157 - 3. Удалить ингредиент из рецепта
+2016-11-19 23:28:39 INFO  CookingBookMain:158 - 4. Создать новый ингредиент
+2016-11-19 23:28:39 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-19 23:29:01 ERROR CookingBookMain:100 - ОШИБКА! Введите номер действия.
+2016-11-19 23:29:01 ERROR CookingBookMain:101 - Попробуйте еще раз:
+2016-11-19 23:29:02 INFO  CookingBookMain:202 - Ингредиенты:
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 1. Ingredient{id=1, name='morkov'}
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 2. Ingredient{id=2, name='svekla'}
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 3. Ingredient{id=3, name='look'}
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 7. Ingredient{id=7, name='chicken'}
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 8. Ingredient{id=8, name='sugar'}
+2016-11-19 23:29:02 INFO  CookingBookMain:204 - 9. Ingredient{id=9, name='flour'}
+2016-11-19 23:29:02 INFO  CookingBookMain:206 - 0. Назад:
+2016-11-19 23:29:14 INFO  CookingBookMain:209 - Колличество:
+2016-11-19 23:29:17 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-19 23:29:17 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-19 23:33:18 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sat Nov 19 23:33:18 KRAT 2016]; root of context hierarchy
+2016-11-19 23:33:19 INFO  CookingBookMain:49 - Start Application!
+2016-11-19 23:33:19 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-19 23:33:19 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-19 23:33:19 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-19 23:33:19 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-19 23:33:19 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-19 23:33:19 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-19 23:33:19 INFO  CookingBookMain:60 - 0. Выход
+2016-11-19 23:33:19 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-19 23:33:20 INFO  CookingBookMain:133 - Введите название рецепта
+2016-11-19 23:33:21 INFO  CookingBookMain:137 - 1. borstch
+2016-11-19 23:33:21 INFO  CookingBookMain:139 - 0. В главное меню
+2016-11-19 23:33:22 INFO  CookingBookMain:150 - Ингредиенты:
+2016-11-19 23:33:22 INFO  CookingBookMain:152 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-19 23:33:22 INFO  CookingBookMain:152 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-19 23:33:22 INFO  CookingBookMain:152 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-19 23:33:22 INFO  CookingBookMain:152 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-19 23:33:22 INFO  CookingBookMain:154 - Выберите действие:
+2016-11-19 23:33:22 INFO  CookingBookMain:155 - 1. Добавить существующий ингредиент
+2016-11-19 23:33:22 INFO  CookingBookMain:156 - 2. Изменить количество ингредиента
+2016-11-19 23:33:22 INFO  CookingBookMain:157 - 3. Удалить ингредиент из рецепта
+2016-11-19 23:33:22 INFO  CookingBookMain:158 - 4. Создать новый ингредиент
+2016-11-19 23:33:22 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-19 23:33:24 INFO  CookingBookMain:204 - Ингредиенты:
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 1. Ingredient{id=1, name='morkov'}
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 2. Ingredient{id=2, name='svekla'}
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 3. Ingredient{id=3, name='look'}
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 7. Ingredient{id=7, name='chicken'}
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 8. Ingredient{id=8, name='sugar'}
+2016-11-19 23:33:24 INFO  CookingBookMain:206 - 9. Ingredient{id=9, name='flour'}
+2016-11-19 23:33:24 INFO  CookingBookMain:208 - 0. Назад:
+2016-11-19 23:33:27 INFO  CookingBookMain:211 - Колличество:
+2016-11-19 23:33:28 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-19 23:33:28 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-19 23:33:28 ERROR CookingBookMain:219 - ОШИБКА! Данный ингредиент уже добавлен в этот рецепт.
+2016-11-19 23:33:28 ERROR CookingBookMain:220 - Попробуйте еще раз:
+2016-11-19 23:33:28 INFO  CookingBookMain:204 - Ингредиенты:
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 1. Ingredient{id=1, name='morkov'}
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 2. Ingredient{id=2, name='svekla'}
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 3. Ingredient{id=3, name='look'}
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 7. Ingredient{id=7, name='chicken'}
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 8. Ingredient{id=8, name='sugar'}
+2016-11-19 23:33:28 INFO  CookingBookMain:206 - 9. Ingredient{id=9, name='flour'}
+2016-11-19 23:33:28 INFO  CookingBookMain:208 - 0. Назад:
+2016-11-19 23:33:37 INFO  CookingBookMain:211 - Колличество:
+2016-11-19 23:33:38 INFO  CookingBookMain:150 - Ингредиенты:
+2016-11-19 23:33:38 INFO  CookingBookMain:152 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-19 23:33:38 INFO  CookingBookMain:152 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-19 23:33:38 INFO  CookingBookMain:152 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-19 23:33:38 INFO  CookingBookMain:152 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-19 23:33:38 INFO  CookingBookMain:152 - 5. IngredientProperty{ingredient=Ingredient{id=8, name='sugar'}, count=20, measure=COUNT}
+2016-11-19 23:33:38 INFO  CookingBookMain:154 - Выберите действие:
+2016-11-19 23:33:38 INFO  CookingBookMain:155 - 1. Добавить существующий ингредиент
+2016-11-19 23:33:38 INFO  CookingBookMain:156 - 2. Изменить количество ингредиента
+2016-11-19 23:33:38 INFO  CookingBookMain:157 - 3. Удалить ингредиент из рецепта
+2016-11-19 23:33:38 INFO  CookingBookMain:158 - 4. Создать новый ингредиент
+2016-11-19 23:33:38 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-19 23:34:39 INFO  CookingBookMain:192 - Выберите редактируемый ингредиент
+2016-11-19 23:34:44 INFO  CookingBookMain:194 - Введите новое количество
+2016-11-20 00:14:00 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 00:14:00 KRAT 2016]; root of context hierarchy
+2016-11-20 00:14:02 INFO  CookingBookMain:49 - Start Application!
+2016-11-20 00:14:02 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-20 00:14:02 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-20 00:14:02 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-20 00:14:02 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-20 00:14:02 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-20 00:14:02 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-20 00:14:02 INFO  CookingBookMain:60 - 0. Выход
+2016-11-20 00:14:02 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-20 00:14:04 INFO  CookingBookMain:133 - Введите название рецепта
+2016-11-20 00:14:08 INFO  CookingBookMain:137 - 1. borstch
+2016-11-20 00:14:08 INFO  CookingBookMain:139 - 0. В главное меню
+2016-11-20 00:14:10 INFO  CookingBookMain:150 - Ингредиенты:
+2016-11-20 00:14:10 INFO  CookingBookMain:152 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:14:10 INFO  CookingBookMain:152 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:14:10 INFO  CookingBookMain:152 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:14:10 INFO  CookingBookMain:152 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-20 00:14:10 INFO  CookingBookMain:154 - Выберите действие:
+2016-11-20 00:14:10 INFO  CookingBookMain:155 - 1. Добавить существующий ингредиент
+2016-11-20 00:14:10 INFO  CookingBookMain:156 - 2. Изменить количество ингредиента
+2016-11-20 00:14:10 INFO  CookingBookMain:157 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:14:10 INFO  CookingBookMain:158 - 4. Создать новый ингредиент
+2016-11-20 00:14:10 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-20 00:14:11 INFO  CookingBookMain:204 - Ингредиенты:
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 3. Ingredient{id=3, name='look'}
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 00:14:11 INFO  CookingBookMain:206 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 00:14:11 INFO  CookingBookMain:208 - 0. Назад:
+2016-11-20 00:14:13 INFO  CookingBookMain:211 - Колличество:
+2016-11-20 00:14:18 INFO  CookingBookMain:150 - Ингредиенты:
+2016-11-20 00:14:18 INFO  CookingBookMain:152 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:14:18 INFO  CookingBookMain:152 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:14:18 INFO  CookingBookMain:152 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:14:18 INFO  CookingBookMain:152 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-20 00:14:18 INFO  CookingBookMain:154 - Выберите действие:
+2016-11-20 00:14:18 INFO  CookingBookMain:155 - 1. Добавить существующий ингредиент
+2016-11-20 00:14:18 INFO  CookingBookMain:156 - 2. Изменить количество ингредиента
+2016-11-20 00:14:18 INFO  CookingBookMain:157 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:14:18 INFO  CookingBookMain:158 - 4. Создать новый ингредиент
+2016-11-20 00:14:18 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-20 00:14:25 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-20 00:14:25 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-20 00:14:25 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-20 00:14:25 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-20 00:14:25 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-20 00:14:25 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-20 00:14:25 INFO  CookingBookMain:60 - 0. Выход
+2016-11-20 00:14:25 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-20 00:38:28 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 00:38:28 KRAT 2016]; root of context hierarchy
+2016-11-20 00:38:29 INFO  CookingBookMain:49 - Start Application!
+2016-11-20 00:38:29 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-20 00:38:29 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-20 00:38:29 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-20 00:38:29 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-20 00:38:29 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-20 00:38:29 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-20 00:38:29 INFO  CookingBookMain:60 - 0. Выход
+2016-11-20 00:38:29 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-20 00:38:30 INFO  CookingBookMain:150 - Введите название рецепта
+2016-11-20 00:38:32 INFO  CookingBookMain:154 - 1. borstch
+2016-11-20 00:38:32 INFO  CookingBookMain:156 - 0. В главное меню
+2016-11-20 00:38:33 ERROR CookingBookMain:117 - ОШИБКА! Выберите корректный ингредиент.
+2016-11-20 00:38:33 ERROR CookingBookMain:118 - Попробуйте еще раз:
+2016-11-20 00:38:36 INFO  CookingBookMain:166 - Ингредиенты:
+2016-11-20 00:38:36 INFO  CookingBookMain:168 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:38:36 INFO  CookingBookMain:168 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:38:36 INFO  CookingBookMain:168 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:38:36 INFO  CookingBookMain:168 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-20 00:38:36 INFO  CookingBookMain:170 - Выберите действие:
+2016-11-20 00:38:36 INFO  CookingBookMain:171 - 1. Добавить существующий ингредиент
+2016-11-20 00:38:36 INFO  CookingBookMain:172 - 2. Изменить количество ингредиента
+2016-11-20 00:38:36 INFO  CookingBookMain:173 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:38:36 INFO  CookingBookMain:174 - 4. Создать новый ингредиент
+2016-11-20 00:38:36 INFO  CookingBookMain:175 - 0. В главное меню
+2016-11-20 00:38:41 INFO  CookingBookMain:54 - ----Главное меню----
+2016-11-20 00:38:41 INFO  CookingBookMain:55 - 1. Поиск рецепта
+2016-11-20 00:38:41 INFO  CookingBookMain:56 - 2. Создать рецепт
+2016-11-20 00:38:41 INFO  CookingBookMain:57 - 3. Вывод кулинарной книги
+2016-11-20 00:38:41 INFO  CookingBookMain:58 - 4. Вывод ингредиентов
+2016-11-20 00:38:41 INFO  CookingBookMain:59 - 5. Вывод рецептов
+2016-11-20 00:38:41 INFO  CookingBookMain:60 - 0. Выход
+2016-11-20 00:38:41 INFO  CookingBookMain:61 - Выберите действие: 
+2016-11-20 00:46:35 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 00:46:35 KRAT 2016]; root of context hierarchy
+2016-11-20 00:46:36 INFO  CookingBookMain:50 - Start Application!
+2016-11-20 00:46:36 INFO  CookingBookMain:55 - ----Главное меню----
+2016-11-20 00:46:36 INFO  CookingBookMain:56 - 1. Поиск рецепта
+2016-11-20 00:46:36 INFO  CookingBookMain:57 - 2. Создать рецепт
+2016-11-20 00:46:36 INFO  CookingBookMain:58 - 3. Вывод кулинарной книги
+2016-11-20 00:46:36 INFO  CookingBookMain:59 - 4. Вывод ингредиентов
+2016-11-20 00:46:36 INFO  CookingBookMain:60 - 5. Вывод рецептов
+2016-11-20 00:46:36 INFO  CookingBookMain:61 - 0. Выход
+2016-11-20 00:46:36 INFO  CookingBookMain:62 - Выберите действие: 
+2016-11-20 00:46:38 INFO  CookingBookMain:151 - Введите название рецепта
+2016-11-20 00:46:41 INFO  CookingBookMain:155 - 1. borstch
+2016-11-20 00:46:41 INFO  CookingBookMain:157 - 0. В главное меню
+2016-11-20 00:46:42 INFO  CookingBookMain:167 - Ингредиенты:
+2016-11-20 00:46:42 INFO  CookingBookMain:169 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:46:42 INFO  CookingBookMain:169 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:46:42 INFO  CookingBookMain:169 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:46:42 INFO  CookingBookMain:169 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-20 00:46:42 INFO  CookingBookMain:171 - Выберите действие:
+2016-11-20 00:46:42 INFO  CookingBookMain:172 - 1. Добавить существующий ингредиент
+2016-11-20 00:46:42 INFO  CookingBookMain:173 - 2. Изменить количество ингредиента
+2016-11-20 00:46:42 INFO  CookingBookMain:174 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:46:42 INFO  CookingBookMain:175 - 4. Создать новый ингредиент
+2016-11-20 00:46:42 INFO  CookingBookMain:176 - 0. В главное меню
+2016-11-20 00:46:44 INFO  CookingBookMain:220 - Ингредиенты:
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 3. Ingredient{id=3, name='look'}
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 00:46:44 INFO  CookingBookMain:222 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 00:46:44 INFO  CookingBookMain:224 - 0. Назад:
+2016-11-20 00:46:50 ERROR CookingBookMain:118 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 00:46:50 ERROR CookingBookMain:119 - Попробуйте еще раз:
+2016-11-20 00:46:56 ERROR CookingBookMain:118 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 00:46:56 ERROR CookingBookMain:119 - Попробуйте еще раз:
+2016-11-20 00:46:59 INFO  CookingBookMain:167 - Ингредиенты:
+2016-11-20 00:46:59 INFO  CookingBookMain:169 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:46:59 INFO  CookingBookMain:169 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:46:59 INFO  CookingBookMain:169 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:46:59 INFO  CookingBookMain:169 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-20 00:46:59 INFO  CookingBookMain:171 - Выберите действие:
+2016-11-20 00:46:59 INFO  CookingBookMain:172 - 1. Добавить существующий ингредиент
+2016-11-20 00:46:59 INFO  CookingBookMain:173 - 2. Изменить количество ингредиента
+2016-11-20 00:46:59 INFO  CookingBookMain:174 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:46:59 INFO  CookingBookMain:175 - 4. Создать новый ингредиент
+2016-11-20 00:46:59 INFO  CookingBookMain:176 - 0. В главное меню
+2016-11-20 00:47:01 INFO  CookingBookMain:220 - Ингредиенты:
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 3. Ingredient{id=3, name='look'}
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 00:47:01 INFO  CookingBookMain:222 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 00:47:01 INFO  CookingBookMain:224 - 0. Назад:
+2016-11-20 00:47:04 ERROR CookingBookMain:118 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 00:47:04 ERROR CookingBookMain:119 - Попробуйте еще раз:
+2016-11-20 00:47:06 INFO  CookingBookMain:227 - Колличество:
+2016-11-20 00:47:09 INFO  CookingBookMain:167 - Ингредиенты:
+2016-11-20 00:47:09 INFO  CookingBookMain:169 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:47:09 INFO  CookingBookMain:169 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:47:09 INFO  CookingBookMain:169 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:47:09 INFO  CookingBookMain:169 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-20 00:47:09 INFO  CookingBookMain:169 - 5. IngredientProperty{ingredient=Ingredient{id=8, name='sugar'}, count=20, measure=COUNT}
+2016-11-20 00:47:09 INFO  CookingBookMain:171 - Выберите действие:
+2016-11-20 00:47:09 INFO  CookingBookMain:172 - 1. Добавить существующий ингредиент
+2016-11-20 00:47:09 INFO  CookingBookMain:173 - 2. Изменить количество ингредиента
+2016-11-20 00:47:09 INFO  CookingBookMain:174 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:47:09 INFO  CookingBookMain:175 - 4. Создать новый ингредиент
+2016-11-20 00:47:09 INFO  CookingBookMain:176 - 0. В главное меню
+2016-11-20 00:47:19 INFO  CookingBookMain:208 - Выберите редактируемый ингредиент
+2016-11-20 00:47:24 ERROR CookingBookMain:118 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 00:47:24 ERROR CookingBookMain:119 - Попробуйте еще раз:
+2016-11-20 00:47:28 ERROR CookingBookMain:118 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 00:47:28 ERROR CookingBookMain:119 - Попробуйте еще раз:
+2016-11-20 00:47:34 INFO  CookingBookMain:210 - Введите новое количество
+2016-11-20 00:47:40 INFO  CookingBookMain:167 - Ингредиенты:
+2016-11-20 00:47:40 INFO  CookingBookMain:169 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:47:40 INFO  CookingBookMain:169 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:47:40 INFO  CookingBookMain:169 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:47:40 INFO  CookingBookMain:169 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 00:47:40 INFO  CookingBookMain:169 - 5. IngredientProperty{ingredient=Ingredient{id=8, name='sugar'}, count=20, measure=COUNT}
+2016-11-20 00:47:40 INFO  CookingBookMain:171 - Выберите действие:
+2016-11-20 00:47:40 INFO  CookingBookMain:172 - 1. Добавить существующий ингредиент
+2016-11-20 00:47:40 INFO  CookingBookMain:173 - 2. Изменить количество ингредиента
+2016-11-20 00:47:40 INFO  CookingBookMain:174 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:47:40 INFO  CookingBookMain:175 - 4. Создать новый ингредиент
+2016-11-20 00:47:40 INFO  CookingBookMain:176 - 0. В главное меню
+2016-11-20 00:47:45 INFO  CookingBookMain:202 - Выберите удаляемый ингредиент
+2016-11-20 00:47:49 ERROR CookingBookMain:118 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 00:47:49 ERROR CookingBookMain:119 - Попробуйте еще раз:
+2016-11-20 00:47:50 ERROR CookingBookMain:118 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 00:47:50 ERROR CookingBookMain:119 - Попробуйте еще раз:
+2016-11-20 00:47:56 INFO  CookingBookMain:167 - Ингредиенты:
+2016-11-20 00:47:56 INFO  CookingBookMain:169 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:47:56 INFO  CookingBookMain:169 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:47:56 INFO  CookingBookMain:169 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:47:56 INFO  CookingBookMain:169 - 4. IngredientProperty{ingredient=Ingredient{id=8, name='sugar'}, count=20, measure=COUNT}
+2016-11-20 00:47:56 INFO  CookingBookMain:171 - Выберите действие:
+2016-11-20 00:47:56 INFO  CookingBookMain:172 - 1. Добавить существующий ингредиент
+2016-11-20 00:47:56 INFO  CookingBookMain:173 - 2. Изменить количество ингредиента
+2016-11-20 00:47:56 INFO  CookingBookMain:174 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:47:56 INFO  CookingBookMain:175 - 4. Создать новый ингредиент
+2016-11-20 00:47:56 INFO  CookingBookMain:176 - 0. В главное меню
+2016-11-20 00:48:03 INFO  CookingBookMain:196 - Введите название нового ингредиента
+2016-11-20 00:48:08 INFO  CookingBookMain:167 - Ингредиенты:
+2016-11-20 00:48:08 INFO  CookingBookMain:169 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:48:08 INFO  CookingBookMain:169 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:48:08 INFO  CookingBookMain:169 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:48:08 INFO  CookingBookMain:169 - 4. IngredientProperty{ingredient=Ingredient{id=8, name='sugar'}, count=20, measure=COUNT}
+2016-11-20 00:48:08 INFO  CookingBookMain:171 - Выберите действие:
+2016-11-20 00:48:08 INFO  CookingBookMain:172 - 1. Добавить существующий ингредиент
+2016-11-20 00:48:08 INFO  CookingBookMain:173 - 2. Изменить количество ингредиента
+2016-11-20 00:48:08 INFO  CookingBookMain:174 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:48:08 INFO  CookingBookMain:175 - 4. Создать новый ингредиент
+2016-11-20 00:48:08 INFO  CookingBookMain:176 - 0. В главное меню
+2016-11-20 00:48:11 INFO  CookingBookMain:220 - Ингредиенты:
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 3. Ingredient{id=3, name='look'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 00:48:11 INFO  CookingBookMain:222 - 10. Ingredient{id=10, name='af34'}
+2016-11-20 00:48:11 INFO  CookingBookMain:224 - 0. Назад:
+2016-11-20 00:48:16 INFO  CookingBookMain:227 - Колличество:
+2016-11-20 00:56:23 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 00:56:23 KRAT 2016]; root of context hierarchy
+2016-11-20 00:56:24 INFO  CookingBookMain:50 - Start Application!
+2016-11-20 00:56:24 INFO  CookingBookMain:55 - ----Главное меню----
+2016-11-20 00:56:24 INFO  CookingBookMain:56 - 1. Поиск рецепта
+2016-11-20 00:56:24 INFO  CookingBookMain:57 - 2. Создать рецепт
+2016-11-20 00:56:24 INFO  CookingBookMain:58 - 3. Вывод кулинарной книги
+2016-11-20 00:56:24 INFO  CookingBookMain:59 - 4. Вывод ингредиентов
+2016-11-20 00:56:24 INFO  CookingBookMain:60 - 5. Вывод рецептов
+2016-11-20 00:56:24 INFO  CookingBookMain:61 - 0. Выход
+2016-11-20 00:56:24 INFO  CookingBookMain:62 - Выберите действие: 
+2016-11-20 00:56:27 INFO  CookingBookMain:151 - Введите название рецепта
+2016-11-20 00:56:27 INFO  CookingBookMain:155 - 1. borstch
+2016-11-20 00:56:27 INFO  CookingBookMain:157 - 0. В главное меню
+2016-11-20 00:56:28 INFO  CookingBookMain:167 - Ингредиенты:
+2016-11-20 00:56:28 INFO  CookingBookMain:169 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:56:28 INFO  CookingBookMain:169 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:56:28 INFO  CookingBookMain:169 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:56:28 INFO  CookingBookMain:169 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=6, measure=COUNT}
+2016-11-20 00:56:28 INFO  CookingBookMain:171 - Выберите действие:
+2016-11-20 00:56:28 INFO  CookingBookMain:172 - 1. Добавить существующий ингредиент
+2016-11-20 00:56:28 INFO  CookingBookMain:173 - 2. Изменить количество ингредиента
+2016-11-20 00:56:28 INFO  CookingBookMain:174 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:56:28 INFO  CookingBookMain:175 - 4. Создать новый ингредиент
+2016-11-20 00:56:28 INFO  CookingBookMain:176 - 0. В главное меню
+2016-11-20 00:56:32 INFO  CookingBookMain:208 - Выберите редактируемый ингредиент
+2016-11-20 00:56:37 INFO  CookingBookMain:210 - Введите новое количество
+2016-11-20 00:56:42 INFO  CookingBookMain:167 - Ингредиенты:
+2016-11-20 00:56:42 INFO  CookingBookMain:169 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 00:56:42 INFO  CookingBookMain:169 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 00:56:42 INFO  CookingBookMain:169 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 00:56:42 INFO  CookingBookMain:169 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 00:56:42 INFO  CookingBookMain:171 - Выберите действие:
+2016-11-20 00:56:42 INFO  CookingBookMain:172 - 1. Добавить существующий ингредиент
+2016-11-20 00:56:42 INFO  CookingBookMain:173 - 2. Изменить количество ингредиента
+2016-11-20 00:56:42 INFO  CookingBookMain:174 - 3. Удалить ингредиент из рецепта
+2016-11-20 00:56:42 INFO  CookingBookMain:175 - 4. Создать новый ингредиент
+2016-11-20 00:56:42 INFO  CookingBookMain:176 - 0. В главное меню
+2016-11-20 00:56:48 INFO  CookingBookMain:208 - Выберите редактируемый ингредиент
+2016-11-20 00:56:50 INFO  CookingBookMain:210 - Введите новое количество
+2016-11-20 00:56:53 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-20 00:56:53 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-20 14:29:33 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:29:33 KRAT 2016]; root of context hierarchy
+2016-11-20 14:29:34 INFO  CookingBookMain:52 - Start Application!
+2016-11-20 14:29:34 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:29:34 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:29:34 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:29:34 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:29:34 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:29:34 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:29:34 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:29:34 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:29:44 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:29:44 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:29:44 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:29:44 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:29:44 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:29:44 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:29:44 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:29:44 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:29:50 INFO  CookingBookMain:153 - Введите название рецепта
+2016-11-20 14:30:00 INFO  CookingBookMain:157 - 1. borstch
+2016-11-20 14:30:00 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-20 14:30:02 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:30:02 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:30:02 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:30:02 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:30:02 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:30:02 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:30:02 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:30:02 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:30:02 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:30:02 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:30:02 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:30:10 INFO  CookingBookMain:199 - Введите название нового ингредиента
+2016-11-20 14:30:12 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-20 14:30:12 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-20 14:31:06 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:31:06 KRAT 2016]; root of context hierarchy
+2016-11-20 14:31:07 INFO  CookingBookMain:52 - Start Application!
+2016-11-20 14:31:07 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:31:07 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:31:07 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:31:07 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:31:07 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:31:07 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:31:07 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:31:07 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:31:10 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:31:10 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:31:10 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:31:10 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:31:10 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:31:10 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:31:10 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:31:10 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:31:17 INFO  CookingBookMain:153 - Введите название рецепта
+2016-11-20 14:31:18 INFO  CookingBookMain:157 - 1. borstch
+2016-11-20 14:31:18 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-20 14:31:20 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:31:20 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:31:20 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:31:20 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:31:20 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:31:20 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:31:20 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:31:20 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:31:20 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:31:20 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:31:20 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:31:26 INFO  CookingBookMain:199 - Введите название нового ингредиента
+2016-11-20 14:31:32 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:31:32 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:31:32 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:31:32 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:31:32 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:31:32 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:31:32 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:31:32 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:31:32 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:31:32 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:31:32 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:31:34 INFO  CookingBookMain:228 - Ингредиенты:
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 3. Ingredient{id=3, name='look'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 14:31:34 INFO  CookingBookMain:230 - 10. Ingredient{id=11, name='test'}
+2016-11-20 14:31:34 INFO  CookingBookMain:232 - 0. Назад:
+2016-11-20 14:31:41 INFO  CookingBookMain:235 - Колличество:
+2016-11-20 14:31:44 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:31:44 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:31:44 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:31:44 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:31:44 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:31:44 INFO  CookingBookMain:172 - 5. IngredientProperty{ingredient=Ingredient{id=11, name='test'}, count=200, measure=COUNT}
+2016-11-20 14:31:44 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:31:44 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:31:44 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:31:44 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:31:44 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:31:44 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:31:48 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:31:48 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:31:48 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:31:48 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:31:48 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:31:48 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:31:48 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:31:48 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:31:54 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:31:54 KRAT 2016]; root of context hierarchy
+2016-11-20 14:31:54 INFO  CookingBookMain:52 - Start Application!
+2016-11-20 14:31:54 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:31:54 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:31:54 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:31:54 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:31:54 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:31:54 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:31:54 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:31:54 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:31:57 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:31:57 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:31:57 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:31:57 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:31:57 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:31:57 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:31:57 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:31:57 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:32:50 INFO  CookingBookMain:153 - Введите название рецепта
+2016-11-20 14:32:52 INFO  CookingBookMain:157 - 1. borstch
+2016-11-20 14:32:52 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-20 14:32:53 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:32:53 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:32:53 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:32:53 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:32:53 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:32:53 INFO  CookingBookMain:172 - 5. IngredientProperty{ingredient=Ingredient{id=11, name='test'}, count=200, measure=COUNT}
+2016-11-20 14:32:53 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:32:53 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:32:53 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:32:53 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:32:53 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:32:53 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:32:56 INFO  CookingBookMain:199 - Введите название нового ингредиента
+2016-11-20 14:32:58 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:32:58 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:32:58 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:32:58 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:32:58 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:32:58 INFO  CookingBookMain:172 - 5. IngredientProperty{ingredient=Ingredient{id=11, name='test'}, count=200, measure=COUNT}
+2016-11-20 14:32:58 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:32:58 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:32:58 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:32:58 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:32:58 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:32:58 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:33:03 ERROR CookingBookMain:103 - ОШИБКА! Введите номер действия.
+2016-11-20 14:33:03 ERROR CookingBookMain:104 - Попробуйте еще раз:
+2016-11-20 14:33:05 INFO  CookingBookMain:228 - Ингредиенты:
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 3. Ingredient{id=3, name='look'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 10. Ingredient{id=11, name='test'}
+2016-11-20 14:33:05 INFO  CookingBookMain:230 - 11. Ingredient{id=12, name='test2'}
+2016-11-20 14:33:05 INFO  CookingBookMain:232 - 0. Назад:
+2016-11-20 14:33:09 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:33:09 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:33:09 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:33:09 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:33:09 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:33:09 INFO  CookingBookMain:172 - 5. IngredientProperty{ingredient=Ingredient{id=11, name='test'}, count=200, measure=COUNT}
+2016-11-20 14:33:09 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:33:09 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:33:09 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:33:09 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:33:09 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:33:09 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:33:12 INFO  CookingBookMain:205 - Выберите удаляемый ингредиент
+2016-11-20 14:33:23 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:33:23 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:33:23 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:33:23 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:33:23 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:33:23 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:33:23 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:33:23 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:33:23 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:33:23 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:33:23 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:33:43 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:33:43 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:33:43 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:33:43 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:33:43 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:33:43 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:33:43 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:33:43 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:33:46 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:33:46 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:33:46 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:33:46 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:33:46 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:33:46 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:33:46 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:33:46 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:36:44 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:36:44 KRAT 2016]; root of context hierarchy
+2016-11-20 14:36:44 INFO  CookingBookMain:52 - Start Application!
+2016-11-20 14:36:44 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:36:44 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:36:44 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:36:44 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:36:44 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:36:44 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:36:44 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:36:44 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:36:46 INFO  CookingBookMain:153 - Введите название рецепта
+2016-11-20 14:36:48 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-20 14:36:51 ERROR CookingBookMain:120 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 14:36:51 ERROR CookingBookMain:121 - Попробуйте еще раз:
+2016-11-20 14:36:53 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-20 14:36:53 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-20 14:36:53 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-20 14:36:53 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-20 14:36:53 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-20 14:36:53 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-20 14:36:53 INFO  CookingBookMain:63 - 0. Выход
+2016-11-20 14:36:53 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-20 14:36:54 INFO  CookingBookMain:153 - Введите название рецепта
+2016-11-20 14:36:55 INFO  CookingBookMain:157 - 1. borstch
+2016-11-20 14:36:55 INFO  CookingBookMain:159 - 0. В главное меню
+2016-11-20 14:36:56 INFO  CookingBookMain:170 - Ингредиенты:
+2016-11-20 14:36:56 INFO  CookingBookMain:172 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:36:56 INFO  CookingBookMain:172 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:36:56 INFO  CookingBookMain:172 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:36:56 INFO  CookingBookMain:172 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:36:56 INFO  CookingBookMain:174 - Выберите действие:
+2016-11-20 14:36:56 INFO  CookingBookMain:175 - 1. Добавить существующий ингредиент
+2016-11-20 14:36:56 INFO  CookingBookMain:176 - 2. Изменить количество ингредиента
+2016-11-20 14:36:56 INFO  CookingBookMain:177 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:36:56 INFO  CookingBookMain:178 - 4. Создать новый ингредиент
+2016-11-20 14:36:56 INFO  CookingBookMain:179 - 0. В главное меню
+2016-11-20 14:37:03 INFO  CookingBookMain:209 - Выберите удаляемый ингредиент
+2016-11-20 14:37:11 ERROR CookingBookMain:120 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 14:37:11 ERROR CookingBookMain:121 - Попробуйте еще раз:
+2016-11-20 14:37:14 ERROR CookingBookMain:120 - ОШИБКА! Выберите корректный элемент списка.
+2016-11-20 14:37:14 ERROR CookingBookMain:121 - Попробуйте еще раз:
+2016-11-20 14:39:58 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:39:58 KRAT 2016]; root of context hierarchy
+2016-11-20 14:39:59 INFO  CookingBookMain:53 - Start Application!
+2016-11-20 14:39:59 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:39:59 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:39:59 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:39:59 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:39:59 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:39:59 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:39:59 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:39:59 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:40:04 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:40:04 KRAT 2016]; root of context hierarchy
+2016-11-20 14:40:05 INFO  CookingBookMain:53 - Start Application!
+2016-11-20 14:40:05 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:40:05 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:40:05 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:40:05 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:40:05 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:40:05 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:40:05 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:40:05 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:40:09 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:40:09 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:40:09 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:40:09 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:40:09 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:40:09 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:40:09 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:40:09 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:40:19 INFO  CookingBookMain:154 - Введите название рецепта
+2016-11-20 14:40:22 INFO  CookingBookMain:158 - 1. borstch
+2016-11-20 14:40:22 INFO  CookingBookMain:160 - 0. В главное меню
+2016-11-20 14:40:25 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:40:25 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:40:25 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:40:25 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:40:25 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:40:25 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:40:25 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:40:25 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:40:25 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:40:25 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:40:25 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:40:30 INFO  CookingBookMain:233 - Ингредиенты:
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 3. Ingredient{id=3, name='look'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 10. Ingredient{id=11, name='test'}
+2016-11-20 14:40:30 INFO  CookingBookMain:235 - 11. Ingredient{id=12, name='test2'}
+2016-11-20 14:40:30 INFO  CookingBookMain:237 - 0. Назад:
+2016-11-20 14:40:37 INFO  CookingBookMain:154 - Введите название рецепта
+2016-11-20 14:40:39 INFO  CookingBookMain:158 - 1. borstch
+2016-11-20 14:40:39 INFO  CookingBookMain:160 - 0. В главное меню
+2016-11-20 14:40:40 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:40:40 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:40:40 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:40:40 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:40:40 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:40:40 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:40:40 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:40:40 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:40:40 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:40:40 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:40:40 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:40:53 INFO  CookingBookMain:233 - Ингредиенты:
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 3. Ingredient{id=3, name='look'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 10. Ingredient{id=11, name='test'}
+2016-11-20 14:40:53 INFO  CookingBookMain:235 - 11. Ingredient{id=12, name='test2'}
+2016-11-20 14:40:53 INFO  CookingBookMain:237 - 0. Назад:
+2016-11-20 14:41:03 INFO  CookingBookMain:240 - Колличество:
+2016-11-20 14:41:08 INFO  CookingBookMain:240 - Колличество:
+2016-11-20 14:41:12 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:41:12 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:41:12 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:41:12 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:41:12 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:41:12 INFO  CookingBookMain:173 - 5. IngredientProperty{ingredient=Ingredient{id=8, name='sugar'}, count=23, measure=COUNT}
+2016-11-20 14:41:12 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:41:12 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:41:12 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:41:12 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:41:12 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:41:12 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:41:17 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-20 14:41:17 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-20 14:41:17 ERROR CookingBookMain:246 - ОШИБКА! Данный ингредиент уже добавлен в этот рецепт.
+2016-11-20 14:41:17 ERROR CookingBookMain:247 - Попробуйте еще раз:
+2016-11-20 14:41:17 INFO  CookingBookMain:233 - Ингредиенты:
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 3. Ingredient{id=3, name='look'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 10. Ingredient{id=11, name='test'}
+2016-11-20 14:41:17 INFO  CookingBookMain:235 - 11. Ingredient{id=12, name='test2'}
+2016-11-20 14:41:17 INFO  CookingBookMain:237 - 0. Назад:
+2016-11-20 14:41:25 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:41:25 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:41:25 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:41:25 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:41:25 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:41:25 INFO  CookingBookMain:173 - 5. IngredientProperty{ingredient=Ingredient{id=8, name='sugar'}, count=23, measure=COUNT}
+2016-11-20 14:41:25 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:41:25 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:41:25 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:41:25 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:41:25 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:41:25 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:41:35 INFO  CookingBookMain:210 - Выберите удаляемый ингредиент
+2016-11-20 14:41:37 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:41:37 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:41:37 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:41:37 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:41:37 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:41:37 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:41:37 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:41:37 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:41:37 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:41:37 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:41:37 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:41:44 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:41:44 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:41:44 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:41:44 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:41:44 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:41:44 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:41:44 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:41:44 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:41:49 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:41:49 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:41:49 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:41:49 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:41:49 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:41:49 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:41:49 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:41:49 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:43:29 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:43:29 KRAT 2016]; root of context hierarchy
+2016-11-20 14:43:29 INFO  CookingBookMain:53 - Start Application!
+2016-11-20 14:43:29 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:43:29 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:43:29 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:43:29 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:43:29 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:43:29 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:43:29 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:43:29 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:43:31 INFO  CookingBookMain:154 - Введите название рецепта
+2016-11-20 14:43:32 INFO  CookingBookMain:158 - 1. borstch
+2016-11-20 14:43:32 INFO  CookingBookMain:160 - 0. В главное меню
+2016-11-20 14:43:33 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:43:33 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:43:33 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:43:33 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:43:33 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:43:33 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:43:33 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:43:33 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:43:33 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:43:33 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:43:33 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:43:37 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:43:37 KRAT 2016]; root of context hierarchy
+2016-11-20 14:43:38 INFO  CookingBookMain:53 - Start Application!
+2016-11-20 14:43:38 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:43:38 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:43:38 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:43:38 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:43:38 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:43:38 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:43:38 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:43:38 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:43:39 INFO  CookingBookMain:154 - Введите название рецепта
+2016-11-20 14:43:40 INFO  CookingBookMain:158 - 1. borstch
+2016-11-20 14:43:40 INFO  CookingBookMain:160 - 0. В главное меню
+2016-11-20 14:43:41 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:43:41 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:43:41 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:43:41 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:43:41 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:43:41 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:43:41 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:43:41 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:43:41 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:43:41 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:43:41 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:44:05 INFO  CookingBookMain:201 - Введите название нового ингредиента
+2016-11-20 14:44:24 INFO  CookingBookMain:201 - Введите название нового ингредиента
+2016-11-20 14:44:44 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:44:44 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:44:44 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:44:44 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:44:44 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:44:44 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:44:44 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:44:44 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:44:44 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:44:44 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:44:44 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:44:53 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-20 14:44:53 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-20 14:44:53 ERROR CookingBookMain:206 - ОШИБКА! Рецепт с таким именем уже существует в БД.
+2016-11-20 14:44:53 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:44:53 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:44:53 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:44:53 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:44:53 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:44:53 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:44:53 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:44:53 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:44:53 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:44:53 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:44:53 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:45:00 INFO  CookingBookMain:201 - Введите название нового ингредиента
+2016-11-20 14:45:07 INFO  CookingBookMain:201 - Введите название нового ингредиента
+2016-11-20 14:45:10 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:45:10 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:45:10 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:45:10 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:45:10 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:45:10 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:45:10 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:45:10 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:45:10 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:45:10 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:45:10 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:45:15 INFO  CookingBookMain:234 - Ингредиенты:
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 1. Ingredient{id=1, name='morkov'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 2. Ingredient{id=2, name='svekla'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 3. Ingredient{id=3, name='look'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 4. Ingredient{id=4, name='kartofel'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 5. Ingredient{id=5, name='kapusta'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 6. Ingredient{id=6, name='pomidor'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 7. Ingredient{id=7, name='chicken'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 8. Ingredient{id=8, name='sugar'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 9. Ingredient{id=9, name='flour'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 10. Ingredient{id=11, name='test'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 11. Ingredient{id=12, name='test2'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 12. Ingredient{id=13, name='mainprop'}
+2016-11-20 14:45:15 INFO  CookingBookMain:236 - 13. Ingredient{id=15, name='main2'}
+2016-11-20 14:45:15 INFO  CookingBookMain:238 - 0. Назад:
+2016-11-20 14:45:20 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:45:20 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:45:20 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:45:20 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:45:20 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:45:20 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:45:20 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:45:20 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:45:20 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:45:20 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:45:20 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:45:20 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:45:20 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:45:20 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:45:20 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:45:20 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:45:20 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:45:20 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:45:20 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:45:26 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-20 14:45:27 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-20 14:45:27 ERROR CookingBookMain:206 - ОШИБКА! Рецепт с таким именем уже существует в БД.
+2016-11-20 14:45:27 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:45:27 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:45:27 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:45:27 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:45:27 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:45:27 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:45:27 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:45:27 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:45:27 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:45:27 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:45:27 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:45:31 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:45:31 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:45:31 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:45:31 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:45:31 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:45:31 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:45:31 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:45:31 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:48:28 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:48:28 KRAT 2016]; root of context hierarchy
+2016-11-20 14:48:29 INFO  CookingBookMain:53 - Start Application!
+2016-11-20 14:48:29 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:48:29 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:48:29 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:48:29 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:48:29 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:48:29 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:48:29 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:48:29 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:48:32 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:48:32 KRAT 2016]; root of context hierarchy
+2016-11-20 14:48:33 INFO  CookingBookMain:53 - Start Application!
+2016-11-20 14:48:33 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:48:33 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:48:33 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:48:33 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:48:33 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:48:33 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:48:33 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:48:33 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:48:38 INFO  CookingBookMain:154 - Введите название рецепта
+2016-11-20 14:48:41 INFO  CookingBookMain:158 - 1. borstch
+2016-11-20 14:48:41 INFO  CookingBookMain:160 - 0. В главное меню
+2016-11-20 14:48:42 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:48:42 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:48:42 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:48:42 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:48:42 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:48:42 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:48:42 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:48:42 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:48:42 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:48:42 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:48:42 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:48:44 INFO  CookingBookMain:201 - Введите название нового ингредиента
+2016-11-20 14:48:53 INFO  CookingBookMain:154 - Введите название рецепта
+2016-11-20 14:48:55 INFO  CookingBookMain:158 - 1. borstch
+2016-11-20 14:48:55 INFO  CookingBookMain:160 - 0. В главное меню
+2016-11-20 14:48:56 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:48:56 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:48:56 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:48:56 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:48:56 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:48:56 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:48:56 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:48:56 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:48:56 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:48:56 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:48:56 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:48:58 INFO  CookingBookMain:201 - Введите название нового ингредиента
+2016-11-20 14:49:04 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:49:04 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:49:04 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:49:04 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:49:04 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:49:04 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:49:04 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:49:04 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:49:04 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:49:04 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:49:04 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:49:08 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-20 14:49:08 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-20 14:49:08 ERROR CookingBookMain:206 - ОШИБКА! Рецепт с таким именем уже существует в БД.
+2016-11-20 14:49:08 INFO  CookingBookMain:171 - Ингредиенты:
+2016-11-20 14:49:08 INFO  CookingBookMain:173 - 1. IngredientProperty{ingredient=Ingredient{id=1, name='morkov'}, count=3, measure=COUNT}
+2016-11-20 14:49:08 INFO  CookingBookMain:173 - 2. IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=1, measure=COUNT}
+2016-11-20 14:49:08 INFO  CookingBookMain:173 - 3. IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=3, measure=COUNT}
+2016-11-20 14:49:08 INFO  CookingBookMain:173 - 4. IngredientProperty{ingredient=Ingredient{id=4, name='kartofel'}, count=10, measure=COUNT}
+2016-11-20 14:49:08 INFO  CookingBookMain:175 - Выберите действие:
+2016-11-20 14:49:08 INFO  CookingBookMain:176 - 1. Добавить существующий ингредиент
+2016-11-20 14:49:08 INFO  CookingBookMain:177 - 2. Изменить количество ингредиента
+2016-11-20 14:49:08 INFO  CookingBookMain:178 - 3. Удалить ингредиент из рецепта
+2016-11-20 14:49:08 INFO  CookingBookMain:179 - 4. Создать новый ингредиент
+2016-11-20 14:49:08 INFO  CookingBookMain:180 - 0. В главное меню
+2016-11-20 14:49:12 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:49:12 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:49:12 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:49:12 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:49:12 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:49:12 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:49:12 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:49:12 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:49:17 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:49:17 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:49:17 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:49:17 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:49:17 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:49:17 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:49:17 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:49:17 INFO  CookingBookMain:65 - Выберите действие: 
+2016-11-20 14:49:35 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6996db8: startup date [Sun Nov 20 14:49:35 KRAT 2016]; root of context hierarchy
+2016-11-20 14:49:36 INFO  CookingBookMain:53 - Start Application!
+2016-11-20 14:49:36 INFO  CookingBookMain:58 - ----Главное меню----
+2016-11-20 14:49:36 INFO  CookingBookMain:59 - 1. Поиск рецепта
+2016-11-20 14:49:36 INFO  CookingBookMain:60 - 2. Создать рецепт
+2016-11-20 14:49:36 INFO  CookingBookMain:61 - 3. Вывод кулинарной книги
+2016-11-20 14:49:36 INFO  CookingBookMain:62 - 4. Вывод ингредиентов
+2016-11-20 14:49:36 INFO  CookingBookMain:63 - 5. Вывод рецептов
+2016-11-20 14:49:36 INFO  CookingBookMain:64 - 0. Выход
+2016-11-20 14:49:36 INFO  CookingBookMain:65 - Выберите действие: 

@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 import ru.sbt.javaschool.recipes.springjdbc.dao.RecipeDao;
 import ru.sbt.javaschool.recipes.springjdbc.entity.Recipe;
 
+import javax.swing.tree.RowMapper;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -52,16 +55,8 @@ public class RecipeDaoImpl implements RecipeDao {
 
     @Override
     public List<Recipe> getRecipeByPartOfName(String name) {
-        List<Map<String, Object>> list = jdbcTemplate.queryForList("select * from Recipe where name like '%" + name + "%'");
-        ArrayList<Recipe> result = new ArrayList<>();
-        for (Map<String, Object> map : list) {
-            result.add(new Recipe(
-                    ((Number) map.get("id")).longValue(),
-                    (String) map.get("name"),
-                    (String) map.get("description")
-            ));
-        }
-        return result;
+        return jdbcTemplate.query("select * from Recipe where name like '%" + name + "%'",
+                (row,count)->new Recipe(row.getLong("id"),row.getString("name"),row.getString("description")));
     }
 
     @Override
@@ -77,15 +72,7 @@ public class RecipeDaoImpl implements RecipeDao {
 
     @Override
     public List<Recipe> getAll() {
-        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from Recipe ORDER BY id");
-        ArrayList<Recipe> result = new ArrayList<>();
-        for (Map<String, Object> map : maps) {
-            result.add(new Recipe(
-                    ((Number) map.get("id")).longValue(),
-                    (String) map.get("name"),
-                    (String) map.get("description")
-            ));
-        }
-        return result;
+        return jdbcTemplate.query("select * from Recipe ORDER BY id",
+                (row,count)->new Recipe(row.getLong("id"),row.getString("name"),row.getString("description")));
     }
 }

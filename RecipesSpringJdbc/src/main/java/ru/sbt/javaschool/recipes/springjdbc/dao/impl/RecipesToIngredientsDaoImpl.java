@@ -88,18 +88,10 @@ public class RecipesToIngredientsDaoImpl implements RecipesToIngredientsDao {
     @Override
     public List<IngredientProperty> getIngredientsForRecipe(Recipe recipe) {
         BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(recipe);
-        List<Map<String, Object>> list = namedParameterJdbcTemplate.queryForList("select id,name,i_count " +
-                "from RecipeToIngredients rec left join Ingredient ing on rec.i_id=ing.id " +
-                "where rec.r_id=:id", params);
-        ArrayList<IngredientProperty> result = new ArrayList<>();
-        for (Map<String, Object> map : list) {
-            result.add(new IngredientProperty(new Ingredient(
-                    ((Number) map.get("id")).longValue(),
-                    (String) map.get("name")),
-                    ((Number) map.get("i_count")).longValue(),
-                    Measure.COUNT
-            ));
-        }
-        return result;
+        return namedParameterJdbcTemplate.query("select id,name,i_count " +
+                        "from RecipeToIngredients rec left join Ingredient ing on rec.i_id=ing.id " +
+                        "where rec.r_id=:id", params,
+                (row, count) -> new IngredientProperty(new Ingredient(row.getLong("id"), row.getString("name"))
+                        , row.getLong("i_count")));
     }
 }
