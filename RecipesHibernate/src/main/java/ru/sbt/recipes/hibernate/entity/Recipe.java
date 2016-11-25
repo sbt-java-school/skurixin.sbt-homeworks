@@ -1,45 +1,50 @@
-package ru.sbt.javaschool.recipes.springjdbc.entity;
+package ru.sbt.recipes.hibernate.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
- * Created by скурихин on 14.11.2016.
+ * Created by скурихин on 21.11.2016.
  */
 @Entity
 @Table(name = "recipe")
 public class Recipe {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    @Column(name = "name",nullable = false,unique = true)
+    private long id;
     private String name;
     private String description;
 
     @OneToMany(mappedBy = "recipe", fetch = FetchType.EAGER)
     List<RecipesToIngredients> ingredients;
 
-    protected Recipe(){}
+    protected Recipe(){
+
+    }
+
+    public Recipe(String name, String description, List<RecipesToIngredients> ingredients) {
+        this.name = name;
+        this.description = description;
+        this.ingredients = ingredients;
+    }
+
+    public Recipe(String name, String description) {
+        this(name,description,new ArrayList<>());
+    }
 
     public Recipe(String name) {
-        this.name = name;
+        this(name,null,new ArrayList<RecipesToIngredients>());
     }
 
-    public Recipe(Long id, String name) {
-        this(name);
-        this.id = id;
-    }
-
-    public Recipe(Long id, String name, String description) {
-        this(id, name);
-        this.description = description;
-    }
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -59,6 +64,14 @@ public class Recipe {
         this.description = description;
     }
 
+    public List<RecipesToIngredients> getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(List<RecipesToIngredients> ingredients) {
+        this.ingredients = ingredients;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -66,17 +79,19 @@ public class Recipe {
 
         Recipe recipe = (Recipe) o;
 
-        if (id != null ? !id.equals(recipe.id) : recipe.id != null) return false;
+        if (id != recipe.id) return false;
         if (name != null ? !name.equals(recipe.name) : recipe.name != null) return false;
-        return description != null ? description.equals(recipe.description) : recipe.description == null;
+        if (description != null ? !description.equals(recipe.description) : recipe.description != null) return false;
+        return ingredients != null ? ingredients.equals(recipe.ingredients) : recipe.ingredients == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
+        int result = (int) (id ^ (id >>> 32));
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
+        result = 31 * result + (ingredients != null ? ingredients.hashCode() : 0);
         return result;
     }
 
@@ -86,6 +101,7 @@ public class Recipe {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
+                ", ingredients=" + ingredients.toString() +
                 '}';
     }
 }

@@ -1,4 +1,4 @@
-package ru.sbt.javaschool.recipes.springjdbc.dao;
+package ru.sbt.javaschool.recipes.springjdbc.service;
 
 import ru.sbt.javaschool.recipes.springjdbc.entity.Ingredient;
 

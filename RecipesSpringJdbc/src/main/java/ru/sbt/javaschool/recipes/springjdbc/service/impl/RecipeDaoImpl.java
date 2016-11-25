@@ -1,4 +1,4 @@
-package ru.sbt.javaschool.recipes.springjdbc.dao.impl;
+package ru.sbt.javaschool.recipes.springjdbc.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -8,13 +8,9 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Service;
-import ru.sbt.javaschool.recipes.springjdbc.dao.RecipeDao;
+import ru.sbt.javaschool.recipes.springjdbc.service.RecipeDao;
 import ru.sbt.javaschool.recipes.springjdbc.entity.Recipe;
 
-import javax.swing.tree.RowMapper;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 

@@ -1,10 +1,13 @@
-package ru.sbt.javaschool.recipes.springjdbc.entity;
+package ru.sbt.recipes.hibernate.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
- * Created by скурихин on 14.11.2016.
+ * Created by скурихин on 21.11.2016.
  */
 @Entity
 @Table(name = "ingredient")
@@ -12,31 +15,30 @@ public class Ingredient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    @Column(name = "name", nullable = false, unique = true)
+    private long id;
     private String name;
 
 
     @OneToMany(mappedBy = "ingredient", fetch = FetchType.EAGER)
     List<RecipesToIngredients> recipes;
 
-    protected Ingredient() {
+    protected Ingredient(){
+    }
+
+    public Ingredient(String name, List<RecipesToIngredients> recipes) {
+        this.name = name;
+        this.recipes = recipes;
     }
 
     public Ingredient(String name) {
-        this(null, name);
+        this(name, new ArrayList<>());
     }
 
-    public Ingredient(Long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -48,6 +50,14 @@ public class Ingredient {
         this.name = name;
     }
 
+    public List<RecipesToIngredients> getRecipes() {
+        return recipes;
+    }
+
+    public void setRecipes(List<RecipesToIngredients> recipes) {
+        this.recipes = recipes;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -55,15 +65,17 @@ public class Ingredient {
 
         Ingredient that = (Ingredient) o;
 
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        return name != null ? name.equals(that.name) : that.name == null;
+        if (id != that.id) return false;
+        if (name != null ? !name.equals(that.name) : that.name != null) return false;
+        return recipes != null ? recipes.equals(that.recipes) : that.recipes == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
+        int result = (int) (id ^ (id >>> 32));
         result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (recipes != null ? recipes.hashCode() : 0);
         return result;
     }
 
@@ -72,6 +84,7 @@ public class Ingredient {
         return "Ingredient{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", recipes=" + recipes.toString() +
                 '}';
     }
 }

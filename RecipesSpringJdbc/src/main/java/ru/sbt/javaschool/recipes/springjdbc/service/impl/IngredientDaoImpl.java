@@ -1,4 +1,4 @@
-package ru.sbt.javaschool.recipes.springjdbc.dao.impl;
+package ru.sbt.javaschool.recipes.springjdbc.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -8,9 +8,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Transactional;
-import ru.sbt.javaschool.recipes.springjdbc.dao.IngredientDao;
+import ru.sbt.javaschool.recipes.springjdbc.service.IngredientDao;
 import ru.sbt.javaschool.recipes.springjdbc.entity.Ingredient;
 
 import java.util.List;
@@ -59,7 +57,7 @@ public class IngredientDaoImpl implements IngredientDao {
 
     @Override
     public List<Ingredient> getAll() {
-        List<Ingredient> result = jdbcTemplate.query("select id,name from Ingredient ing ORDER BY 1",
+        List<Ingredient> result = jdbcTemplate.query("select id,name from ingredient ing ORDER BY 1",
                 (row, count) -> new Ingredient(row.getLong("id"), row.getString("name")));
         return result;
     }

@@ -3,19 +3,18 @@ package ru.sbt.javaschool.recipes.springjdbc;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 import ru.sbt.javaschool.recipes.springjdbc.config.ApplicationConfiguration;
+import ru.sbt.javaschool.recipes.springjdbc.config.ApplicationConfigurationWithHibernate;
 import ru.sbt.javaschool.recipes.springjdbc.config.TablesInitializer;
 import ru.sbt.javaschool.recipes.springjdbc.config.TablesInitializerImpl;
-import ru.sbt.javaschool.recipes.springjdbc.dao.IngredientDao;
-import ru.sbt.javaschool.recipes.springjdbc.dao.RecipeDao;
-import ru.sbt.javaschool.recipes.springjdbc.dao.RecipesToIngredientsDao;
+import ru.sbt.javaschool.recipes.springjdbc.service.IngredientDao;
+import ru.sbt.javaschool.recipes.springjdbc.service.RecipeDao;
+import ru.sbt.javaschool.recipes.springjdbc.service.RecipesToIngredientsDao;
 import ru.sbt.javaschool.recipes.springjdbc.entity.Ingredient;
 import ru.sbt.javaschool.recipes.springjdbc.entity.IngredientProperty;
 import ru.sbt.javaschool.recipes.springjdbc.entity.Recipe;
@@ -39,8 +38,8 @@ public class CookingBookMain {
     private RecipesToIngredientsDao recipesToIngredientsDao;
 
     public static void main(String[] args) throws IOException {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
-        TablesInitializer initializer = context.getBean(TablesInitializerImpl.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfigurationWithHibernate.class);
+//        TablesInitializer initializer = context.getBean(TablesInitializerImpl.class);
 //        initializer.dropTables();
 //        initializer.createTables();
 //        initializer.executeScript(TablesInitializerImpl.SCRIPT_FILL);

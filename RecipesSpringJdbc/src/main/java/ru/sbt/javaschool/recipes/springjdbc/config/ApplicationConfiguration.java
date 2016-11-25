@@ -1,15 +1,16 @@
 package ru.sbt.javaschool.recipes.springjdbc.config;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import ru.sbt.javaschool.recipes.springjdbc.repository.IngredientRepository;
+import ru.sbt.javaschool.recipes.springjdbc.service.impl.hibernate.IngredientServiceImpl;
+import ru.sbt.javaschool.recipes.springjdbc.service.impl.hibernate.RecipeServiceImpl;
+import ru.sbt.javaschool.recipes.springjdbc.service.impl.hibernate.RecipesToIngredientsServiceImpl;
 
 import javax.sql.DataSource;
 
@@ -18,7 +19,12 @@ import javax.sql.DataSource;
  */
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("ru.sbt.javaschool.recipes.springjdbc")
+//@ComponentScan("ru.sbt.javaschool.recipes.springjdbc")
+@ComponentScan(basePackages = {"ru.sbt.javaschool.recipes.springjdbc"}, excludeFilters = {
+        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = IngredientServiceImpl.class),
+        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = RecipeServiceImpl.class),
+        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = RecipesToIngredientsServiceImpl.class),
+        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = ApplicationConfigurationWithHibernate.class)})
 @PropertySource("classpath:app.properties")
 public class ApplicationConfiguration {
 
@@ -38,7 +44,7 @@ public class ApplicationConfiguration {
     }
 
     @Bean
-    public PlatformTransactionManager transactionManager(DataSource dataSource){
+    public PlatformTransactionManager transactionManager(DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
 }

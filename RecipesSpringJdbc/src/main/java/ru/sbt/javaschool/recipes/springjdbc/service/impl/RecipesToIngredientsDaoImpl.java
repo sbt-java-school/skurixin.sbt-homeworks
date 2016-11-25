@@ -1,4 +1,4 @@
-package ru.sbt.javaschool.recipes.springjdbc.dao.impl;
+package ru.sbt.javaschool.recipes.springjdbc.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -6,7 +6,7 @@ import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Service;
-import ru.sbt.javaschool.recipes.springjdbc.dao.RecipesToIngredientsDao;
+import ru.sbt.javaschool.recipes.springjdbc.service.RecipesToIngredientsDao;
 import ru.sbt.javaschool.recipes.springjdbc.entity.*;
 
 import java.util.ArrayList;
