@@ -31,6 +31,7 @@
         <module>HomeTasksBeforeMaven</module>
         <module>RecipesSpringJdbc</module>
         <module>RecipesHibernate</module>
+        <module>RecipesMVC</module>
     </modules>
 
     <dependencies>
