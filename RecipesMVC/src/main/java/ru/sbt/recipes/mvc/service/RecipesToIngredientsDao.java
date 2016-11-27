@@ -1,16 +1,13 @@
-package ru.sbt.javaschool.recipes.springjdbc.service;
+package ru.sbt.recipes.mvc.service;
 
-import ru.sbt.javaschool.recipes.springjdbc.entity.Ingredient;
-import ru.sbt.javaschool.recipes.springjdbc.entity.IngredientProperty;
-import ru.sbt.javaschool.recipes.springjdbc.entity.Recipe;
-import ru.sbt.javaschool.recipes.springjdbc.entity.RecipesToIngredients;
+import ru.sbt.recipes.mvc.entity.Ingredient;
+import ru.sbt.recipes.mvc.entity.IngredientProperty;
+import ru.sbt.recipes.mvc.entity.Recipe;
+import ru.sbt.recipes.mvc.entity.RecipesToIngredients;
 
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by скурихин on 14.11.2016.
- */
 public interface RecipesToIngredientsDao {
     void addIngredientToRecipe(Recipe recipe, IngredientProperty ingredientProperty);
 
@@ -22,4 +19,5 @@ public interface RecipesToIngredientsDao {
 
     List<IngredientProperty> getIngredientsForRecipe(Recipe recipe);
 
+    List<IngredientProperty> getIngredientsForRecipe(long recipe_id);
 }
