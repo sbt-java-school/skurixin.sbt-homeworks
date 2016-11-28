@@ -5,7 +5,7 @@
 <html>
 <body>
 
-<a href="recipes/add">
+<a href="/recipes/add">
     Add recipe
 </a>
 <br>
@@ -17,13 +17,13 @@
 <ul>
     <c:forEach var="el" items="${list}">
         <li>
-            <a href="recipe/${el.id}">
+            <a href="/recipes/${el.id}">
                     ${el.name}
             </a>
-            <a href="recipe/${el.id}/delete">
+            <a href="/recipes/${el.id}/delete">
                 delete
             </a>
-            <a href="recipe/${el.id}/edit">
+            <a href="/recipes/${el.id}/edit">
                 edit name
             </a>
         </li>

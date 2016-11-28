@@ -16,4 +16,6 @@ public interface RecipeDao {
     Recipe getRecipe(Long id);
 
     List<Recipe> getAll();
+
+    Recipe update(Recipe recipe);
 }

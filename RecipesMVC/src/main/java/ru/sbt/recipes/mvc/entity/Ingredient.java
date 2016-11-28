@@ -27,6 +27,10 @@ public class Ingredient {
         this(null, name);
     }
 
+    public Ingredient(Long id) {
+        this.id = id;
+    }
+
     public Ingredient(Long id, String name) {
         this.id = id;
         this.name = name;

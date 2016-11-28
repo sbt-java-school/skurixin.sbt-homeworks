@@ -8,6 +8,7 @@ public interface IngredientDao {
     Ingredient create(Ingredient ingredient);
 
     Ingredient get(Long id);
+
     void delete(Long id);
 
     Ingredient edit(Long idSource, Ingredient ingredient);

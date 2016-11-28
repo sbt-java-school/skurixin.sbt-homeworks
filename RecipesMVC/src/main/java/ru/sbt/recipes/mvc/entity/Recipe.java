@@ -25,6 +25,10 @@ public class Recipe {
         this.name = name;
     }
 
+    public Recipe(Long id) {
+        this.id = id;
+    }
+
     public Recipe(Long id, String name) {
         this(name);
         this.id = id;

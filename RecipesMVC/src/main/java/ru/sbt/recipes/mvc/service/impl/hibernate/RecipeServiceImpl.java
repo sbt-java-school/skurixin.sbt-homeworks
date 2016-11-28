@@ -6,13 +6,18 @@ import ru.sbt.recipes.mvc.entity.Recipe;
 import ru.sbt.recipes.mvc.repository.RecipeRepository;
 import ru.sbt.recipes.mvc.service.RecipeDao;
 
+import javax.persistence.EntityManager;
 import java.util.List;
+
 
 /**
  * Created by скурихин on 23.11.2016.
  */
 @Service
 public class RecipeServiceImpl implements RecipeDao {
+
+    @Autowired
+    private EntityManager entityManager;
 
     @Autowired
     private RecipeRepository recipeRepository;
@@ -24,7 +29,9 @@ public class RecipeServiceImpl implements RecipeDao {
 
     @Override
     public Recipe create(Recipe recipe) {
-        return recipeRepository.saveAndFlush(recipe);
+//        return recipeRepository.saveAndFlush(recipe);
+        entityManager.persist(recipe);
+        return recipe;
     }
 
     @Override
@@ -39,12 +46,19 @@ public class RecipeServiceImpl implements RecipeDao {
 
     @Override
     public Recipe getRecipe(Long id) {
-        Recipe one = recipeRepository.getOne(id);
-        return one;
+//        Recipe one = recipeRepository.getOne(id);
+//        return one;
+        Recipe recipe = entityManager.find(Recipe.class, id);
+        return recipe;
     }
 
     @Override
     public List<Recipe> getAll() {
         return recipeRepository.findAll();
+    }
+
+    @Override
+    public Recipe update(Recipe recipe) {
+        return entityManager.merge(recipe);
     }
 }

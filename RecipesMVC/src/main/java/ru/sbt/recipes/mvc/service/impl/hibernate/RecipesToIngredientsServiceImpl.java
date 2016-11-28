@@ -1,5 +1,6 @@
 package ru.sbt.recipes.mvc.service.impl.hibernate;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.sbt.recipes.mvc.entity.Ingredient;
@@ -15,12 +16,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 /**
  * Created by скурихин on 23.11.2016.
  */
 @Service
 public class RecipesToIngredientsServiceImpl implements RecipesToIngredientsDao {
+
     @Autowired
     private RecipesToIngredientsRepository recipesToIngredientsRepository;
 
@@ -83,5 +84,12 @@ public class RecipesToIngredientsServiceImpl implements RecipesToIngredientsDao 
         List<RecipesToIngredients> list = recipesToIngredientsRepository.findByRecipe(new Recipe(recipe_id, "temp"));
         list.stream().forEach(recipesToIngredientsRepository::delete);
         return 1;
+    }
+
+    @Override
+    public RecipesToIngredients getRecipeToIngredient(Long recipe_id, Long ingredient_id) {
+        RecipesToIngredients byRecipeAndIngredient = recipesToIngredientsRepository
+                .findByRecipeAndIngredient(new Recipe(recipe_id), new Ingredient(ingredient_id));
+        return byRecipeAndIngredient;
     }
 }

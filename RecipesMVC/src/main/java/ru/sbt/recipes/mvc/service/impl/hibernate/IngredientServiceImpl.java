@@ -1,11 +1,13 @@
 package ru.sbt.recipes.mvc.service.impl.hibernate;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.sbt.recipes.mvc.entity.Ingredient;
 import ru.sbt.recipes.mvc.repository.IngredientRepository;
 import ru.sbt.recipes.mvc.service.IngredientDao;
 
+import javax.persistence.EntityManager;
 import java.util.List;
 
 /**
@@ -16,6 +18,9 @@ public class IngredientServiceImpl implements IngredientDao {
 
     @Autowired
     private IngredientRepository ingredientRepository;
+
+    @Autowired
+    private EntityManager entityManager;
 
     @Override
     public Ingredient edit(Long idSource, Ingredient ingredient) {

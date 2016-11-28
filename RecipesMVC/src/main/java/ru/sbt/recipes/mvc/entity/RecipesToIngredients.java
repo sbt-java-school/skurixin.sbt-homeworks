@@ -29,6 +29,10 @@ public class RecipesToIngredients {
 
     protected RecipesToIngredients(){}
 
+    public RecipesToIngredients(Recipe recipe) {
+        this.recipe = recipe;
+    }
+
     public RecipesToIngredients(Recipe recipe, IngredientProperty ingredientProperty) {
         this.recipe = recipe;
         this.ingredientProperty = ingredientProperty;

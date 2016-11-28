@@ -3188,3 +3188,41 @@ insert into recipe (description, name, id) values (?, ?, ?) [23505-193]
 2016-11-26 22:16:58 INFO  CookingBookMain:62 - 5. Вывод рецептов
 2016-11-26 22:16:58 INFO  CookingBookMain:63 - 0. Выход
 2016-11-26 22:16:58 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-28 23:07:27 INFO  AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4cc77c2e: startup date [Mon Nov 28 23:07:27 KRAT 2016]; root of context hierarchy
+2016-11-28 23:07:27 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-28 23:07:27 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'applicationConfigurationWithHibernate' of type [class ru.sbt.javaschool.recipes.springjdbc.config.ApplicationConfigurationWithHibernate$$EnhancerBySpringCGLIB$$9167eb27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-28 23:07:28 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2016-11-28 23:07:28 INFO  LocalContainerEntityManagerFactoryBean:336 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-28 23:07:28 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-28 23:07:28 INFO  Version:45 - HHH000412: Hibernate Core {5.2.4.Final}
+2016-11-28 23:07:28 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-11-28 23:07:28 INFO  Environment:318 - HHH000021: Bytecode provider name : javassist
+2016-11-28 23:07:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-11-28 23:07:29 INFO  Dialect:153 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-11-28 23:07:31 INFO  CookingBookMain:52 - Start Application!
+2016-11-28 23:07:31 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-28 23:07:31 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-28 23:07:31 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-28 23:07:31 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-28 23:07:31 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-28 23:07:31 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-28 23:07:31 INFO  CookingBookMain:63 - 0. Выход
+2016-11-28 23:07:31 INFO  CookingBookMain:64 - Выберите действие: 
+2016-11-28 23:07:36 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-28 23:07:36 INFO  CookingBookMain:131 - Recipe{id=6, name='soup', description='null'}
+2016-11-28 23:07:36 INFO  CookingBookMain:132 -    IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=200, measure=COUNT}
+2016-11-28 23:07:36 INFO  CookingBookMain:131 - Recipe{id=10, name='asdf', description='null'}
+2016-11-28 23:07:36 INFO  CookingBookMain:132 -    IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=34, measure=COUNT}
+2016-11-28 23:07:36 INFO  CookingBookMain:131 - Recipe{id=1, name='borstch', description='null'}
+2016-11-28 23:07:36 INFO  CookingBookMain:132 -    IngredientProperty{ingredient=Ingredient{id=2, name='svekla'}, count=100, measure=COUNT}
+2016-11-28 23:07:36 INFO  CookingBookMain:132 -    IngredientProperty{ingredient=Ingredient{id=3, name='look'}, count=150, measure=COUNT}
+2016-11-28 23:07:36 INFO  CookingBookMain:57 - ----Главное меню----
+2016-11-28 23:07:36 INFO  CookingBookMain:58 - 1. Поиск рецепта
+2016-11-28 23:07:36 INFO  CookingBookMain:59 - 2. Создать рецепт
+2016-11-28 23:07:36 INFO  CookingBookMain:60 - 3. Вывод кулинарной книги
+2016-11-28 23:07:36 INFO  CookingBookMain:61 - 4. Вывод ингредиентов
+2016-11-28 23:07:36 INFO  CookingBookMain:62 - 5. Вывод рецептов
+2016-11-28 23:07:36 INFO  CookingBookMain:63 - 0. Выход
+2016-11-28 23:07:36 INFO  CookingBookMain:64 - Выберите действие: 
