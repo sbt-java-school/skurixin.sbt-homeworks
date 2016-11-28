@@ -38,6 +38,11 @@ public class IngredientServiceImpl implements IngredientDao {
     }
 
     @Override
+    public Ingredient getByName(String name) {
+        return ingredientRepository.findByName(name);
+    }
+
+    @Override
     public void delete(Long id) {
         ingredientRepository.delete(id);
     }

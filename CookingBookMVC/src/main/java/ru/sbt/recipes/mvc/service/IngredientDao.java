@@ -9,6 +9,8 @@ public interface IngredientDao {
 
     Ingredient get(Long id);
 
+    Ingredient getByName(String name);
+
     void delete(Long id);
 
     Ingredient edit(Long idSource, Ingredient ingredient);

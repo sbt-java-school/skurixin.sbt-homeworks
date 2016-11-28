@@ -15,9 +15,9 @@ import java.io.IOException;
 @Service
 public class TablesInitializerImpl implements TablesInitializer {
     private static final Logger LOGGER = Logger.getLogger(TablesInitializerImpl.class);
-    public static final String SCRIPT_CREATE = "RecipesMVC/src/main/resources/sql/createTables.sql";
-    public static final String SCRIPT_DROP = "RecipesMVC/src/main/resources/sql/dropTables.sql";
-    public static final String SCRIPT_FILL = "RecipesMVC/src/main/resources/sql/fillTable.sql";
+    public static final String SCRIPT_CREATE = "CookingBookMVC/src/main/resources/sql/createTables.sql";
+    public static final String SCRIPT_DROP = "CookingBookMVC/src/main/resources/sql/dropTables.sql";
+    public static final String SCRIPT_FILL = "CookingBookMVC/src/main/resources/sql/fillTable.sql";
     @Autowired
     private JdbcTemplate jdbcTemplate;
 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet  author="am" id="database-1">
+        <sql>
+            create table IF NOT EXISTS Ingredient (
+            id BIGINT IDENTITY (1,1) PRIMARY KEY,
+            name varchar2(50) not null,
+
+            constraint uqi_name unique(name)
+            );
+        </sql>
+    </changeSet>
+    <changeSet  author="am" id="database-2">
+        <sql>
+            create table IF NOT EXISTS recipe (
+            id BIGINT IDENTITY(1,1) PRIMARY KEY,
+            name varchar2(50) not null,
+            description varchar2(50),
+
+            constraint uqr_name unique(name)
+            );
+        </sql>
+    </changeSet>
+    <changeSet  author="am" id="database-3">
+        <sql>
+            create table IF NOT EXISTS recipe_ingredient (
+            id BIGINT IDENTITY(1,1) PRIMARY KEY,
+            recipe_id BIGINT NOT NULL ,
+            ingredient_id BIGINT NOT NULL ,
+            count BIGINT CHECK (count>0),
+
+            FOREIGN KEY (recipe_id) REFERENCES recipe(id),
+            FOREIGN KEY (ingredient_id) REFERENCES Ingredient(id),
+            UNIQUE(recipe_id,ingredient_id)
+            );
+        </sql>
+    </changeSet>
+
+    <changeSet  author="am" id="database-4">
+        <sqlFile path="sql/fillIngredient.sql"/>
+    </changeSet>
+    <changeSet  author="am" id="database-5">
+        <sqlFile path="sql/fillRecipe.sql"/>
+    </changeSet>
+    <changeSet  author="am" id="database-6">
+        <sqlFile path="sql/fillTable.sql"/>
+    </changeSet>
+
+</databaseChangeLog>

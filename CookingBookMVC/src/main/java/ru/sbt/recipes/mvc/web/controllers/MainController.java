@@ -39,16 +39,18 @@ public class MainController {
     @RequestMapping(value = "/init", method = RequestMethod.GET)
     public String init(ModelMap model) {
         Recipe borstch = recipeDao.create(new Recipe("borstch"));
-        Recipe vodka = recipeDao.create(new Recipe("vodka"));
+        Recipe kompot = recipeDao.create(new Recipe("kompot"));
         Recipe beaf = recipeDao.create(new Recipe("beaf"));
         Ingredient look = ingredientDao.create(new Ingredient("look"));
         Ingredient svekla = ingredientDao.create(new Ingredient("svekla"));
         Ingredient water = ingredientDao.create(new Ingredient("water"));
+        Ingredient yagodi = ingredientDao.create(new Ingredient("yagodi"));
         Ingredient meat = ingredientDao.create(new Ingredient("meat"));
         recipesToIngredientsDao.addIngredientToRecipe(borstch, new IngredientProperty(look, 100L));
         recipesToIngredientsDao.addIngredientToRecipe(borstch, new IngredientProperty(svekla, 200L));
         recipesToIngredientsDao.addIngredientToRecipe(borstch, new IngredientProperty(water, 50L));
-        recipesToIngredientsDao.addIngredientToRecipe(vodka, new IngredientProperty(water, 100L));
+        recipesToIngredientsDao.addIngredientToRecipe(kompot, new IngredientProperty(water, 100L));
+        recipesToIngredientsDao.addIngredientToRecipe(kompot, new IngredientProperty(yagodi, 20L));
         recipesToIngredientsDao.addIngredientToRecipe(beaf, new IngredientProperty(meat, 200L));
         recipesToIngredientsDao.addIngredientToRecipe(beaf, new IngredientProperty(look, 50L));
 
@@ -99,7 +101,6 @@ public class MainController {
         List<Ingredient> listNotContains = ingredientsAll.stream()
                 .filter(p -> ingredients.contains(p) == false).collect(Collectors.toList());
 
-//        List<Ingredient> listNames = listNotContains.stream().peek(p -> p.getName()).collect(Collectors.toList());
         RecipesToIngredients recipesToIngredients = new RecipesToIngredients(recipe);
         model.addAttribute("recipeToIngredient",recipesToIngredients);
         model.addAttribute("listNotContains",listNotContains);
@@ -135,13 +136,9 @@ public class MainController {
             recipesToIngredientsDao.updateCount(recipe, ingredient, recipeToIngredient.getCount());
         }
         else{
-            List<Ingredient> ingredientByPartOfName = ingredientDao.getByPartOfName(recipeToIngredient.getIngredient().getName());
-            if(ingredientByPartOfName==null) {
+            ingredient = ingredientDao.getByName(recipeToIngredient.getIngredient().getName());
+            if(ingredient==null) {
                 ingredient = ingredientDao.create(recipeToIngredient.getIngredient());
-            }
-            else
-            {
-                ingredient=ingredientByPartOfName.get(0);
             }
             recipesToIngredientsDao.addIngredientToRecipe(recipe,
                     new IngredientProperty(ingredient,recipeToIngredient.getCount()));

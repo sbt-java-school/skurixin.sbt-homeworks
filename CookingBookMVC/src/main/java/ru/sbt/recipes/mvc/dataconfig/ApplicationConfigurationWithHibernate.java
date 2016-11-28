@@ -2,6 +2,7 @@ package ru.sbt.recipes.mvc.dataconfig;
 
 //import org.hibernate.ejb.HibernatePersistence;
 
+import liquibase.integration.spring.SpringLiquibase;
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -40,7 +41,7 @@ public class ApplicationConfigurationWithHibernate {
     public DataSource dataSource() {
         DriverManagerDataSource managerDataSource = new DriverManagerDataSource();
         managerDataSource.setDriverClassName("org.h2.Driver");
-        managerDataSource.setUrl("jdbc:h2:./RecipesMVC/database/app");
+        managerDataSource.setUrl("jdbc:h2:./CookingBookMVC/database/app");
 
         return managerDataSource;
     }
@@ -77,16 +78,31 @@ public class ApplicationConfigurationWithHibernate {
     public JdbcTemplate jdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);
     }
+//
+//    @Bean
+//    public SpringLiquibase liquibase(DataSource dataSource) {
+//        SpringLiquibase liquibase = new SpringLiquibase();
+//
+//        liquibase.setDataSource(dataSource);
+//        liquibase.setChangeLog("classpath:liquibase.xml");
+//
+//        return liquibase;
+//    }
 
     private Properties hibernateProperties() {
         Properties properties = new Properties();
         properties.put("hibernate.dialect",
                 "org.hibernate.dialect.H2Dialect");
-        properties.put("hibernate.hbm2ddl.auto", "create-drop");
+//        properties.put("hibernate.hbm2ddl.auto", "create-drop");
 //        properties.put("hibernate.hbm2ddl.auto", "update");
         properties.put("hibernate.show_sql", "true");
-//        properties.put("hibernate.format_sql", "false");
+        properties.put("hibernate.format_sql", "true");
 //        properties.put("ejb.naming_strategy", "org.hibernate.cfg.ImprovedNamingStrategy");
+
+        properties.put("hibernate.connection.charSet","UTF-8");
+
+        properties.put("hibernate.connection.characterEncoding","UTF-8");
+
         return properties;
     }
 }

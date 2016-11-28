@@ -1,0 +1,306 @@
+2016-11-26 22:36:47 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 22:36:47 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 22:36:47 KRAT 2016]; root of context hierarchy
+2016-11-26 22:36:47 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class WebConfiguration]
+2016-11-26 22:36:47 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:36:48 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat Nov 26 22:36:47 KRAT 2016]; root of context hierarchy
+2016-11-26 22:36:48 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 1367 ms
+2016-11-26 22:36:48 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-11-26 22:36:48 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Nov 26 22:36:48 KRAT 2016]; parent: Root WebApplicationContext
+2016-11-26 22:36:48 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:36:48 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 46 ms
+2016-11-26 22:36:58 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:37:04 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/hello] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:37:48 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:37:51 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC//] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:38:23 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 22:38:23 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 22:38:23 KRAT 2016]; root of context hierarchy
+2016-11-26 22:38:23 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class WebConfiguration]
+2016-11-26 22:38:23 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:38:24 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat Nov 26 22:38:23 KRAT 2016]; root of context hierarchy
+2016-11-26 22:38:24 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 1375 ms
+2016-11-26 22:38:24 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-11-26 22:38:24 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Nov 26 22:38:24 KRAT 2016]; parent: Root WebApplicationContext
+2016-11-26 22:38:24 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:38:24 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 47 ms
+2016-11-26 22:38:29 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC//] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:38:32 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:38:39 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipe] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:39:32 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 22:39:32 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 22:39:32 KRAT 2016]; root of context hierarchy
+2016-11-26 22:39:33 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class WebConfiguration]
+2016-11-26 22:39:33 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:39:34 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat Nov 26 22:39:32 KRAT 2016]; root of context hierarchy
+2016-11-26 22:39:34 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 1347 ms
+2016-11-26 22:39:34 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-11-26 22:39:34 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Nov 26 22:39:34 KRAT 2016]; parent: Root WebApplicationContext
+2016-11-26 22:39:34 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:39:34 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 47 ms
+2016-11-26 22:39:39 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipe] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:39:40 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipe] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:40:07 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipe] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:41:40 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:41:55 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:42:03 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipe] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:42:08 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipes] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:51:37 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 22:51:37 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 22:51:37 KRAT 2016]; root of context hierarchy
+2016-11-26 22:51:37 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class WebConfiguration]
+2016-11-26 22:51:37 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:51:38 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat Nov 26 22:51:37 KRAT 2016]; root of context hierarchy
+2016-11-26 22:51:38 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 1306 ms
+2016-11-26 22:51:38 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-11-26 22:51:38 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Nov 26 22:51:38 KRAT 2016]; parent: Root WebApplicationContext
+2016-11-26 22:51:38 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:51:38 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 45 ms
+2016-11-26 22:51:44 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipes] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:51:46 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipe] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:54:34 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 22:54:34 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 22:54:34 KRAT 2016]; root of context hierarchy
+2016-11-26 22:54:34 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class WebConfiguration]
+2016-11-26 22:54:34 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:54:35 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat Nov 26 22:54:34 KRAT 2016]; root of context hierarchy
+2016-11-26 22:54:35 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 1261 ms
+2016-11-26 22:54:35 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-11-26 22:54:35 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Nov 26 22:54:35 KRAT 2016]; parent: Root WebApplicationContext
+2016-11-26 22:54:35 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:54:35 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 45 ms
+2016-11-26 22:54:42 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipe] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:54:46 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/recipeyuguy] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:54:51 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:54:54 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:56:41 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 22:56:41 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 22:56:41 KRAT 2016]; root of context hierarchy
+2016-11-26 22:56:41 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class WebConfiguration]
+2016-11-26 22:56:41 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:56:41 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'applicationConfigurationWithHibernate' of type [class ru.sbt.recipes.mvc.web.config.ApplicationConfigurationWithHibernate$$EnhancerBySpringCGLIB$$cbe9af73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-26 22:56:42 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2016-11-26 22:56:42 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [ru/sbt/recipes/mvc/config/ApplicationConfigurationWithHibernate.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+2016-11-26 22:56:42 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [ru/sbt/recipes/mvc/config/ApplicationConfigurationWithHibernate.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4937)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+	at org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager.obtainDefaultPersistenceUnitInfo(DefaultPersistenceUnitManager.java:668)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.determinePersistenceUnitInfo(LocalContainerEntityManagerFactoryBean.java:362)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:316)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579)
+	... 21 more
+2016-11-26 22:59:00 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 22:59:01 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 22:59:01 KRAT 2016]; root of context hierarchy
+2016-11-26 22:59:01 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class WebConfiguration]
+2016-11-26 22:59:01 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:59:02 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat Nov 26 22:59:01 KRAT 2016]; root of context hierarchy
+2016-11-26 22:59:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/hello/{name:.+}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView MainController.hello(java.lang.String)
+2016-11-26 22:59:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/],methods=[GET]}" onto public java.lang.String MainController.printWelcome(org.springframework.ui.ModelMap)
+2016-11-26 22:59:02 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 1313 ms
+2016-11-26 22:59:02 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-11-26 22:59:02 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Nov 26 22:59:02 KRAT 2016]; parent: Root WebApplicationContext
+2016-11-26 22:59:02 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 22:59:02 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 57 ms
+2016-11-26 22:59:15 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.css;jsessionid=6C0981984FDD67A4B3215586DF865953] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:15 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.css;jsessionid=6C0981984FDD67A4B3215586DF865953] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:15 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.js;jsessionid=6C0981984FDD67A4B3215586DF865953] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:15 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.js;jsessionid=6C0981984FDD67A4B3215586DF865953] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:15 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.js;jsessionid=6C0981984FDD67A4B3215586DF865953] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:15 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.js;jsessionid=6C0981984FDD67A4B3215586DF865953] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:27 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/hello] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:30 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.css] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:30 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.css] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:30 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.js] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:30 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.js] in DispatcherServlet with name 'dispatcher'
+2016-11-26 22:59:30 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.js] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:00:01 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/hello/] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:00:14 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.css] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:00:14 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.css] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:00:14 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.js] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:00:14 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.js] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:00:14 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.js] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:00:14 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.js] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:05:52 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 23:05:53 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 23:05:53 KRAT 2016]; root of context hierarchy
+2016-11-26 23:05:53 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class ru.sbt.recipes.WebConfiguration]
+2016-11-26 23:05:53 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 23:05:53 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'applicationConfigurationWithHibernate' of type [class ru.sbt.recipes.ApplicationConfigurationWithHibernate$$EnhancerBySpringCGLIB$$682f507d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-26 23:05:53 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2016-11-26 23:05:53 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [ru/sbt/recipes/mvc/config/ApplicationConfigurationWithHibernate.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+2016-11-26 23:05:53 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [ru/sbt/recipes/mvc/config/ApplicationConfigurationWithHibernate.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4937)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+	at org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager.obtainDefaultPersistenceUnitInfo(DefaultPersistenceUnitManager.java:668)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.determinePersistenceUnitInfo(LocalContainerEntityManagerFactoryBean.java:362)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:316)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579)
+	... 21 more
+2016-11-26 23:14:41 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 23:14:41 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 23:14:41 KRAT 2016]; root of context hierarchy
+2016-11-26 23:14:41 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class ru.sbt.recipes.WebConfiguration]
+2016-11-26 23:14:42 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 23:14:42 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'applicationConfigurationWithHibernate' of type [class ru.sbt.recipes.ApplicationConfigurationWithHibernate$$EnhancerBySpringCGLIB$$6ea24b69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-26 23:14:42 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2016-11-26 23:14:42 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [ru/sbt/recipes/mvc/config/ApplicationConfigurationWithHibernate.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+2016-11-26 23:14:42 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [ru/sbt/recipes/mvc/config/ApplicationConfigurationWithHibernate.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4937)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: No persistence units parsed from {classpath*:META-INF/persistence.xml}
+	at org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager.obtainDefaultPersistenceUnitInfo(DefaultPersistenceUnitManager.java:668)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.determinePersistenceUnitInfo(LocalContainerEntityManagerFactoryBean.java:362)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:316)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579)
+	... 21 more
+2016-11-26 23:52:56 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-26 23:52:56 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sat Nov 26 23:52:56 KRAT 2016]; root of context hierarchy
+2016-11-26 23:52:56 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class WebConfiguration]
+2016-11-26 23:52:57 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 23:52:57 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/],methods=[GET]}" onto public java.lang.String MainController.printWelcome(org.springframework.ui.ModelMap)
+2016-11-26 23:52:57 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/hello/{name:.+}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView MainController.hello(java.lang.String)
+2016-11-26 23:52:57 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sat Nov 26 23:52:56 KRAT 2016]; root of context hierarchy
+2016-11-26 23:52:58 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 1343 ms
+2016-11-26 23:52:58 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-11-26 23:52:58 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sat Nov 26 23:52:58 KRAT 2016]; parent: Root WebApplicationContext
+2016-11-26 23:52:58 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-26 23:52:58 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 62 ms
+2016-11-26 23:53:05 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.css] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:53:05 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.css] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:53:05 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/hello.js] in DispatcherServlet with name 'dispatcher'
+2016-11-26 23:53:05 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/RecipesMVC/resources/core/css/bootstrap.min.js] in DispatcherServlet with name 'dispatcher'
+2016-11-28 22:54:47 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-28 22:54:47 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Nov 28 22:54:47 KRAT 2016]; root of context hierarchy
+2016-11-28 22:54:48 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class ru.sbt.recipes.mvc.web.config.WebConfiguration,class ru.sbt.recipes.mvc.dataconfig.ApplicationConfigurationWithHibernate]
+2016-11-28 22:54:48 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'applicationConfigurationWithHibernate' of type [class ru.sbt.recipes.mvc.dataconfig.ApplicationConfigurationWithHibernate$$EnhancerBySpringCGLIB$$738d6fac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-28 22:54:48 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2016-11-28 22:54:48 INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-28 22:54:49 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-28 22:54:49 INFO  Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-28 22:54:49 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-11-28 22:54:49 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-11-28 22:54:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-28 22:54:49 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-11-28 22:54:50 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-28 22:54:50 INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-28 22:54:50 INFO  SchemaExport:344 - HHH000227: Running hbm2ddl schema export
+2016-11-28 22:54:50 INFO  SchemaExport:406 - HHH000230: Schema export complete
+2016-11-28 22:54:50 INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-11-28 22:54:51 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController': Unsatisfied dependency expressed through field 'ingredientDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ingredientServiceImpl': Unsatisfied dependency expressed through field 'errorManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean found for dependency [java.util.logging.ErrorManager]: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2016-11-28 22:54:51 INFO  LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-11-28 22:54:51 INFO  SchemaExport:344 - HHH000227: Running hbm2ddl schema export
+2016-11-28 22:54:51 INFO  SchemaExport:406 - HHH000230: Schema export complete
+2016-11-28 22:54:51 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController': Unsatisfied dependency expressed through field 'ingredientDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ingredientServiceImpl': Unsatisfied dependency expressed through field 'errorManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean found for dependency [java.util.logging.ErrorManager]: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:569)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4937)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ingredientServiceImpl': Unsatisfied dependency expressed through field 'errorManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean found for dependency [java.util.logging.ErrorManager]: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:569)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:207)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1056)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean found for dependency [java.util.logging.ErrorManager]: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1056)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566)
+	... 37 more
