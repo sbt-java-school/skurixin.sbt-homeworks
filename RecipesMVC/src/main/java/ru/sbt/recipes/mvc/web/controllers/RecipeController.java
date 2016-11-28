@@ -7,9 +7,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.sbt.recipes.mvc.entity.IngredientProperty;
+import ru.sbt.recipes.mvc.entity.Recipe;
 import ru.sbt.recipes.mvc.service.RecipeDao;
 import ru.sbt.recipes.mvc.service.RecipesToIngredientsDao;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
@@ -26,10 +28,27 @@ public class RecipeController {
 
     @RequestMapping(value = "")
     public String ingredientsForRecipe(ModelMap model,
-                                       @PathVariable("id") long recipe_id){
+                                       @PathVariable("id") Long recipe_id) {
         List<IngredientProperty> list = recipesToIngredientsDao.getIngredientsForRecipe(recipe_id);
-        model.put("ingredients",list);
+        model.put("recipe_id", recipe_id);
+        model.put("ingredients", list);
         return "recipe";
     }
 
+    @RequestMapping(value = "/delete")
+    public String deleteRecipe(@PathVariable("id") Long recipe_id) {
+        recipesToIngredientsDao.deleteAllByRecipe(recipe_id);
+        recipeDao.delete(recipe_id);
+        return "redirect:/recipes";
+    }
+
+    @RequestMapping(value = "/edit")
+    public String editRecipe(@PathVariable("id") Long recipe_id,
+                             Model model,
+                             HttpSession httpSession) {
+//        httpSession.setAttribute("recipe_id", recipe_id);
+        Recipe recipe = recipeDao.getRecipe(recipe_id);
+        model.addAttribute("recipeFORM",recipe);
+        return "create_recipe";
+    }
 }

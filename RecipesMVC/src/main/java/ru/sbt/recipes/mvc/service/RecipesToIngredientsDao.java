@@ -19,5 +19,7 @@ public interface RecipesToIngredientsDao {
 
     List<IngredientProperty> getIngredientsForRecipe(Recipe recipe);
 
-    List<IngredientProperty> getIngredientsForRecipe(long recipe_id);
+    List<IngredientProperty> getIngredientsForRecipe(Long recipe_id);
+
+    int deleteAllByRecipe(Long recipe_id);
 }

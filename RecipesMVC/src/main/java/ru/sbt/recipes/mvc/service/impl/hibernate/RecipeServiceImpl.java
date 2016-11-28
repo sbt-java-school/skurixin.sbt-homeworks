@@ -39,7 +39,8 @@ public class RecipeServiceImpl implements RecipeDao {
 
     @Override
     public Recipe getRecipe(Long id) {
-        return recipeRepository.getOne(id);
+        Recipe one = recipeRepository.getOne(id);
+        return one;
     }
 
     @Override

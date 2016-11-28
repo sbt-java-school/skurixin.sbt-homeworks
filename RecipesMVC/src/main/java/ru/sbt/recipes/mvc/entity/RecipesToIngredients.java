@@ -12,7 +12,7 @@ public class RecipesToIngredients {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "recipe_id")
@@ -25,7 +25,7 @@ public class RecipesToIngredients {
     @Transient
     private IngredientProperty ingredientProperty;
 
-    private long count;
+    private Long count;
 
     protected RecipesToIngredients(){}
 
@@ -34,7 +34,7 @@ public class RecipesToIngredients {
         this.ingredientProperty = ingredientProperty;
     }
 
-    public RecipesToIngredients(Recipe recipe, Ingredient ingredient, long count) {
+    public RecipesToIngredients(Recipe recipe, Ingredient ingredient, Long count) {
         this.recipe = recipe;
         this.ingredient = ingredient;
         this.count = count;
@@ -61,11 +61,11 @@ public class RecipesToIngredients {
         this.ingredientProperty = ingredientProperty;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -77,11 +77,11 @@ public class RecipesToIngredients {
         this.ingredient = ingredient;
     }
 
-    public long getCount() {
+    public Long getCount() {
         return count;
     }
 
-    public void setCount(long count) {
+    public void setCount(Long count) {
         this.count = count;
     }
 

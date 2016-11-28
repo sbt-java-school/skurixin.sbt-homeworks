@@ -9,6 +9,7 @@ import ru.sbt.recipes.mvc.entity.RecipesToIngredients;
 import ru.sbt.recipes.mvc.repository.RecipesToIngredientsRepository;
 import ru.sbt.recipes.mvc.service.RecipesToIngredientsDao;
 
+import javax.persistence.EntityManager;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,6 +24,8 @@ public class RecipesToIngredientsServiceImpl implements RecipesToIngredientsDao 
     @Autowired
     private RecipesToIngredientsRepository recipesToIngredientsRepository;
 
+    @Autowired
+    private EntityManager entityManager;
 
     @Override
     public void addIngredientToRecipe(Recipe recipe, IngredientProperty ingredientProperty) {
@@ -71,7 +74,14 @@ public class RecipesToIngredientsServiceImpl implements RecipesToIngredientsDao 
     }
 
     @Override
-    public List<IngredientProperty> getIngredientsForRecipe(long recipe_id) {
+    public List<IngredientProperty> getIngredientsForRecipe(Long recipe_id) {
         return getIngredientsForRecipe(new Recipe(recipe_id, "name"));
+    }
+
+    @Override
+    public int deleteAllByRecipe(Long recipe_id) {
+        List<RecipesToIngredients> list = recipesToIngredientsRepository.findByRecipe(new Recipe(recipe_id, "temp"));
+        list.stream().forEach(recipesToIngredientsRepository::delete);
+        return 1;
     }
 }
