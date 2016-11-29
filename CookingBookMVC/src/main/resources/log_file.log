@@ -304,3 +304,60 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1056)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:566)
 	... 37 more
+2016-11-29 16:37:56 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-11-29 16:37:56 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Tue Nov 29 16:37:56 KRAT 2016]; root of context hierarchy
+2016-11-29 16:37:56 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class ru.sbt.recipes.mvc.web.config.WebConfiguration,class ru.sbt.recipes.mvc.dataconfig.ApplicationConfigurationWithHibernate]
+2016-11-29 16:37:57 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'applicationConfigurationWithHibernate' of type [class ru.sbt.recipes.mvc.dataconfig.ApplicationConfigurationWithHibernate$$EnhancerBySpringCGLIB$$dd1fdd0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-29 16:37:57 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.h2.Driver
+2016-11-29 16:37:57 INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-29 16:37:57 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-29 16:37:57 INFO  Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-29 16:37:57 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-11-29 16:37:57 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-11-29 16:37:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-29 16:37:58 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-11-29 16:37:58 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ru.sbt.recipes.mvc.dataconfig.ApplicationConfigurationWithHibernate: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.Table.indexes()[Ljavax/persistence/Index;
+2016-11-29 16:37:58 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ru.sbt.recipes.mvc.dataconfig.ApplicationConfigurationWithHibernate: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.Table.indexes()[Ljavax/persistence/Index;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4937)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoSuchMethodError: javax.persistence.Table.indexes()[Ljavax/persistence/Index;
+	at org.hibernate.cfg.annotations.EntityBinder.processComplementaryTableDefinitions(EntityBinder.java:973)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:824)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579)
+	... 21 more

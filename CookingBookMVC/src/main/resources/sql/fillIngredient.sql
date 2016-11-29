@@ -1,4 +1,4 @@
-INSERT INTO Ingredient VALUES
+INSERT INTO Ingredient(id,name) VALUES
   (1, 'morkov'),
   (2, 'svekla'),
   (3, 'look'),

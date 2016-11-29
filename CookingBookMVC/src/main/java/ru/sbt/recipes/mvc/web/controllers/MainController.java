@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -66,7 +67,7 @@ public class MainController {
 
 
     @RequestMapping(value = "", method = RequestMethod.POST)
-    public String createRecipeFromForm(@ModelAttribute("recipeFORM") Recipe recipe) {
+    public String createRecipeFromForm(@ModelAttribute("recipeFORM") @Validated Recipe recipe) {
         if (recipe.getId() != null) {
             recipeDao.update(recipe);
         } else {

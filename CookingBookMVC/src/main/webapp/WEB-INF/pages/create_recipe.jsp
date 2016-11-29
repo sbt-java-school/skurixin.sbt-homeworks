@@ -9,6 +9,7 @@
     <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>
     <form:hidden path="id"/>
     <form:input path="name"/>
+    <form:errors path="name"/>
     <form:input path="description"/>
     <button type="submit">Add</button>
 </form:form>

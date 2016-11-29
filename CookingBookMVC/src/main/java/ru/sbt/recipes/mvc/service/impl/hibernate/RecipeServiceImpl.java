@@ -54,8 +54,8 @@ public class RecipeServiceImpl implements RecipeDao {
 
     @Override
     public List<Recipe> getAll() {
-//        return recipeRepository.findAll();
-        return entityManager.createQuery("select i from Recipe i").getResultList();
+        return recipeRepository.findAll();
+//        return entityManager.createQuery("select i from Recipe i").getResultList();
     }
 
     @Override

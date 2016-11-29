@@ -1,6 +1,6 @@
 package ru.sbt.recipes.mvc.dataconfig;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -24,12 +24,12 @@ public class TablesInitializerImpl implements TablesInitializer {
 
     @Override
     public void executeScript(String fileName) {
-        try {
-            String script = FileUtils.readFileToString(new File(fileName));
+//        try {
+            String script="asdfaf"/* = FileUtils.readFileToString(new File(fileName))*/;
             jdbcTemplate.execute(script);
-        } catch (IOException e) {
-            LOGGER.error("Ошибка создания таблиц");
-        }
+//        } catch (IOException e) {
+//            LOGGER.error("Ошибка создания таблиц");
+//        }
     }
 
     @Override

@@ -1,4 +1,4 @@
-INSERT into recipe_ingredient VALUES
+INSERT into recipe_ingredient(id,recipe_id,ingredient_id,count) VALUES
   (1,1,1,3),
   (2,1,2,1),
   (3,1,3,3),
