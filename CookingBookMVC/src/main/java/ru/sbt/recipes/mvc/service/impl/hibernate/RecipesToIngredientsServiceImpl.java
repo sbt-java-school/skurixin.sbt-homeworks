@@ -29,9 +29,16 @@ public class RecipesToIngredientsServiceImpl implements RecipesToIngredientsDao 
     private EntityManager entityManager;
 
     @Override
-    public void addIngredientToRecipe(Recipe recipe, IngredientProperty ingredientProperty) {
-        recipesToIngredientsRepository.saveAndFlush(
-                new RecipesToIngredients(recipe, ingredientProperty.getIngredient(), ingredientProperty.getCount()));
+    public boolean addIngredientToRecipe(Recipe recipe, IngredientProperty ingredientProperty) {
+        RecipesToIngredients finded = recipesToIngredientsRepository.findByRecipeAndIngredient(recipe, ingredientProperty.getIngredient());
+        if(finded==null) {
+            recipesToIngredientsRepository.saveAndFlush(
+                    new RecipesToIngredients(recipe, ingredientProperty.getIngredient(), ingredientProperty.getCount()));
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
@@ -52,6 +59,9 @@ public class RecipesToIngredientsServiceImpl implements RecipesToIngredientsDao 
 
     @Override
     public RecipesToIngredients updateCount(Recipe recipe, Ingredient ingredient, Long i_count) {
+        if(i_count<=0){
+            return null;
+        }
         RecipesToIngredients recipesToIngredients = recipesToIngredientsRepository.findByRecipeAndIngredient(recipe, ingredient);
         recipesToIngredients.setCount(i_count);
         return recipesToIngredientsRepository.saveAndFlush(recipesToIngredients);

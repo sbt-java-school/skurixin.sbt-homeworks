@@ -7,6 +7,8 @@ import java.util.List;
 public interface RecipeDao {
     Recipe create(Recipe recipe);
 
+    int createIfNotExist(Recipe recipe);
+
     void delete(Long id);
 
     Recipe edit(Long idSource, Recipe values);
@@ -18,4 +20,6 @@ public interface RecipeDao {
     List<Recipe> getAll();
 
     Recipe update(Recipe recipe);
+
+    int updateIfNotExist(Recipe recipe);
 }

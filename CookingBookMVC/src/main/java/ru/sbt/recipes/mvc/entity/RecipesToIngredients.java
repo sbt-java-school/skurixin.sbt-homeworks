@@ -1,6 +1,9 @@
 package ru.sbt.recipes.mvc.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by скурихин on 14.11.2016.
@@ -15,19 +18,22 @@ public class RecipesToIngredients {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "recipe_id")
+    @JoinColumn(name = "recipe_id",nullable = false)
     private Recipe recipe;
 
     @ManyToOne
-    @JoinColumn(name = "ingredient_id")
+    @JoinColumn(name = "ingredient_id",nullable = false)
     private Ingredient ingredient;
 
     @Transient
     private IngredientProperty ingredientProperty;
 
+//    @Min(value = 1,message ="Колличество должно быть больше 0")
+//    @Min(1)
     private Long count;
 
-    protected RecipesToIngredients(){}
+    protected RecipesToIngredients() {
+    }
 
     public RecipesToIngredients(Recipe recipe) {
         this.recipe = recipe;
@@ -106,7 +112,7 @@ public class RecipesToIngredients {
 
     @Override
     public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
+        int result = (int) ((id != null ? id : 0) ^ ((id != null ? id : 0) >>> 32));
         result = 31 * result + (recipe != null ? recipe.hashCode() : 0);
         result = 31 * result + (ingredient != null ? ingredient.hashCode() : 0);
         result = 31 * result + (ingredientProperty != null ? ingredientProperty.hashCode() : 0);

@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=utf8" pageEncoding="utf8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@ page isELIgnored="false" %>
@@ -6,7 +7,7 @@
 <body>
 
 <a href="/recipes/add">
-    Add recipe
+    Добавить рецепт
 </a>
 <br>
 <%--<sf:form method="POST" modelAttribute="recipe">--%>
@@ -21,10 +22,10 @@
                     ${el.name}
             </a>
             <a href="/recipes/${el.id}/delete">
-                delete
+                Удалить
             </a>
             <a href="/recipes/${el.id}/edit">
-                edit name
+                Изменить
             </a>
         </li>
     </c:forEach>

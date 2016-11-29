@@ -1,6 +1,7 @@
 package ru.sbt.recipes.mvc.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 /**
@@ -13,6 +14,8 @@ public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Size(min = 1,message = "Введите название ингредиента")
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 

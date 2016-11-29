@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.annotation.Validated;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +19,7 @@ import ru.sbt.recipes.mvc.service.RecipeDao;
 import ru.sbt.recipes.mvc.service.RecipesToIngredientsDao;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -58,6 +59,7 @@ public class MainController {
         return "redirect:/recipes";
     }
 
+    //start page
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String index(ModelMap model) {
         List<Recipe> all = recipeDao.getAll();
@@ -65,17 +67,7 @@ public class MainController {
         return "index";
     }
 
-
-    @RequestMapping(value = "", method = RequestMethod.POST)
-    public String createRecipeFromForm(@ModelAttribute("recipeFORM") @Validated Recipe recipe) {
-        if (recipe.getId() != null) {
-            recipeDao.update(recipe);
-        } else {
-            recipeDao.create(recipe);
-        }
-        return "redirect:/recipes";
-    }
-
+    //создание рецепта
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String showFormAddRecipe(Model model) {
         Recipe recipe = new Recipe();
@@ -86,27 +78,39 @@ public class MainController {
         return "create_recipe";
     }
 
+    @RequestMapping(value = "", method = RequestMethod.POST)
+    public String createRecipeFromForm(@ModelAttribute("recipeFORM") @Valid Recipe recipe,
+                                       BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "create_recipe";
+        }
+        int result = 0;
+        if (recipe.getId() != null) {
+            result = recipeDao.updateIfNotExist(recipe);
+        } else {
+            result = recipeDao.createIfNotExist(recipe);
+        }
+        if (result == 0) {
+            bindingResult.rejectValue("name", "error.recipeFORM", "Рецепт с таким именем уже есть!");
+        }
+        if (bindingResult.hasErrors()) {
+            return "create_recipe";
+        }
+        return "redirect:/recipes";
+    }
+
     @RequestMapping(value = "{id}")
     public String ingredientsForRecipe(Model model,
                                        @PathVariable("id") Long recipe_id,
                                        HttpSession httpSession) {
         Recipe recipe = recipeDao.getRecipe(recipe_id);
+        RecipesToIngredients relation = new RecipesToIngredients(recipe);
         model.addAttribute("recipeCurrent", recipe);
-        List<IngredientProperty> list = recipesToIngredientsDao.getIngredientsForRecipe(recipe_id);
-        model.addAttribute("ingredients", list);
+        model.addAttribute("recipeToIngredient", relation);
 
-        List<Ingredient> ingredientsAll = ingredientDao.getAll();
+        prepareFormFields(model, recipe_id);
 
-        ArrayList<Ingredient> ingredients = new ArrayList<>();
-        list.stream().forEach(p->ingredients.add(p.getIngredient()));
-        List<Ingredient> listNotContains = ingredientsAll.stream()
-                .filter(p -> ingredients.contains(p) == false).collect(Collectors.toList());
-
-        RecipesToIngredients recipesToIngredients = new RecipesToIngredients(recipe);
-        model.addAttribute("recipeToIngredient",recipesToIngredients);
-        model.addAttribute("listNotContains",listNotContains);
-
-        httpSession.setAttribute("recipeCurrent",recipe);
+        httpSession.setAttribute("recipeCurrent", recipe);
         return "recipe";
     }
 
@@ -127,23 +131,64 @@ public class MainController {
     }
 
     @RequestMapping(value = "{id}", method = RequestMethod.POST)
-    public String saveRecipeToIngredient(
-            Model model,
-            @ModelAttribute("recipeToIngredient") RecipesToIngredients recipeToIngredient,
-            HttpSession httpSession) {
+    public String saveRecipeToIngredient(Model model,
+                                         @ModelAttribute("recipeToIngredient") @Valid RecipesToIngredients recipeToIngredient,
+                                         HttpSession httpSession,
+                                         BindingResult bindingResult) {
         Recipe recipe = (Recipe) httpSession.getAttribute("recipeCurrent");
-        Ingredient ingredient = (Ingredient) httpSession.getAttribute("ingredient");
-        if (recipeToIngredient.getId() != null) {
-            recipesToIngredientsDao.updateCount(recipe, ingredient, recipeToIngredient.getCount());
+        if (recipeToIngredient.getCount() <= 0) {
+            prepareFormFields(model, recipe.getId());
+            recipeToIngredient.setIngredient(null);
+            recipeToIngredient.setCount(1L);
+            bindingResult.rejectValue("count", "error.recipeToIngredient", "Колличество должно быть больше 0");
+            return "recipe";
         }
-        else{
+        if ("".equals(recipeToIngredient.getIngredient().getName())) {
+            prepareFormFields(model, recipe.getId());
+            recipeToIngredient.setIngredient(null);
+            bindingResult.rejectValue("ingredient", "error.recipeToIngredient", "Введите название ингредиента");
+            return "recipe";
+        }
+        if (bindingResult.hasErrors()) {
+            return "recipe";
+        }
+
+        Ingredient ingredient;
+        if (recipeToIngredient.getId() != null) {
+            ingredient = (Ingredient) httpSession.getAttribute("ingredient");
+            RecipesToIngredients resultUpdate = recipesToIngredientsDao.updateCount(recipe, ingredient, recipeToIngredient.getCount());
+        } else {
             ingredient = ingredientDao.getByName(recipeToIngredient.getIngredient().getName());
-            if(ingredient==null) {
+            if (ingredient == null) {
                 ingredient = ingredientDao.create(recipeToIngredient.getIngredient());
             }
-            recipesToIngredientsDao.addIngredientToRecipe(recipe,
-                    new IngredientProperty(ingredient,recipeToIngredient.getCount()));
+
+            boolean resultUpdate = recipesToIngredientsDao.addIngredientToRecipe(recipe,
+                    new IngredientProperty(ingredient, recipeToIngredient.getCount()));
+            if (!resultUpdate) {
+                prepareFormFields(model, recipe.getId());
+                recipeToIngredient.setIngredient(null);
+                bindingResult.rejectValue("ingredient", "error.recipeToIngredient", "Данный ингредиент уже добавлен в рецепт");
+            }
+        }
+        if (bindingResult.hasErrors()) {
+            return "recipe";
         }
         return "redirect:/recipes/" + recipe.getId();
+    }
+
+    private void prepareFormFields(Model model, Long recipe_id) {
+        List<IngredientProperty> ingredientsExistingInRecipe = recipesToIngredientsDao.getIngredientsForRecipe(recipe_id);
+        model.addAttribute("ingredientsExistingInRecipe", ingredientsExistingInRecipe);
+        List<Ingredient> ingredientsNotContainedInRecipe = getIngredientsNotContainedInRecipe(ingredientsExistingInRecipe);
+        model.addAttribute("ingredientsNotContainedInRecipe", ingredientsNotContainedInRecipe);
+    }
+
+    private List<Ingredient> getIngredientsNotContainedInRecipe(List<IngredientProperty> ingredientsExistingInRecipe) {
+        List<Ingredient> ingredientsAll = ingredientDao.getAll();
+        ArrayList<Ingredient> ingredients = new ArrayList<>();
+        ingredientsExistingInRecipe.stream().forEach(p -> ingredients.add(p.getIngredient()));
+        return ingredientsAll.stream()
+                .filter(p -> ingredients.contains(p) == false).collect(Collectors.toList());
     }
 }

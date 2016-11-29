@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface RecipesToIngredientsDao {
-    void addIngredientToRecipe(Recipe recipe, IngredientProperty ingredientProperty);
+    boolean addIngredientToRecipe(Recipe recipe, IngredientProperty ingredientProperty);
 
     Map<Recipe, List<IngredientProperty>> getCookingBook();
 

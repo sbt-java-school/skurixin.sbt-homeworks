@@ -97,9 +97,9 @@ public class ApplicationConfigurationWithHibernate {
         properties.put("hibernate.format_sql", "true");
 //        properties.put("ejb.naming_strategy", "org.hibernate.cfg.ImprovedNamingStrategy");
 
-//        properties.put("hibernate.connection.charSet","UTF-8");
-//
-//        properties.put("hibernate.connection.characterEncoding","UTF-8");
+        properties.put("hibernate.connection.charSet","UTF-8");
+
+        properties.put("hibernate.connection.characterEncoding","UTF-8");
 
         return properties;
     }
