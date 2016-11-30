@@ -23,7 +23,7 @@ public class IngredientServiceImpl implements IngredientDao {
     private EntityManager entityManager;
 
     @Override
-    public Ingredient edit(Long idSource, Ingredient ingredient) {
+    public Ingredient edit(Ingredient ingredient) {
         return ingredientRepository.saveAndFlush(ingredient);
     }
 
@@ -34,7 +34,8 @@ public class IngredientServiceImpl implements IngredientDao {
 
     @Override
     public Ingredient get(Long id) {
-        return ingredientRepository.getOne(id);
+        Ingredient ingredient = entityManager.find(Ingredient.class, id);
+        return ingredient;
     }
 
     @Override

@@ -5,8 +5,11 @@
 <%@ page isELIgnored="false" %>
 
 <html>
-    <jsp:include page="fragments/header.jsp"/>
 
+<head>
+    <title>Изменить рецепт</title>
+    <jsp:include page="fragments/header.jsp"/>
+</head>
 <body>
 <form:form modelAttribute="recipeFORM" method="post" action="/recipes" autocomplete="off">
     <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>

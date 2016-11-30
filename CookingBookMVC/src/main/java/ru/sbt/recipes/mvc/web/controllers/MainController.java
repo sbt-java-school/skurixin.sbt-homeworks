@@ -75,14 +75,14 @@ public class MainController {
         recipe.setDescription("defaultDescription");
 
         model.addAttribute("recipeFORM", recipe);
-        return "create_recipe";
+        return "create_edit_recipe";
     }
 
     @RequestMapping(value = "", method = RequestMethod.POST)
     public String createRecipeFromForm(@ModelAttribute("recipeFORM") @Valid Recipe recipe,
                                        BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return "create_recipe";
+            return "create_edit_recipe";
         }
         int result = 0;
         if (recipe.getId() != null) {
@@ -94,7 +94,7 @@ public class MainController {
             bindingResult.rejectValue("name", "error.recipeFORM", "Рецепт с таким именем уже есть!");
         }
         if (bindingResult.hasErrors()) {
-            return "create_recipe";
+            return "create_edit_recipe";
         }
         return "redirect:/recipes";
     }
@@ -127,7 +127,7 @@ public class MainController {
                              HttpSession httpSession) {
         Recipe recipe = recipeDao.getRecipe(recipe_id);
         model.addAttribute("recipeFORM", recipe);
-        return "create_recipe";
+        return "create_edit_recipe";
     }
 
     @RequestMapping(value = "{id}", method = RequestMethod.POST)

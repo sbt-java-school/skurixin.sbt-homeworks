@@ -13,7 +13,7 @@ public interface IngredientDao {
 
     void delete(Long id);
 
-    Ingredient edit(Long idSource, Ingredient ingredient);
+    Ingredient edit(Ingredient ingredient);
 
     List<Ingredient> getByPartOfName(String name);
 

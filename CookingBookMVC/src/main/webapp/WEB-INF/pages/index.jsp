@@ -4,6 +4,10 @@
 <%@ page isELIgnored="false" %>
 
 <html>
+<head>
+    <title>Главная страница</title>
+    <jsp:include page="fragments/header.jsp"/>
+</head>
 <body>
 
 <a href="/recipes/add">

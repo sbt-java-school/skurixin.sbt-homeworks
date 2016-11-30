@@ -6,8 +6,10 @@
 <%@ page isELIgnored="false" %>
 
 <html>
-<jsp:include page="fragments/header.jsp"/>
-
+<head>
+    <title>${recipeCurrent.name} рецепт</title>
+    <jsp:include page="fragments/header.jsp"/>
+</head>
 <body>
 
 <span>${recipeCurrent.name}</span>
@@ -23,12 +25,16 @@
                 ${instance.ingredient.name} - ${instance.count}
             </span>
 
+            <a href="/recipes/ingredient/${instance.ingredient.id}/rename">
+                Переименовать
+            </a>
+
             <a href="/recipes/${recipeCurrent.id}/ingredient/${instance.ingredient.id}/edit">
-                edit count
+                Изменить количество
             </a>
 
             <a href="/recipes/${recipeCurrent.id}/ingredient/${instance.ingredient.id}/delete">
-                delete
+                Удалить связь
             </a>
         </li>
     </c:forEach>

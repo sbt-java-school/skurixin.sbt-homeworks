@@ -5,8 +5,11 @@
 <%@ page isELIgnored="false" %>
 
 <html>
-<jsp:include page="fragments/header.jsp"/>
 
+<head>
+    <title>Изменить количество</title>
+    <jsp:include page="fragments/header.jsp"/>
+</head>
 <body>
 <span>
     Print count of ${recipeToIngredient.ingredient.name} for ${recipeToIngredient.recipe.name}
