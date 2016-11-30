@@ -15,7 +15,7 @@ public class Ingredient {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(min = 1,message = "Введите название ингредиента")
+    @Size(min = 1, message = "Введите название ингредиента")
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 

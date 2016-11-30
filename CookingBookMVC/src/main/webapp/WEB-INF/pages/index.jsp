@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf8" pageEncoding="utf8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page isELIgnored="false" %>
 
 <html>
@@ -13,13 +14,17 @@
 <a href="/recipes/add">
     Добавить рецепт
 </a>
+
+<form method="post" action="/recipes">
+    <span>Поиск рецепта</span><br>
+    <input name="recipeName" type="text" id="recipeName" value="" ><br>
+    <input type="submit"><br>
+</form>
+
 <br>
-<%--<sf:form method="POST" modelAttribute="recipe">--%>
-    <%--<sf:input path="name"/>--%>
-    <%--<sf:input path="description"/>--%>
-<%--</sf:form>--%>
 
 <ul>
+    <h3>${searchMessage}</h3><br>
     <c:forEach var="el" items="${list}">
         <li>
             <a href="/recipes/${el.id}">

@@ -31,12 +31,11 @@ public class RecipesToIngredientsServiceImpl implements RecipesToIngredientsDao 
     @Override
     public boolean addIngredientToRecipe(Recipe recipe, IngredientProperty ingredientProperty) {
         RecipesToIngredients finded = recipesToIngredientsRepository.findByRecipeAndIngredient(recipe, ingredientProperty.getIngredient());
-        if(finded==null) {
+        if (finded == null) {
             recipesToIngredientsRepository.saveAndFlush(
                     new RecipesToIngredients(recipe, ingredientProperty.getIngredient(), ingredientProperty.getCount()));
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
@@ -59,7 +58,7 @@ public class RecipesToIngredientsServiceImpl implements RecipesToIngredientsDao 
 
     @Override
     public RecipesToIngredients updateCount(Recipe recipe, Ingredient ingredient, Long i_count) {
-        if(i_count<=0){
+        if (i_count <= 0) {
             return null;
         }
         RecipesToIngredients recipesToIngredients = recipesToIngredientsRepository.findByRecipeAndIngredient(recipe, ingredient);

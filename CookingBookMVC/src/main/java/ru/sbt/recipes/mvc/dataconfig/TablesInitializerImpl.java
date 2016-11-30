@@ -1,13 +1,11 @@
 package ru.sbt.recipes.mvc.dataconfig;
 
 //import org.apache.commons.io.FileUtils;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-
-import java.io.File;
-import java.io.IOException;
 
 /**
  * Created by скурихин on 14.11.2016.
@@ -25,8 +23,8 @@ public class TablesInitializerImpl implements TablesInitializer {
     @Override
     public void executeScript(String fileName) {
 //        try {
-            String script="asdfaf"/* = FileUtils.readFileToString(new File(fileName))*/;
-            jdbcTemplate.execute(script);
+        String script = "asdfaf"/* = FileUtils.readFileToString(new File(fileName))*/;
+        jdbcTemplate.execute(script);
 //        } catch (IOException e) {
 //            LOGGER.error("Ошибка создания таблиц");
 //        }

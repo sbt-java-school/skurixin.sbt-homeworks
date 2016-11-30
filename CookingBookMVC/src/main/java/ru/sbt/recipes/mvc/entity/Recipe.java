@@ -1,7 +1,6 @@
 package ru.sbt.recipes.mvc.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.List;
 
@@ -15,15 +14,16 @@ public class Recipe {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(min = 1,message = "Введите название рецепта")
-    @Column(name = "name",nullable = false,unique = true)
+    @Size(min = 1, message = "Введите название рецепта")
+    @Column(name = "name", nullable = false, unique = true)
     private String name;
     private String description;
 
     @OneToMany(mappedBy = "recipe", fetch = FetchType.EAGER)
     List<RecipesToIngredients> ingredients;
 
-    public Recipe(){}
+    public Recipe() {
+    }
 
     public Recipe(String name) {
         this.name = name;

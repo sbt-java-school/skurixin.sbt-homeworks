@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import ru.sbt.recipes.mvc.entity.Ingredient;
 import ru.sbt.recipes.mvc.entity.Recipe;
 import ru.sbt.recipes.mvc.service.IngredientDao;
-import ru.sbt.recipes.mvc.service.RecipeDao;
-import ru.sbt.recipes.mvc.service.RecipesToIngredientsDao;
 
 import javax.servlet.http.HttpSession;
 
@@ -20,19 +18,14 @@ import javax.servlet.http.HttpSession;
  * Created by скурихин on 27.11.2016.
  */
 @Controller
-//@RequestMapping(value = "/recipe/{id}")
+@RequestMapping(value = "/recipes/ingredient/{id_ingredient}")
 public class IngredientController {
-    @Autowired
-    private RecipeDao recipeDao;
 
     @Autowired
     private IngredientDao ingredientDao;
 
-    @Autowired
-    private RecipesToIngredientsDao recipesToIngredientsDao;
-
     //GET запрос переименования рецепта
-    @RequestMapping(value = "/recipes/ingredient/{id_ingredient}/rename")
+    @RequestMapping(value = "/rename")
     public String renameIngredientGET(Model model,
                                       @PathVariable("id_ingredient") Long id_ingredient) {
         Ingredient ingredient = ingredientDao.get(id_ingredient);
@@ -41,7 +34,7 @@ public class IngredientController {
     }
 
     //POST запрос переименования рецепта
-    @RequestMapping(value = "/recipes/ingredient/{id_ingredient}/rename", method = RequestMethod.POST)
+    @RequestMapping(value = "/rename", method = RequestMethod.POST)
     public String renameIngredientPOST(Model model,
                                        @PathVariable("id_ingredient") Long id_ingredient,
                                        @ModelAttribute("ingredientFORM") Ingredient ingredient,

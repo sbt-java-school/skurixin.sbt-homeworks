@@ -1,9 +1,6 @@
 package ru.sbt.recipes.mvc.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 /**
  * Created by скурихин on 14.11.2016.
@@ -18,17 +15,17 @@ public class RecipesToIngredients {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "recipe_id",nullable = false)
+    @JoinColumn(name = "recipe_id", nullable = false)
     private Recipe recipe;
 
     @ManyToOne
-    @JoinColumn(name = "ingredient_id",nullable = false)
+    @JoinColumn(name = "ingredient_id", nullable = false)
     private Ingredient ingredient;
 
     @Transient
     private IngredientProperty ingredientProperty;
 
-//    @Min(value = 1,message ="Колличество должно быть больше 0")
+    //    @Min(value = 1,message ="Колличество должно быть больше 0")
 //    @Min(1)
     private Long count;
 

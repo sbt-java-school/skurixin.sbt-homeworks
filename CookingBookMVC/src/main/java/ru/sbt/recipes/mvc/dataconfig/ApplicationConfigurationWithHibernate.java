@@ -2,16 +2,12 @@ package ru.sbt.recipes.mvc.dataconfig;
 
 //import org.hibernate.ejb.HibernatePersistence;
 
-import liquibase.integration.spring.SpringLiquibase;
-//import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -19,9 +15,10 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
+
+//import org.hibernate.jpa.HibernatePersistenceProvider;
 
 @Configuration
 @ComponentScan(basePackages = {"ru.sbt.recipes.mvc.service",
@@ -97,9 +94,9 @@ public class ApplicationConfigurationWithHibernate {
         properties.put("hibernate.format_sql", "true");
 //        properties.put("ejb.naming_strategy", "org.hibernate.cfg.ImprovedNamingStrategy");
 
-        properties.put("hibernate.connection.charSet","UTF-8");
+        properties.put("hibernate.connection.charSet", "UTF-8");
 
-        properties.put("hibernate.connection.characterEncoding","UTF-8");
+        properties.put("hibernate.connection.characterEncoding", "UTF-8");
 
         return properties;
     }

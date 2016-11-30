@@ -3,6 +3,7 @@ package ru.sbt.recipes.mvc.web.config;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 import ru.sbt.recipes.mvc.dataconfig.ApplicationConfigurationWithHibernate;
+
 import javax.servlet.Filter;
 
 public class SpringAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {

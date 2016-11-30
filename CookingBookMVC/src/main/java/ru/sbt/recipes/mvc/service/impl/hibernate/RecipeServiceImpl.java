@@ -9,7 +9,6 @@ import ru.sbt.recipes.mvc.repository.RecipeRepository;
 import ru.sbt.recipes.mvc.service.RecipeDao;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import java.util.List;
 
 
@@ -47,7 +46,7 @@ public class RecipeServiceImpl implements RecipeDao {
 //        int update = jdbcTemplate.update("insert into recipe(name)" +
 //                "select distinct " + name + " from recipe r1 where not exist (select r2.name from recipe r2 where r2.name=\"+name+\")");
         Recipe byName = recipeRepository.findByName(recipe.getName());
-        if(byName==null){
+        if (byName == null) {
             entityManager.persist(recipe);
             return 1;
         }
@@ -86,7 +85,7 @@ public class RecipeServiceImpl implements RecipeDao {
     @Override
     public int updateIfNotExist(Recipe recipe) {
         Recipe byName = recipeRepository.findByName(recipe.getName());
-        if(byName==null){
+        if (byName == null) {
             entityManager.merge(recipe);
             return 1;
         }

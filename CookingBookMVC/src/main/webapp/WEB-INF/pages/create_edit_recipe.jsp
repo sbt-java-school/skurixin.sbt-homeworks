@@ -11,7 +11,7 @@
     <jsp:include page="fragments/header.jsp"/>
 </head>
 <body>
-<form:form modelAttribute="recipeFORM" method="post" action="/recipes" autocomplete="off">
+<form:form modelAttribute="recipeFORM" method="post" action="/recipes/edit" autocomplete="off">
     <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>
     <form:hidden path="id"/>
     <form:input path="name" autocomplete="off"/>
