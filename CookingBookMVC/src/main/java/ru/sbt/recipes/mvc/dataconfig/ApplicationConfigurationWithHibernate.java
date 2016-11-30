@@ -2,6 +2,7 @@ package ru.sbt.recipes.mvc.dataconfig;
 
 //import org.hibernate.ejb.HibernatePersistence;
 
+import liquibase.integration.spring.SpringLiquibase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -74,15 +75,15 @@ public class ApplicationConfigurationWithHibernate {
         return new JdbcTemplate(dataSource);
     }
 
-//    @Bean
-//    public SpringLiquibase liquibase(DataSource dataSource) {
-//        SpringLiquibase liquibase = new SpringLiquibase();
-//
-//        liquibase.setDataSource(dataSource);
-//        liquibase.setChangeLog("classpath:liquibase.xml");
-//
-//        return liquibase;
-//    }
+    @Bean
+    public SpringLiquibase liquibase(DataSource dataSource) {
+        SpringLiquibase liquibase = new SpringLiquibase();
+
+        liquibase.setDataSource(dataSource);
+        liquibase.setChangeLog("classpath:liquibase.xml");
+
+        return liquibase;
+    }
 
     private Properties hibernateProperties() {
         Properties properties = new Properties();
@@ -90,7 +91,7 @@ public class ApplicationConfigurationWithHibernate {
         properties.put("hibernate.hbm2ddl.auto", "create-drop");
 //        properties.put("hibernate.hbm2ddl.auto", "drop");
 //        properties.put("hibernate.hbm2ddl.auto", "validate");
-        properties.put("hibernate.show_sql", "true");
+//        properties.put("hibernate.show_sql", "true");
         properties.put("hibernate.format_sql", "true");
 //        properties.put("ejb.naming_strategy", "org.hibernate.cfg.ImprovedNamingStrategy");
 

@@ -33,27 +33,6 @@ public class MainController {
     @Autowired
     private RecipesToIngredientsDao recipesToIngredientsDao;
 
-    @RequestMapping(value = "/init", method = RequestMethod.GET)
-    public String init(ModelMap model) {
-        Recipe borstch = recipeDao.create(new Recipe("borstch"));
-        Recipe kompot = recipeDao.create(new Recipe("kompot"));
-        Recipe beaf = recipeDao.create(new Recipe("beaf"));
-        Ingredient look = ingredientDao.create(new Ingredient("look"));
-        Ingredient svekla = ingredientDao.create(new Ingredient("svekla"));
-        Ingredient water = ingredientDao.create(new Ingredient("water"));
-        Ingredient yagodi = ingredientDao.create(new Ingredient("yagodi"));
-        Ingredient meat = ingredientDao.create(new Ingredient("meat"));
-        recipesToIngredientsDao.addIngredientToRecipe(borstch, new IngredientProperty(look, 100L));
-        recipesToIngredientsDao.addIngredientToRecipe(borstch, new IngredientProperty(svekla, 200L));
-        recipesToIngredientsDao.addIngredientToRecipe(borstch, new IngredientProperty(water, 50L));
-        recipesToIngredientsDao.addIngredientToRecipe(kompot, new IngredientProperty(water, 100L));
-        recipesToIngredientsDao.addIngredientToRecipe(kompot, new IngredientProperty(yagodi, 20L));
-        recipesToIngredientsDao.addIngredientToRecipe(beaf, new IngredientProperty(meat, 200L));
-        recipesToIngredientsDao.addIngredientToRecipe(beaf, new IngredientProperty(look, 50L));
-
-        return "redirect:/recipes";
-    }
-
     //start page
     //отображение рецептов
     @RequestMapping(method = RequestMethod.GET)
