@@ -7,15 +7,34 @@
 <html>
 <head>
     <title>Изменить ингредиент</title>
-    <jsp:include page="fragments/header.jsp"/>
+    <style>
+        <%@include file="css/style.css" %>
+    </style>
 </head>
 <body>
-<form:form modelAttribute="ingredientFORM" method="post" autocomplete="off">
-    <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>
-    <form:hidden path="id"/>
-    <form:input path="name" autocomplete="off"/>
-    <form:errors path="name"/><br>
-    <button type="submit">Add</button>
-</form:form>
+<header>
+    <div class="layout-positioner">
+        <ul id="list_grey">
+            <li>
+                <a href="/recipes">На главную</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="layout-positioner">
+    <h3>
+        Введите название ингредиента
+    </h3>
+    <form:form modelAttribute="ingredientFORM" id="recipe_form" class="form" method="post" autocomplete="off">
+        <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>
+        <form:hidden path="id"/>
+        <ul id="form_list">
+            <form:input path="name" autocomplete="off"/>
+            <form:errors path="name"/><br>
+        </ul>
+        <input id="send" type="submit" value="Изменить">
+    </form:form>
+</div>
 </body>
 </html>

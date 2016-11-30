@@ -8,60 +8,97 @@
 <html>
 <head>
     <title>${recipeCurrent.name} рецепт</title>
-    <jsp:include page="fragments/header.jsp"/>
+    <style>
+        <%@include file="css/style.css" %>
+    </style>
 </head>
 <body>
+<header>
+    <div class="layout-positioner">
+        <ul id="list_grey">
+            <li>
+                <a href="/recipes">На главную</a>
+            </li>
+        </ul>
+    </div>
+</header>
 
-<span>${recipeCurrent.name}</span>
-<br>
-<span>${recipeCurrent.description}</span>
-<br>
-<%--<a href="/recipes/${recipeCurrent}/add">Add ingredient to recipe</a>--%>
-<%--<br>--%>
-<ul>
-    <c:forEach var="instance" items="${ingredientsExistingInRecipe}">
-        <li>
-            <span>
-                ${instance.ingredient.name} - ${instance.count}
-            </span>
 
-            <a href="/recipes/ingredient/${instance.ingredient.id}/rename">
-                Переименовать
-            </a>
+<div class="layout-positioner main_class">
 
-            <a href="/recipes/${recipeCurrent.id}/ingredient/${instance.ingredient.id}/edit">
-                Изменить количество
-            </a>
+    <aside>
+        <form:form action="/recipes/${recipeCurrent.id}" class="form" modelAttribute="recipeToIngredient" method="post"
+                   autocomplete="off">
+            <form:hidden path="id"/>
+            <%--<form:select path="ingredient" items="${listNotContains}"/>--%>
 
-            <a href="/recipes/${recipeCurrent.id}/ingredient/${instance.ingredient.id}/delete">
-                Удалить связь
-            </a>
-        </li>
-    </c:forEach>
-</ul>
-
-<form:form action="/recipes/${recipeCurrent.id}" modelAttribute="recipeToIngredient" method="post" autocomplete="off">
-    <form:hidden path="id"/>
-    <%--<form:select path="ingredient" items="${listNotContains}"/>--%>
-
-    <%--<form:select path="ingredient">--%>
-        <%--<c:forEach var="ingredientVar" items="${listNotContains}">--%>
+            <%--<form:select path="ingredient">--%>
+            <%--<c:forEach var="ingredientVar" items="${listNotContains}">--%>
             <%--<form:option value="${ingredientVar.name}">${ingredientVar.name}</form:option>--%>
-        <%--</c:forEach>--%>
-    <%--</form:select>--%>
+            <%--</c:forEach>--%>
+            <%--</form:select>--%>
 
-    <form:input type="text" list="help_list" path="ingredient" autocomplete="off"/>
-    <datalist id="help_list">
-        <c:forEach var="ingredientName" items="${ingredientsNotContainedInRecipe}">
-            <option<%-- value="${ingredient}"--%>>${ingredientName.name}</option>
-        </c:forEach>
-    </datalist>
+            <ul id="form_list">
+                <li>
+                    <form:input type="text" list="help_list" path="ingredient" autocomplete="off"/>
+                    <datalist id="help_list">
+                        <c:forEach var="ingredientName" items="${ingredientsNotContainedInRecipe}">
+                            <option<%-- value="${ingredient}"--%>>${ingredientName.name}</option>
+                        </c:forEach>
+                    </datalist>
+                </li>
+                <li>
+                    <form:input path="count" type="number"/>
+                </li>
+                <form:errors path="count"/>
+            </ul>
+            <form:errors path="ingredient"/>
+            <input id="send" type="submit" value="Добавить">
+        </form:form>
+    </aside>
 
-    <form:input path="count" type="number"/>
-    <form:errors path="ingredient"/>
-    <form:errors path="count"/>
-    <button type="submit">Add</button>
-</form:form>
+    <div class="content">
+        <h3 id="basket_content_head">
+            <span>${recipeCurrent.name}</span>
+        </h3>
+        <br>
+        <h3 class="content_head">
+            <span>${recipeCurrent.description}</span>
+        </h3>
+        <ul id="basket_list">
+            <c:forEach var="instance" items="${ingredientsExistingInRecipe}">
+                <li class="basket_item">
+                    <ul class="basket_inner">
+                        <li class="ingredient">
+                            <span class="description">
+                                    ${instance.ingredient.name}
+                            </span>
+                        </li>
+                        <li class="count">
+                                ${instance.count}
+                        </li>
+                        <li>
+                            <a class="basket_delete_thing"
+                               href="/recipes/${recipeCurrent.id}/ingredient/${instance.ingredient.id}/delete">
+                                Удалить связь
+                            </a>
+                        </li>
+                        <li class="edit_fields">
+                            <a href="/recipes/ingredient/${instance.ingredient.id}/rename">
+                                Переименовать ингредиент
+                            </a>
+                        </li>
+                        <li class="edit_fields">
+                            <a href="/recipes/${recipeCurrent.id}/ingredient/${instance.ingredient.id}/edit">
+                                Изменить количество
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </c:forEach>
+        </ul>
+    </div>
 
+</div>
 </body>
 </html>

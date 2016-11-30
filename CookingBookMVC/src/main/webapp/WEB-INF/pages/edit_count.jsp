@@ -5,24 +5,40 @@
 <%@ page isELIgnored="false" %>
 
 <html>
-
 <head>
     <title>Изменить количество</title>
-    <jsp:include page="fragments/header.jsp"/>
+    <style>
+        <%@include file="css/style.css" %>
+    </style>
 </head>
 <body>
-<span>
-    Print count of ${recipeToIngredient.ingredient.name} for ${recipeToIngredient.recipe.name}
-</span>
-<form:form modelAttribute="recipeToIngredient" method="post" action="/recipes/${recipeToIngredient.recipe.id}">
-    <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>
-    <%--<form:hidden path="id"/>--%>
-    <form:hidden path="recipe" value="${recipeToIngredient.recipe.name}"/>
-    <form:hidden path="ingredient" value="${recipeToIngredient.ingredient.name}"/>
+<header>
+    <div class="layout-positioner">
+        <ul id="list_grey">
+            <li>
+                <a href="/recipes">На главную</a>
+            </li>
+        </ul>
+    </div>
+</header>
 
-    <form:input path="count" type="number"  autocomplete="off"/>
-    <form:errors path="count" />
-    <button type="submit">Edit</button>
-</form:form>
+<div class="layout-positioner">
+<span>
+    Введите количество ${recipeToIngredient.ingredient.name} для рецепта ${recipeToIngredient.recipe.name}
+</span>
+    <form:form modelAttribute="recipeToIngredient" id="recipe_form" class="form" method="post"
+               action="/recipes/${recipeToIngredient.recipe.id}">
+        <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>
+        <%--<form:hidden path="id"/>--%>
+        <form:hidden path="recipe" value="${recipeToIngredient.recipe.name}"/>
+        <form:hidden path="ingredient" value="${recipeToIngredient.ingredient.name}"/>
+
+        <ul id="form_list">
+            <form:input path="count" type="number" autocomplete="off"/>
+            <form:errors path="count"/>
+        </ul>
+        <input id="send" type="submit" value="Изменить">
+    </form:form>
+</div>
 </body>
 </html>

@@ -1,0 +1,307 @@
+body {
+    background: rgb(246, 246, 246);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited {
+    color: rgb(0, 91, 193);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, ul > li, ol > li, h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+p {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.layout-positioner {
+    width: 945px; /*68.47%;*/
+    /*margin-left:177px;*/
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+.layout-positioner:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+header {
+    background: url("../img/fon_grey.jpg") rgb(124, 131, 132);
+    height: 48px;
+    box-shadow: 0 10px 50px -15px;
+    margin-bottom: 100px;
+}
+
+#list_grey {
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    padding-left: 23px;
+}
+
+#list_grey ul.inner {
+    display: none;
+}
+
+#list_grey > li {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 78px;
+}
+
+#list_grey a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px white solid;
+    line-height: 16px;
+}
+
+#list_grey li:last-child {
+    margin-right: 0px;
+}
+
+#list_grey a:hover {
+    color: rgb(228, 228, 0);
+    border-bottom: 1px rgb(228, 228, 0) solid;
+}
+
+#list_grey a.selected_kategoria {
+    color: rgb(228, 228, 0);
+    border-bottom: 1px rgb(228, 228, 0) solid;
+}
+
+aside {
+    float: left;
+    vertical-align: top;
+    width: 216px;
+    /*width:218px;*/
+    min-height: 100px;
+}
+
+.content {
+    float: right;
+    width: 725px;
+}
+
+/*sdfs*/
+#basket_content_head {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(194, 64, 0);
+    /*float: left;*/
+    margin: 0;
+    margin-top: -2px;
+    margin-left: -3px;
+    /*margin-bottom: 30px;*/
+    border-bottom: 1px solid rgb(194, 64, 0);
+    line-height: 0.95;
+    text-decoration: none;
+}
+
+h3.content_head {
+    display: block;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: -3px;
+    margin-bottom: 10px;
+}
+
+ul#basket_list {
+    margin-top: 24px;
+}
+
+ul#basket_list > li.basket_item {
+    display: block;
+    /*width:100%;*/
+    border-bottom: 2px solid rgb(221, 221, 221);
+    margin: 0;
+    padding: 0;
+    padding: 20px 0;
+}
+
+ul#basket_list > li.basket_item a {
+    text-decoration: none;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner li {
+    margin: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul#basket_list > li.basket_item .description {
+    text-decoration: none;
+    color: rgb(0, 91, 193);
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ul#basket_list > li.basket_item em {
+    border-bottom: 1px solid;
+    line-height: 20px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner li.editor {
+    cursor: pointer;
+    width: 50px;
+    margin-left: 100px;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner li:last-child {
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner li a.basket_delete_thing {
+    cursor: pointer;
+    display: inline-block;
+    color: red;
+    font-weight: normal;
+    text-decoration: none;
+    border-bottom: 1px solid red;
+    line-height: 12px;
+}
+
+/*recipe*/
+ul#basket_list > li.basket_item ul.basket_inner li.ingredient {
+    width: 400px;
+    margin-right: 10px;
+    font-size: 21px;
+    color: rgb(5, 139, 122);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner li.ingredient span {
+    color: rgb(5, 139, 122);
+    font-size: 16px;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner li.count {
+    font-weight: bold;
+    font-size: 18px;
+    width: 120px;
+    margin-right: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner li.edit_fields {
+    margin-top: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(121, 121, 121);
+    line-height: 0.95;
+}
+
+ul#basket_list > li.basket_item ul.basket_inner li.edit_fields a{
+    color: rgb(121, 121, 121);
+}
+
+/*forms*/
+form.form {
+    margin-top: 19px;
+}
+
+form.form em {
+    font-size: 15px;
+    color: rgb(66, 66, 66);
+    margin-bottom: 3px;
+}
+
+.content ul#form_list {
+    display: block;
+}
+
+#form_list input {
+    border-radius: 8px;
+    border: 1px solid rgb(198, 191, 172);
+    height: 25px;
+    width: 175px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#form_list span {
+    color: red;
+}
+
+#form_list input:focus {
+    outline: none;
+}
+
+input#send {
+    cursor: pointer;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px rgb(0, 179, 29) solid;
+    text-decoration: none;
+    color: rgb(0, 179, 29);
+    font-size: 13px;
+    font-weight: bold;
+    background: transparent;
+    padding: 0;
+    margin-top: 5px;
+}
+
+#recipe_form input {
+    width: 600px;
+    display: block;
+}
+
+#recipe_form input#send {
+    width:auto;
+}
+
+#recipe_form textarea {
+    resize: none;
+    height: 51px;
+    width: 600px;
+    border-radius: 8px;
+    border: 1px solid rgb(198, 191, 172);
+    margin-bottom: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

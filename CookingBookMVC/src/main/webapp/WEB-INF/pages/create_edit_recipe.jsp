@@ -5,19 +5,34 @@
 <%@ page isELIgnored="false" %>
 
 <html>
-
 <head>
-    <title>Изменить рецепт</title>
-    <jsp:include page="fragments/header.jsp"/>
+    <title>Изменение рецепта</title>
+    <style>
+        <%@include file="css/style.css" %>
+    </style>
 </head>
 <body>
-<form:form modelAttribute="recipeFORM" method="post" action="/recipes/edit" autocomplete="off">
-    <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>
-    <form:hidden path="id"/>
-    <form:input path="name" autocomplete="off"/>
-    <form:errors path="name"/><br>
-    <form:input path="description" autocomplete="off"/><br>
-    <button type="submit">Add</button>
-</form:form>
+<header>
+    <div class="layout-positioner">
+        <ul id="list_grey">
+            <li>
+                <a href="/recipes">На главную</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="layout-positioner">
+    <form:form modelAttribute="recipeFORM" id="recipe_form" class="form" method="post" action="/recipes/edit" autocomplete="off">
+        <%--<input id="id" name="id" type="hidden" value="${recipeFORM.id}"/>--%>
+        <form:hidden path="id"/>
+        <ul id="form_list">
+            <form:input path="name" autocomplete="off"/>
+            <form:errors path="name"/><br>
+            <form:textarea path="description" autocomplete="off"/><br>
+        </ul>
+        <input id="send" type="submit" value="Отправить">
+    </form:form>
+</div>
 </body>
 </html>
