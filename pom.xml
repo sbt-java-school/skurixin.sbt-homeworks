@@ -22,15 +22,15 @@
         </plugins>
     </build>
     <modules>
-        <module>JMM_homework</module>
-        <module>ThreadPool_homework</module>
-        <module>Barbershop</module>
-        <module>GoodCode</module>
-        <module>MagicWoman</module>
-        <module>SchoolChat</module>
-        <module>HomeTasksBeforeMaven</module>
-        <module>RecipesSpringJdbc</module>
-        <module>RecipesMVC</module>
+        <module>4-11_hometasks_before_maven</module>
+        <module>homework12_ThreadPool</module>
+        <module>homework13_JMM</module>
+        <module>homework14_BarberShop</module>
+        <module>homework15_MagicWoman</module>
+        <module>homework16_SchoolChat</module>
+        <module>homework17_GoodCode</module>
+        <module>homework18_RecipesSpringJdbc</module>
+        <module>homework19_RecipesSpringMVC</module>
     </modules>
 
     <dependencies>
